@@ -6,21 +6,21 @@ Global:
     - Unique or rare features of a disease.
     - Unique therapeutic approaches.
     - A positional or quantitative variation of the anatomical structures.
-Usually:
 
-For an individual patient
+Usually:
+For an individual patient -> https://schema.org/Patient
 detailed report of the 
 Examen clinique: 
 - symptoms, 
-- signs, 
+- signs, -> https://schema.org/MedicalSign
 - diagnosis, 
-+ Examens complémentaires
++ Examens complémentaires -> https://schema.org/MedicalTest -> https://schema.org/ImagingTest
 
-- treatment, 
-- follow-up
-
+https://schema.org/MedicalTherapy
+    - treatment,  
+    - follow-up
+    - adverse events -> https://schema.org/adverseOutcome
 - effectiveness
-- adverse events
 // cost
 
 Optional:
@@ -29,7 +29,7 @@ Optional:
 
 Case report and review of the literature:
 - extensive review of the relevant literature on the topic at-hand
-- a systematic review of available evidence
+- a systematic review of available evidence -> https://schema.org/MedicalStudy
 
 
 status: published or not
@@ -38,3 +38,7 @@ CARE (i.e. CAse REport) guidelines include a reporting checklist that is listed 
 introduction, patient information, clinical findings, timeline, diagnostic assessment, therapeutic interventions, follow-up and outcomes, discussion, patient perspective, and informed consent.
 
 + Medecin
+
+
+
+- medical device: https://schema.org/MedicalDevice

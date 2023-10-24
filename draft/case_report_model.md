@@ -24,10 +24,10 @@ Examen clinique:
 // cost
 
 Optional:
-demographic profile of the patient
-literature review of other reported cases
+- demographic profile of the patient
+- literature review of other reported cases
 
-case report and review of the literature:
+Case report and review of the literature:
 - extensive review of the relevant literature on the topic at-hand
 - a systematic review of available evidence
 

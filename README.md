@@ -3,6 +3,9 @@ https://lov.okfn.org/dataset/lov/
 https://lov.linkeddata.es/dataset/lov/vocabs/medred  
 https://lov.linkeddata.es/dataset/lov/vocabs/obo  
 
+## Link to written report 
+https://docs.google.com/document/d/1QEQe_vPuW1t35e2oRJi8rssv7_0DQiK1DA-xBmAOg9w/edit?usp=sharing
+
 ##  Section 1
 Propose an RDFS model for describing medical case reports.   
 You may reuse existing ontologies and complement them with your own schema (mcr_schema.ttl).

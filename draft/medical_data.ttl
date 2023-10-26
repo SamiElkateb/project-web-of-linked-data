@@ -5,20 +5,18 @@
 @prefix draft: <http://www.draft.com> .
 @prefix m: <http://www.draft.com/medical_exams/data#> .
 
-
+# TODO : add 10 diseases
+ 
 draft:Flu a m:MedicalExam ;
-    :hasSymptoms draft:Fever 
+    :hasSymptoms draft:Fever .
 
-draft:Flu a m:MedicalExam ;
-    :hasSymptoms draft:Fever 
-
-- symptoms, 
+"""- symptoms, 
 - signs, 
 - diagnosis, 
 + Examens complémentaires
 
-- treatment, 
+- treatment,
 - follow-up
 
 - effectiveness
-- adverse events
+- adverse events"""

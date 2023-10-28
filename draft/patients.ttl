@@ -7,6 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 @prefix d: <http://project-wold.fr/patients/data#> .
+@prefix tests: <http://project-wold.fr/medical_tests/data#> .
 @prefix reports: <http://project-wold.fr/case_reports/data#> .
 @prefix treatments: <http://project-wold.fr/treatments/data#> .
 @prefix symptoms: <http://project-wold.fr/symptoms/data#> .
@@ -16,6 +17,7 @@
 d:Patient1 a s:Patient ;
   s:gender "male" ;
   s:birthDate "1960-05-20" ;
+  s:healthCondition diseases:Diabetes ;
   s:weight [ 
     s:value "80"^^xsd:unsignedInt ;
     s:unitText "kg" .
@@ -40,6 +42,7 @@ d:Patient2 a s:Patient ;
 d:Patient3 a s:Patient ;
   s:gender "male" ;
   s:birthDate "1985-02-28" ;
+  s:healthCondition diseases:Diabetes ;
   s:weight [ 
     s:value "90"^^xsd:unsignedInt ;
     s:unitText "kg" .
@@ -52,6 +55,7 @@ d:Patient3 a s:Patient ;
 d:Patient4 a s:Patient ;
   s:gender "female"^^xsd:unsignedInt ;
   s:birthDate "1975-08-15" ;
+  s:healthCondition diseases:Hypertension ;
   s:weight [ 
     s:value "60" ;
     s:unitText "kg" .
@@ -88,6 +92,7 @@ d:Patient6 a s:Patient ;
 d:Patient7 a s:Patient ;
   s:gender "male" ;
   s:birthDate "1955-07-25" ;
+  s:healthCondition diseases:Hypertension ;
   s:weight [ 
     s:value "85"^^xsd:unsignedInt ;
     s:unitText "kg" .
@@ -112,6 +117,7 @@ d:Patient8 a s:Patient ;
 d:Patient9 a s:Patient ;
   s:gender "male" ;
   s:birthDate "1968-06-12" ;
+  s:healthCondition diseases:Diabetes ;
   s:weight [ 
     s:value "76"^^xsd:unsignedInt ;
     s:unitText "kg" .

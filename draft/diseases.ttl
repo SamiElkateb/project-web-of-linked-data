@@ -5,6 +5,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+@prefix tests: <http://project-wold.fr/medical_tests/data#> .
 @prefix patients: <http://project-wold.fr/patients/data#> .
 @prefix reports: <http://project-wold.fr/case_reports/data#> .
 @prefix treatments: <http://project-wold.fr/treatments/data#> .
@@ -48,4 +49,18 @@ d:Diabetes a s:MedicalCondition ;
                   symptoms:Polydipsia, symptoms:DrySkin,
                   symptoms:WeightLoss ;
   s:possibleTreatment treatments:MetforminPrescription,
-                      treatments:InsulinPrescription .
+                      treatments:InsulinPrescription,
+                      treatments:TherapeuticEducation,
+                      treatments:BalancedDiet,
+                      treatments:PhysicalExercice .
+
+d:Hypertension a s:MedicalCondition ;
+  s:name "Hypertension"@en , "Hypertension"@fr ;
+  s:signOrSymptom symptoms:Headache, symptoms:Nausea, 
+                  symptoms:Dizziness, symptoms:Anxiety,
+                  symptoms:BlurredVision, symptoms:ChestPain,
+                  symptoms:ShortnessBreath;
+  s:possibleTreatment treatments:TherapeuticEducation,
+                      treatments:BalancedDiet,
+                      treatments:PhysicalExercice .
+                      

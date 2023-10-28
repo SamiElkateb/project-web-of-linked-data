@@ -12,16 +12,48 @@
 @prefix drugs: <http://project-wold.fr/drugs/data#> .
 @prefix diseases: <http://project-wold.fr/diseases/data#> .
 @prefix doctors: <http://project-wold.fr/doctors/data#> .
-
+@prefix tests: <http://project-wold.fr/medical_tests/data#> .
 
 d:P1CE a :ClinicalExamination ;
   :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
                     symptoms:Chills, symptoms:Fatigue ;
   :hasDiagnosis diseases:Flu ;
+  :hasMedicalTest tests:CovidTest ;
   :hasDoctor doctors:DoctorMichu .
 
 d:Case1 a :CaseReport ;
   :hasPatient patients:Patient1 ;
   :hasClinicalExamination d:P1CE ;
+  :hasDoctor doctors:DoctorMichu .
   :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+
+d:P2CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:Chills, symptoms:Fatigue ;
+  :hasDiagnosis diseases:Covid ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasDoctor doctors:DoctorSmith .
+
+d:Case2 a :CaseReport ;
+  :hasPatient patients:Patient2 ;
+  :hasClinicalExamination d:P2CE ;
+  :hasDoctor doctors:DoctorMichu .
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+
+d:P3CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:Fatigue, symptoms:ChestPain,
+                    symptoms:ShortnessBreath, symptoms:Nausea ;
+  :hasDiagnosis diseases:Pneumonia ;
+  :hasMedicalTest tests:PulmonaryRadiography ;
+  :hasDoctor doctors:DoctorDoe .
+
+d:Case3 a :CaseReport ;
+  :hasPatient patients:Patient3 ;
+  :hasClinicalExamination d:P3CE ;
+  :hasDoctor doctors:DoctorDoe .
+  :hasMedicalTherapy treatments:ParacetamolPrescription, 
+                     treatments:AmoxicillinPrescription .
 

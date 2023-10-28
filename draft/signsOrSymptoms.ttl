@@ -6,6 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 @prefix patients: <http://project-wold.fr/patients/data#> .
+@prefix tests: <http://project-wold.fr/medical_tests/data#> .
 @prefix reports: <http://project-wold.fr/case_reports/data#> .
 @prefix treatments: <http://project-wold.fr/treatments/data#> .
 @prefix drugs: <http://project-wold.fr/drugs/data#> .
@@ -62,3 +63,12 @@ d:Polydipsia a s:MedicalSignOrSymptom ;
 
 d:Nausea a s:MedicalSignOrSymptom ;
   s:name "Nausea"@en , "Nausée"@fr .
+
+d:Dizziness a s:MedicalSignOrSymptom ;
+  s:name "Dizziness"@en , "Vertiges"@fr .
+
+d:Anxiety a s:MedicalSignOrSymptom ;
+  s:name "Anxiety"@en , "Anxiété"@fr .
+
+d:BlurredVision a s:MedicalSignOrSymptom ;
+  s:name "Blurred vision"@en , "Vision trouble"@fr .

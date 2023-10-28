@@ -1,0 +1,31 @@
+@prefix s: <https://schema.org/schema#> .
+@prefix : <http://project-wold.fr/schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix patients: <http://project-wold.fr/patients/data#> .
+@prefix reports: <http://project-wold.fr/case_reports/data#> .
+@prefix treatments: <http://project-wold.fr/treatments/data#> .
+@prefix symptoms: <http://project-wold.fr/symptoms/data#> .
+@prefix drugs: <http://project-wold.fr/drugs/data#> .
+@prefix diseases: <http://project-wold.fr/diseases/data#> .
+@prefix doctors: <http://project-wold.fr/doctors/data#> .
+@prefix d: <http://project-wold.fr/medical_tests/data#> .
+
+d:CovidTest a s:MedicalTest ;
+  s:name "Covid test"@en , "Test Covid"@fr ;
+  s:usedToDiagnose diseases:Covid .
+
+d:PulmonaryRadiography a s:MedicalTest ;
+  s:name "Pulmonary radiography"@en , "Radiographie pulmonaire"@fr ;
+  s:usedToDiagnose diseases:Pneumonia .
+
+d:BloodTest a s:MedicalTest ;
+  s:name "Blood test"@en , "Prise de sang"@fr ;
+  s:usedToDiagnose diseases:Diabetes .
+
+d:BloodPressureMesurement a s:MedicalTest ;
+  s:name "Blood pressure mesurement"@en , "Mesure de la pression artérielle"@fr ;
+  s:usedToDiagnose diseases:Hypertension .

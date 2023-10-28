@@ -15,19 +15,19 @@
   rdfs:label    "Case report"@en, "Observation médicale"@fr ;
   rdfs:comment  "detailed report of the symptoms, signs, diagnosis, treatment, and follow-up of an individual patient."@en,
                 "document créé par le médecin et contenant des informations recueillies lors de l'examen médical d'un patient."@fr ;
-  rdfs:subClassOf :MedicalEntity .
+  rdfs:subClassOf s:MedicalEntity .
 
 :ClinicalExamination a rdfs:Class;
   rdfs:label    "Clinical examination"@en, "Examen clinique"@fr ;
   rdfs:comment  "detailed report of the symptoms, signs, diagnosis, treatment, and follow-up of an individual patient."@en,
                 "L'examen clinique fait partie de l'examen médical ou psychologique qui permet au médecin ou aux infirmiers en pratique avancée de décrire l'état d'un patient"@fr ;
-  rdfs:subClassOf :MedicalEntity .
+  rdfs:subClassOf s:MedicalEntity .
 
 :Doctor a rdfs:Class;
   rdfs:label    "Doctor"@en, "Médecin"@fr ;
   rdfs:comment  ""@en,
                 ""@fr ;
-  rdfs:subClassOf :Person .
+  rdfs:subClassOf s:Person .
 
 :hasDiagnosis a rdf:Property ;
   rdfs:label ""@en, ""@fr ;
@@ -51,16 +51,21 @@
                ""@fr ;
   rdfs:range  s:Patient .
 
-
 :hasDoctor a rdf:Property ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en,
                ""@fr ;
-  rdfs:range  s:Doctor .
+  rdfs:range  :Doctor .
 
 :hasMedicalTherapy a rdf:Property ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en,
                ""@fr ;
   rdfs:range  s:MedicalTherapy .
+
+:hasMedicalTest a rdf:Property;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+               ""@fr ;
+  rdfs:range  s:MedicalTest .
 

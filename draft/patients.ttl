@@ -1,0 +1,134 @@
+@prefix s: <https://schema.org/schema#> .
+@prefix : <http://project-wold.fr/schema#> .
+@prefix reports: <http://project-wold.fr/case_reports/data#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix d: <http://project-wold.fr/patients/data#> .
+@prefix reports: <http://project-wold.fr/case_reports/data#> .
+@prefix treatments: <http://project-wold.fr/treatments/data#> .
+@prefix symptoms: <http://project-wold.fr/symptoms/data#> .
+@prefix drugs: <http://project-wold.fr/drugs/data#> .
+@prefix diseases: <http://project-wold.fr/diseases/data#> .
+
+d:Patient1 a s:Patient ;
+  s:gender "male" ;
+  s:birthDate "1960-05-20" ;
+  s:weight [ 
+    s:value "80"^^xsd:unsignedInt ;
+    s:unitText "kg" .
+  ] ;
+  s:height [ 
+    s:value "180"^^xsd:unsignedInt ;
+    s:unitText "cm" .
+  ] .
+
+d:Patient2 a s:Patient ;
+  s:gender "female" ;
+  s:birthDate "1970-04-10" ;
+  s:weight [ 
+    s:value "65"^^xsd:unsignedInt ;
+    s:unitText "kg" .
+  ] ;
+  s:height [ 
+    s:value "165"^^xsd:unsignedInt ;
+    s:unitText "cm" .
+  ] .
+
+d:Patient3 a s:Patient ;
+  s:gender "male" ;
+  s:birthDate "1985-02-28" ;
+  s:weight [ 
+    s:value "90"^^xsd:unsignedInt ;
+    s:unitText "kg" .
+  ] ;
+  s:height [ 
+    s:value "175"^^xsd:unsignedInt ;
+    s:unitText "cm" .
+  ] .
+
+d:Patient4 a s:Patient ;
+  s:gender "female"^^xsd:unsignedInt ;
+  s:birthDate "1975-08-15" ;
+  s:weight [ 
+    s:value "60" ;
+    s:unitText "kg" .
+  ] ;
+  s:height [ 
+    s:value "162"^^xsd:unsignedInt ;
+    s:unitText "cm" .
+  ] .
+
+d:Patient5 a s:Patient ;
+  s:gender "male" ;
+  s:birthDate "1965-12-05" ;
+  s:weight [ 
+    s:value "78"^^xsd:unsignedInt ;
+    s:unitText "kg" .
+  ] ;
+  s:height [ 
+    s:value "182"^^xsd:unsignedInt ;
+    s:unitText "cm" .
+  ] .
+
+d:Patient6 a s:Patient ;
+  s:gender "female" ;
+  s:birthDate "1980-03-30" ;
+  s:weight [ 
+    s:value "58"^^xsd:unsignedInt ;
+    s:unitText "kg" .
+  ] ;
+  s:height [ 
+    s:value "159"^^xsd:unsignedInt ;
+    s:unitText "cm" .
+  ] .
+
+d:Patient7 a s:Patient ;
+  s:gender "male" ;
+  s:birthDate "1955-07-25" ;
+  s:weight [ 
+    s:value "85"^^xsd:unsignedInt ;
+    s:unitText "kg" .
+  ] ;
+  s:height [ 
+    s:value "179"^^xsd:unsignedInt ;
+    s:unitText "cm" .
+  ] .
+
+d:Patient8 a s:Patient ;
+  s:gender "female" ;
+  s:birthDate "1990-11-10" ;
+  s:weight [ 
+    s:value "54"^^xsd:unsignedInt ;
+    s:unitText "kg" .
+  ] ;
+  s:height [ 
+    s:value "163"^^xsd:unsignedInt ;
+    s:unitText "cm" .
+  ] .
+
+d:Patient9 a s:Patient ;
+  s:gender "male" ;
+  s:birthDate "1968-06-12" ;
+  s:weight [ 
+    s:value "76"^^xsd:unsignedInt ;
+    s:unitText "kg" .
+  ] ;
+  s:height [ 
+    s:value "174"^^xsd:unsignedInt ;
+    s:unitText "cm" .
+  ] .
+
+d:Patient10 a s:Patient ;
+  s:gender "female" ;
+  s:birthDate "1978-09-24" ;
+  s:weight [ 
+    s:value "62"^^xsd:unsignedInt ;
+    s:unitText "kg" .
+  ] ;
+  s:height [ 
+    s:value "168"^^xsd:unsignedInt ;
+    s:unitText "cm" .
+  ] .

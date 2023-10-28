@@ -1,0 +1,55 @@
+@prefix s: <https://schema.org/schema#> .
+@prefix : <http://project-wold.fr/schema#> .
+
+@prefix patients: <http://project-wold.fr/patients/data#> .
+@prefix reports: <http://project-wold.fr/case_reports/data#> .
+@prefix treatments: <http://project-wold.fr/treatments/data#> .
+@prefix symptoms: <http://project-wold.fr/symptoms/data#> .
+@prefix d: <http://project-wold.fr/drugs/data#> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix diseases: <http://project-wold.fr/diseases/data#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+d:ParacetamolPrescription a s:MedicalTherapy ;
+  s:drug drugs:Paracetamol ;
+  s:doseSchedule [
+    s:doseUnit "mg" ;
+    s:doseValue "1000"^^xsd:unsignedInt ;
+    s:frequency "every 6 hours"@en, "toutes les 6 heures"@fr .
+  ] .
+
+d:IbuprofenePrescription a s:MedicalTherapy ;
+  s:drug drugs:Ibuprofene ;
+  s:doseSchedule [
+    s:doseUnit "mg" ;
+    s:doseValue "1000"^^xsd:unsignedInt ;
+    s:frequency "every 8 hours"@en, "toutes les 8 heures"@fr .
+  ] .
+
+d:AmoxicillinPrescription a s:MedicalTherapy ;
+  s:drug drugs:Amoxicillin ;
+  s:doseSchedule [
+    s:doseUnit "mg" ;
+    s:doseValue "1000"^^xsd:unsignedInt ;
+    s:frequency "morning and night"@en, "matin et soir"@fr .
+  ] .
+
+d:MetforminPrescription a s:MedicalTherapy ;
+  s:drug drugs:Metformin ;
+  s:doseSchedule [
+    s:doseUnit "mg" ;
+    s:doseValue "500"^^xsd:unsignedInt ;
+    s:frequency "morning and night"@en, "matin et soir"@fr .
+  ] .
+
+d:InsulinPrescription a s:MedicalTherapy ;
+  s:drug drugs:Insulin ;
+  s:doseSchedule [
+    s:doseUnit "UI" ;
+    s:doseValue "1"^^xsd:unsignedInt ;
+    s:frequency "0.2 UI / kg"@en, "0.2 UI / kg"@fr .
+  ] .
+

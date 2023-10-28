@@ -1,0 +1,64 @@
+@prefix s: <https://schema.org/schema#> .
+@prefix : <http://project-wold.fr/schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix patients: <http://project-wold.fr/patients/data#> .
+@prefix reports: <http://project-wold.fr/case_reports/data#> .
+@prefix treatments: <http://project-wold.fr/treatments/data#> .
+@prefix drugs: <http://project-wold.fr/drugs/data#> .
+@prefix diseases: <http://project-wold.fr/diseases/data#> .
+@prefix d: <http://project-wold.fr/symptoms/data#> .
+
+d:Fever a s:MedicalSignOrSymptom ;
+  s:name "Fever"@en , "Fièvre"@fr .
+
+d:Cough a s:MedicalSignOrSymptom ;
+  s:name "Cough"@en , "Toux"@fr .
+
+d:Fatigue a s:MedicalSignOrSymptom ;
+  s:name "Fatigue"@en , "Fatigue"@fr .
+
+d:ArticularPain a s:MedicalSignOrSymptom ;
+  s:name "Articular pain"@en , "Douleur articulaire"@fr .
+
+d:MuscularPain a s:MedicalSignOrSymptom ;
+  s:name "Muscular pain"@en , "Douleur musculaire"@fr .
+
+d:ChestPain a s:MedicalSignOrSymptom ;
+  s:name "Chest pain"@en , "Douleur thoracique"@fr .
+
+d:Headache a s:MedicalSignOrSymptom ;
+  s:name "Headache"@en , "Mal de tête"@fr .
+
+d:SoreThroat a s:MedicalSignOrSymptom ;
+  s:name "Sore throat"@en , "Mal de gorge"@fr .
+
+d:LossOfSmell a s:MedicalSignOrSymptom ;
+  s:name "Loss of smell"@en , "Perte d'odorat"@fr .
+
+d:ShortnessBreath a s:MedicalSignOrSymptom ;
+  s:name "Shortness of breath"@en , "Essouflement"@fr .
+
+d:Chills a s:MedicalSignOrSymptom ;
+  s:name "Chills"@en , "Frissons"@fr .
+
+d:WeightLoss a s:MedicalSignOrSymptom ;
+  s:name "Weight loss"@en , "Perte de poid"@fr .
+
+d:DrySkin a s:MedicalSignOrSymptom ;
+  s:name "Dry skin"@en , "Peau sèche"@fr .
+
+d:Polyphagia a s:MedicalSignOrSymptom ; 
+  s:name "Polyphagia"@en, "Polyphagie"@fr .
+
+d:Polyuria a s:MedicalSignOrSymptom ; 
+  s:name "Polyuria"@en, "Polyurie"@fr .
+
+d:Polydipsia a s:MedicalSignOrSymptom ; 
+  s:name "Polydipsia"@en, "Polydipsie"@fr .
+
+d:Nausea a s:MedicalSignOrSymptom ;
+  s:name "Nausea"@en , "Nausée"@fr .

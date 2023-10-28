@@ -1,0 +1,40 @@
+@prefix s: <https://schema.org/schema#> .
+@prefix : <http://project-wold.fr/schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+d:Case1 a :CaseReport ;
+  :hasPatient d:Patient1 ;
+  :url "http://dx.doi.org/10.1136/bcr-2022-253811"
+
+d:Patient1 a s:Patient ;
+  s:gender "male" ;
+
+d:Patient2 a s:Patient ;
+  s:gender "male" ;
+
+d:Patient3 a s:Patient ;
+  s:gender "male" ;
+
+d:Patient4 a s:Patient ;
+  s:gender "male" ;
+
+d:Patient5 a s:Patient ;
+  s:gender "male" ;
+
+d:Patient6 a s:Patient ;
+  s:gender "male" ;
+
+d:Patient7 a s:Patient ;
+  s:gender "male" ;
+
+d:Patient8 a s:Patient ;
+  s:gender "male" ;
+
+d:Patient9 a s:Patient ;
+  s:gender "male" ;
+
+d:Patient10 a s:Patient ;
+  s:gender "male" ;

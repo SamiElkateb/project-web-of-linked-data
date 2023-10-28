@@ -24,7 +24,7 @@ https://schema.org/MedicalTherapy
 // cost
 
 Optional:
-- demographic profile of the patient
+- demographic profile of the patient https://schema.org/Patient
 - literature review of other reported cases
 
 Case report and review of the literature:

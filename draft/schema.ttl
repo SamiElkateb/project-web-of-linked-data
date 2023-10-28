@@ -1,0 +1,66 @@
+@prefix s: <https://schema.org/schema#> .
+@prefix : <http://project-wold.fr/schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+: a owl:Ontology :
+  rdfs:label "";
+  rdfs:comment "";
+
+
+:CaseReport a rdfs:Class;
+  rdfs:label    "Case report"@en, "Observation médicale"@fr ;
+  rdfs:comment  "detailed report of the symptoms, signs, diagnosis, treatment, and follow-up of an individual patient."@en,
+                "document créé par le médecin et contenant des informations recueillies lors de l'examen médical d'un patient."@fr ;
+  rdfs:subClassOf :MedicalEntity .
+
+:ClinicalExamination a rdfs:Class;
+  rdfs:label    "Clinical examination"@en, "Examen clinique"@fr ;
+  rdfs:comment  "detailed report of the symptoms, signs, diagnosis, treatment, and follow-up of an individual patient."@en,
+                "L'examen clinique fait partie de l'examen médical ou psychologique qui permet au médecin ou aux infirmiers en pratique avancée de décrire l'état d'un patient"@fr ;
+  rdfs:subClassOf :MedicalEntity .
+
+:Doctor a rdfs:Class;
+  rdfs:label    "Doctor"@en, "Médecin"@fr ;
+  rdfs:comment  ""@en,
+                ""@fr ;
+  rdfs:subClassOf :Person .
+
+:hasDiagnosis a rdf:Property ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+               ""@fr ;
+  rdfs:range  s:MedicalCondition .
+
+:hasClinicalExamination a rdf:Property ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+               ""@fr ;
+  rdfs:range  :ClinicalExamination .
+
+:hasSignOrSymptom a rdf:Property ;
+  rdfs:range  s:MedicalSignOrSymptom  .
+
+
+:hasPatient a rdf:Property ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+               ""@fr ;
+  rdfs:range  s:Patient .
+
+
+:hasDoctor a rdf:Property ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+               ""@fr ;
+  rdfs:range  s:Doctor .
+
+:hasMedicalTherapy a rdf:Property ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+               ""@fr ;
+  rdfs:range  s:MedicalTherapy .
+

@@ -1,0 +1,27 @@
+@prefix s: <https://schema.org/schema#> .
+@prefix : <http://project-wold.fr/schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix patients: <http://project-wold.fr/patients/data#> .
+@prefix d: <http://project-wold.fr/case_reports/data#> .
+@prefix treatments: <http://project-wold.fr/treatments/data#> .
+@prefix symptoms: <http://project-wold.fr/symptoms/data#> .
+@prefix drugs: <http://project-wold.fr/drugs/data#> .
+@prefix diseases: <http://project-wold.fr/diseases/data#> .
+@prefix doctors: <http://project-wold.fr/doctors/data#> .
+
+
+d:P1CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:Chills, symptoms:Fatigue ;
+  :hasDiagnosis diseases:Flu ;
+  :hasDoctor doctors:DoctorMichu .
+
+d:Case1 a :CaseReport ;
+  :hasPatient patients:Patient1 ;
+  :hasClinicalExamination d:P1CE ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+

@@ -49,7 +49,7 @@ test:hasMedicalCondition a rdf:Property ;
 
 test:testType a rdf:Property ; #text
     rdfs:label "testType" ;
-    rdfs:comment "A type of test performed to identify the medical condition of a patient e.g.'palpation'." ;
+    rdfs:comment "A type of test performed to identify the medical condition of a patient e.g. palpation." ;
     rdfs:domain test:medicalTest .
 
 :hasSignOrSymptom a rdf:Property ;
@@ -59,8 +59,8 @@ test:testType a rdf:Property ; #text
     rdfs:range symptom:medicalSignOrSymptom .
 
 symptom:signOrSymptomName a rdf:Property ; #text
-    rdfs:label "signOrSymptomName"
-    rdfs:comment "The name of a sign or a symptom e.g. 'fever'." ;
+    rdfs:label "signOrSymptomName" ;
+    rdfs:comment "The name of a sign or a symptom e.g. fever." ;
     rdfs:domain symptom:medicalSignOrSymptom .
 
 :hasMedicalTherapy a rdf:Property ;
@@ -87,18 +87,5 @@ drug:activeIngredient a rdf:Property ; #text
 
 drug:administrationRoute a rdf:Property ; #text
     rdfs:label "administrationRoute" ;
-    rdfs:comment "A route by which this drug may be administered, e.g. 'oral'." ;
+    rdfs:comment "A route by which this drug may be administered, e.g. oral." ;
     rdfs:domain drug:Drug .
-
-
-"""
-- Medical test : done
-- symptoms or signs, : done
-- diagnosis, : done
-+ additional examination : another medical test
-- treatment / drug, : done
-- follow-up : done
-
-- effectiveness : optional
-- adverse events : optional (associated to the medical therapy)
-"""

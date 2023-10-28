@@ -5,18 +5,19 @@
 @prefix draft: <http://www.draft.com> .
 @prefix m: <http://www.draft.com/medical_exams/data#> .
 
-# TODO : add 10 diseases
+# TODO : add 10 medical tests
 
 
 
 
-"""- symptoms, 
-- signs, 
-- diagnosis,
-+ Examens complémentaires
+"""
+- Medical test : done
+- symptoms or signs, : done
+- diagnosis, : done
++ additional examination : another medical test
+- treatment / drug, : done
+- follow-up : done
 
-- treatment,
-- follow-up
-
-- effectiveness
-- adverse events"""
+- effectiveness : optional
+- adverse events : optional (associated to the medical therapy)
+"""

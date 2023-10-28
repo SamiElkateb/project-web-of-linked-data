@@ -5,6 +5,7 @@
 @prefix therapy: <https://schema.org/MedicalTherapy#>
 @prefix drug: <https://schema.org/Drug#>
 @prefix symptom: <https://schema.org/MedicalSignOrSymptom#>
+@prefix test: <https://schema.org/MedicalTest#>
 @prefix : <https://schema.org/MedicalCondition#>
 
 
@@ -14,63 +15,90 @@
     rdfs:comment "An example schema to describe medical case reports." .
 
 # Define Classes
+# The medical condition of a patient
 :medicalCondition a rdfs:Class ;
     rdfs:label "MedicalCondition" ;
     rdfs:comment "Any condition of the human body that affects the normal functioning of a person." .
 
-therapy:medicalTherapy a rdfs:Class ;
-    rdfs:label "MedicalTherapy" ;
-    rdfs:comment "Any medical intervention designed to prevent, treat, and cure human diseases." .
-
-drug:drug a rdfs:Class ;
-    rdfs:label "Drug" ;
-    rdfs:comment "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism." ;
-
+# A patient typically has some signs or symptoms of his medical condition
 symptom:medicalSignOrSymptom a rdfs:Class ;
     rdfs:label "MedicalSignOrSymptom" ;
     rdfs:comment "Any feature associated or not with a medical condition. In medicine a symptom is generally subjective while a sign is objective." .
 
+# The medical therapy given to the patient after the examination
+therapy:medicalTherapy a rdfs:Class ;
+    rdfs:label "MedicalTherapy" ;
+    rdfs:comment "Any medical intervention designed to prevent, treat, and cure human diseases." .
+
+# The medical therapy can include some drugs
+drug:drug a rdfs:Class ;
+    rdfs:label "Drug" ;
+    rdfs:comment "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism." .
+
+# The test done to define the medical condition of a patient (there can be many)
+test:medicalTest a rdfs:Class ;
+    rdfs:label "MedicalTest" ;
+    rdfs:comment "Any medical test, typically performed for diagnostic purposes." .
+
 # Define Properties
+test:hasMedicalCondition a rdf:Property ;
+    rdfs:label "hasMedicalCondition" ;
+    rdfs:comment "A medical condition determined after the test" ;
+    rdfs:domain test:medicalTest ;
+    rdfs:range :medicalCondition .
+
+test:testType a rdf:Property ; #text
+    rdfs:label "testType" ;
+    rdfs:comment "A type of test performed to identify the medical condition of a patient e.g.'palpation'." ;
+    rdfs:domain test:medicalTest .
+
 :hasSignOrSymptom a rdf:Property ;
     rdfs:label "hasSignOrSymptom" ;
-    rdfs:comment "A sign or symptom of this condition. Signs are objective or physically observable manifestations of the medical condition while symptoms are the subjective experience of the medical condition." .
+    rdfs:comment "A sign or symptom of this condition. Signs are objective or physically observable manifestations of the medical condition while symptoms are the subjective experience of the medical condition." ;
+    rdfs:domain :medicalCondition ;
     rdfs:range symptom:medicalSignOrSymptom .
 
-:hasDifferentialDiagnosis a rdf:Property ;
-    rdfs:label "hasDifferentialDiagnosis" ;
-    rdfs:comment "One of a set of differential diagnoses for the condition." ;
-    rdfs:domain :medicalCondition .
-
-:hasDrug a rdf:Property ;
-    rdfs:label "hasDrug" ;
-    rdfs:comment "Specifies a drug or medicine used in a medication procedure." ;
-    rdfs:range drug:Drug .
-
-therapy:hasFollowup a rdf:Property ;
-    rdfs:label "hasFollowup" ;
-    rdfs:comment "Typical or recommended follow-up care after the procedure is performed." .
-
-drug:activeIngredient a rdf:Property ;
-    rdfs:label "activeIngredient" ;
-    rdfs:comment "An active ingredient, typically chemical compounds and/or biologic substances." ;
-    rdfs:domain drug:Drug .
-
-drug:administrationRoute a rdf:Property ;
-    rdfs:label "administrationRoute" ;
-    rdfs:comment "A route by which this drug may be administered, e.g. 'oral'." ;
-    rdfs:domain drug:Drug .
-
-symptom:signOrSymptomName a rdf:Property ;
+symptom:signOrSymptomName a rdf:Property ; #text
     rdfs:label "signOrSymptomName"
     rdfs:comment "The name of a sign or a symptom e.g. 'fever'." ;
     rdfs:domain symptom:medicalSignOrSymptom .
 
-"""- symptoms or signs, 
-- diagnosis,
-+ Examens complémentaires
+:hasMedicalTherapy a rdf:Property ;
+    rdfs:label "hasMedicalTherapy" ;
+    rdfs:comment "The medical therapy of the medical condition of the patient." ;
+    rdfs:domain :medicalCondition ;
+    rdfs:range therapy:medicalTherapy .
 
-- treatment,
-- follow-up
+therapy:hasFollowup a rdf:Property ; #text
+    rdfs:label "hasFollowup" ;
+    rdfs:comment "Typical or recommended follow-up care after the procedure is performed." ;
+    rdfs:domain therapy:medicalTherapy .
 
-- effectiveness
-- adverse events"""
+therapy:hasDrug a rdf:Property ;
+    rdfs:label "hasDrug" ;
+    rdfs:comment "Specifies a drug or medicine used in a medication procedure." ;
+    rdfs:domain therapy:medicalTherapy ;
+    rdfs:range drug:Drug .
+
+drug:activeIngredient a rdf:Property ; #text
+    rdfs:label "activeIngredient" ;
+    rdfs:comment "An active ingredient, typically chemical compounds and/or biologic substances." ;
+    rdfs:domain drug:Drug .
+
+drug:administrationRoute a rdf:Property ; #text
+    rdfs:label "administrationRoute" ;
+    rdfs:comment "A route by which this drug may be administered, e.g. 'oral'." ;
+    rdfs:domain drug:Drug .
+
+
+"""
+- Medical test : done
+- symptoms or signs, : done
+- diagnosis, : done
++ additional examination : another medical test
+- treatment / drug, : done
+- follow-up : done
+
+- effectiveness : optional
+- adverse events : optional (associated to the medical therapy)
+"""

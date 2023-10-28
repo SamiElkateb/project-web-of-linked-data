@@ -2,21 +2,70 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix therapy: <https://schema.org/MedicalTherapy#>
+@prefix drug: <https://schema.org/Drug#>
+@prefix symptom: <https://schema.org/MedicalSignOrSymptom#>
 @prefix : <https://schema.org/MedicalCondition#>
 
 
 # Declaration of the Ontology
 : a owl:Ontology ;
-    rdfs:lablel "Toy Medical Condition Ontology" ;
-    rdfs:comment "An example of schema to describe any condition of the human body that affects the normal functioning of a person" ;
+    rdfs:label "Toy Medical Condition Ontology" ;
+    rdfs:comment "An example schema to describe medical case reports." .
 
+# Define Classes
+:medicalCondition a rdfs:Class ;
+    rdfs:label "MedicalCondition" ;
+    rdfs:comment "Any condition of the human body that affects the normal functioning of a person." .
 
+therapy:medicalTherapy a rdfs:Class ;
+    rdfs:label "MedicalTherapy" ;
+    rdfs:comment "Any medical intervention designed to prevent, treat, and cure human diseases." .
 
+drug:drug a rdfs:Class ;
+    rdfs:label "Drug" ;
+    rdfs:comment "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism." ;
 
+symptom:medicalSignOrSymptom a rdfs:Class ;
+    rdfs:label "MedicalSignOrSymptom" ;
+    rdfs:comment "Any feature associated or not with a medical condition. In medicine a symptom is generally subjective while a sign is objective." .
 
+# Define Properties
+:hasSignOrSymptom a rdf:Property ;
+    rdfs:label "hasSignOrSymptom" ;
+    rdfs:comment "A sign or symptom of this condition. Signs are objective or physically observable manifestations of the medical condition while symptoms are the subjective experience of the medical condition." .
+    rdfs:range symptom:medicalSignOrSymptom .
 
-"""- symptoms, 
-- signs, 
+:hasDifferentialDiagnosis a rdf:Property ;
+    rdfs:label "hasDifferentialDiagnosis" ;
+    rdfs:comment "One of a set of differential diagnoses for the condition." ;
+    rdfs:domain :medicalCondition .
+
+:hasDrug a rdf:Property ;
+    rdfs:label "hasDrug" ;
+    rdfs:comment "Specifies a drug or medicine used in a medication procedure." ;
+    rdfs:range drug:Drug .
+
+therapy:hasFollowup a rdf:Property ;
+    rdfs:label "hasFollowup" ;
+    rdfs:comment "Typical or recommended follow-up care after the procedure is performed." .
+
+drug:activeIngredient a rdf:Property ;
+    rdfs:label "activeIngredient" ;
+    rdfs:comment "An active ingredient, typically chemical compounds and/or biologic substances." ;
+    rdfs:domain drug:Drug .
+
+drug:administrationRoute a rdf:Property ;
+    rdfs:label "administrationRoute" ;
+    rdfs:comment "A route by which this drug may be administered, e.g. 'oral'." ;
+    rdfs:domain drug:Drug .
+
+symptom:signOrSymptomName a rdf:Property ;
+    rdfs:label "signOrSymptomName"
+    rdfs:comment "The name of a sign or a symptom e.g. 'fever'." ;
+    rdfs:domain symptom:medicalSignOrSymptom .
+
+"""- symptoms or signs, 
 - diagnosis,
 + Examens complémentaires
 

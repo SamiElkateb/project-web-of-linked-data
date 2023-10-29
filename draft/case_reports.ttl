@@ -15,6 +15,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 reports:P1CE a :ClinicalExamination ;
+  :hasPatient patients:Patient1 ;
   :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
                     symptoms:Chills, symptoms:Fatigue ;
   :hasDiagnosis diseases:Flu ;
@@ -28,6 +29,7 @@ reports:Case1 a :CaseReport ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
 
 reports:P2CE a :ClinicalExamination ;
+  :hasPatient patients:Patient2 ;
   :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
                     symptoms:Chills, symptoms:Fatigue ;
   :hasDiagnosis diseases:Covid ;
@@ -41,6 +43,7 @@ reports:Case2 a :CaseReport ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
 
 reports:P3CE a :ClinicalExamination ;
+  :hasPatient patients:Patient3 ;
   :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
                     symptoms:Fatigue, symptoms:ChestPain,
                     symptoms:ShortnessBreath, symptoms:Nausea ;
@@ -56,6 +59,7 @@ reports:Case3 a :CaseReport ;
                      treatments:AmoxicillinPrescription .
 
 reports:P4CE a :ClinicalExamination ;
+  :hasPatient patients:Patient4 ;
   :hasSignOrSymptom symptoms:Cough, symptoms:SoreThroat;  
   :hasDiagnosis diseases:Bronchitis ;
   :hasDoctor doctors:DoctorLopez  .
@@ -67,6 +71,7 @@ reports:Case4 a :CaseReport ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
 
 reports:P5CE a :ClinicalExamination ;
+  :hasPatient patients:Patient5 ;
   :hasSignOrSymptom symptoms:Polyphagia, symptoms:Polyuria,   
                     symptoms:Polydipsia, symptoms:DrySkin ;
   :hasDiagnosis diseases:Diabetes ;
@@ -81,6 +86,7 @@ reports:Case5 a :CaseReport ;
                      treatments:BalancedDiet .
 
 reports:P6CE a :ClinicalExamination ;
+  :hasPatient patients:Patient6 ;
   :hasSignOrSymptom symptoms:ShortnessBreath, symptoms:ChestPain, 
                     symptoms:Nausea, symptoms:Headache ;
   :hasDiagnosis diseases:Hypertension ;
@@ -96,6 +102,7 @@ reports:Case6 a :CaseReport ;
                       treatments:PhysicalExercice .
 
 reports:P7CE a :ClinicalExamination ;
+  :hasPatient patients:Patient7 ;
   :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
                     symptoms:ShortnessBreath, symptoms:Fatigue ;
   :hasMedicalTest tests:CovidTest ;
@@ -111,6 +118,7 @@ reports:Case7 a :CaseReport ;
                      treatments:ParacetamolPrescription .
 
 reports:P8CE a :ClinicalExamination ;
+  :hasPatient patients:Patient8 ;
   :hasSignOrSymptom symptoms:Cough, symptoms:Fever,
                     symptoms:Fatigue, symptoms:Chills, 
                     symptoms:LossOfSmell ;
@@ -125,6 +133,7 @@ reports:Case8 a :CaseReport ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
 
 reports:P9CE a :ClinicalExamination ;
+  :hasPatient patients:Patient9 ;
   :hasSignOrSymptom symptoms:Cough, symptoms:Fatigue ;
   :hasDiagnosis diseases:Bronchitis ;
   :hasDoctor doctors:DoctorSmith .
@@ -137,6 +146,7 @@ reports:Case9 a :CaseReport ;
 
 
 reports:P10CE a :ClinicalExamination ;
+  :hasPatient patients:Patient10 ;
   :hasSignOrSymptom symptoms:Cough, symptoms:Fever,
                     symptoms:Fatigue, symptoms:Chills, 
                     symptoms:MuscularPain ;

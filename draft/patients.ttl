@@ -15,7 +15,7 @@
 
 patients:Patient1 a :Patient ;
   :gender "male" ;
-  :birthDate "1960-05-20" ;
+  :birthDate "1960-05-20"^^xsd:date ;
   :healthCondition diseases:Diabetes ;
   :weight [ 
     :value "80"^^xsd:unsignedInt ;
@@ -28,7 +28,7 @@ patients:Patient1 a :Patient ;
 
 patients:Patient2 a :Patient ;
   :gender "female" ;
-  :birthDate "1970-04-10" ;
+  :birthDate "1970-04-10"^^xsd:date ;
   :weight [ 
     :value "65"^^xsd:unsignedInt ;
     :unitText "kg"
@@ -40,7 +40,7 @@ patients:Patient2 a :Patient ;
 
 patients:Patient3 a :Patient ;
   :gender "male" ;
-  :birthDate "1985-02-28" ;
+  :birthDate "1985-02-28"^^xsd:date ;
   :weight [ 
     :value "90"^^xsd:unsignedInt ;
     :unitText "kg"
@@ -52,7 +52,7 @@ patients:Patient3 a :Patient ;
 
 patients:Patient4 a :Patient ;
   :gender "female"^^xsd:unsignedInt ;
-  :birthDate "1975-08-15" ;
+  :birthDate "1975-08-15"^^xsd:date ;
   :healthCondition diseases:Hypertension ;
   :weight [ 
     :value "60" ;
@@ -65,7 +65,7 @@ patients:Patient4 a :Patient ;
 
 patients:Patient5 a :Patient ;
   :gender "male" ;
-  :birthDate "1965-12-05" ;
+  :birthDate "1965-12-05"^^xsd:date ;
   :healthCondition diseases:Diabetes ;
   :weight [ 
     :value "78"^^xsd:unsignedInt ;
@@ -78,7 +78,7 @@ patients:Patient5 a :Patient ;
 
 patients:Patient6 a :Patient ;
   :gender "female" ;
-  :birthDate "1980-03-30" ;
+  :birthDate "1980-03-30"^^xsd:date ;
   :hasDiagnosis diseases:Hypertension ;
   :weight [ 
     :value "58"^^xsd:unsignedInt ;
@@ -91,7 +91,7 @@ patients:Patient6 a :Patient ;
 
 patients:Patient7 a :Patient ;
   :gender "male" ;
-  :birthDate "1955-07-25" ;
+  :birthDate "1955-07-25"^^xsd:date ;
   :weight [ 
     :value "85"^^xsd:unsignedInt ;
     :unitText "kg"
@@ -103,7 +103,7 @@ patients:Patient7 a :Patient ;
 
 patients:Patient8 a :Patient ;
   :gender "female" ;
-  :birthDate "1990-11-10" ;
+  :birthDate "1990-11-10"^^xsd:date ;
   :healthCondition diseases:Diabetes ;
   :weight [ 
     :value "54"^^xsd:unsignedInt ;
@@ -116,7 +116,7 @@ patients:Patient8 a :Patient ;
 
 patients:Patient9 a :Patient ;
   :gender "male" ;
-  :birthDate "2010-06-12" ;
+  :birthDate "2010-06-12"^^xsd:date ;
   :weight [ 
     :value "54"^^xsd:unsignedInt ;
     :unitText "kg"
@@ -128,7 +128,7 @@ patients:Patient9 a :Patient ;
 
 patients:Patient10 a :Patient ;
   :gender "female" ;
-  :birthDate "1978-09-24" ;
+  :birthDate "1978-09-24"^^xsd:date ;
   :healthCondition diseases:Hypertension ;
   :weight [ 
     :value "62"^^xsd:unsignedInt ;

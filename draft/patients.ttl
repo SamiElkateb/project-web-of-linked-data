@@ -5,7 +5,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-@prefix d: <http://project-wold.fr/patients/data#> .
+@prefix patients: <http://project-wold.fr/patients/data#> .
 @prefix tests: <http://project-wold.fr/medical_tests/data#> .
 @prefix reports: <http://project-wold.fr/case_reports/data#> .
 @prefix treatments: <http://project-wold.fr/treatments/data#> .
@@ -13,7 +13,7 @@
 @prefix drugs: <http://project-wold.fr/drugs/data#> .
 @prefix diseases: <http://project-wold.fr/diseases/data#> .
 
-d:Patient1 a :Patient ;
+patients:Patient1 a :Patient ;
   :gender "male" ;
   :birthDate "1960-05-20" ;
   :healthCondition diseases:Diabetes ;
@@ -26,7 +26,7 @@ d:Patient1 a :Patient ;
     :unitText "cm"
   ] .
 
-d:Patient2 a :Patient ;
+patients:Patient2 a :Patient ;
   :gender "female" ;
   :birthDate "1970-04-10" ;
   :weight [ 
@@ -38,7 +38,7 @@ d:Patient2 a :Patient ;
     :unitText "cm"
   ] .
 
-d:Patient3 a :Patient ;
+patients:Patient3 a :Patient ;
   :gender "male" ;
   :birthDate "1985-02-28" ;
   :weight [ 
@@ -50,7 +50,7 @@ d:Patient3 a :Patient ;
     :unitText "cm"
   ] .
 
-d:Patient4 a :Patient ;
+patients:Patient4 a :Patient ;
   :gender "female"^^xsd:unsignedInt ;
   :birthDate "1975-08-15" ;
   :healthCondition diseases:Hypertension ;
@@ -63,7 +63,7 @@ d:Patient4 a :Patient ;
     :unitText "cm"
   ] .
 
-d:Patient5 a :Patient ;
+patients:Patient5 a :Patient ;
   :gender "male" ;
   :birthDate "1965-12-05" ;
   :healthCondition diseases:Diabetes ;
@@ -76,7 +76,7 @@ d:Patient5 a :Patient ;
     :unitText "cm"
   ] .
 
-d:Patient6 a :Patient ;
+patients:Patient6 a :Patient ;
   :gender "female" ;
   :birthDate "1980-03-30" ;
   :hasDiagnosis diseases:Hypertension ;
@@ -89,7 +89,7 @@ d:Patient6 a :Patient ;
     :unitText "cm"
   ] .
 
-d:Patient7 a :Patient ;
+patients:Patient7 a :Patient ;
   :gender "male" ;
   :birthDate "1955-07-25" ;
   :weight [ 
@@ -101,7 +101,7 @@ d:Patient7 a :Patient ;
     :unitText "cm"
   ] .
 
-d:Patient8 a :Patient ;
+patients:Patient8 a :Patient ;
   :gender "female" ;
   :birthDate "1990-11-10" ;
   :healthCondition diseases:Diabetes ;
@@ -114,7 +114,7 @@ d:Patient8 a :Patient ;
     :unitText "cm"
   ] .
 
-d:Patient9 a :Patient ;
+patients:Patient9 a :Patient ;
   :gender "male" ;
   :birthDate "2010-06-12" ;
   :weight [ 
@@ -126,7 +126,7 @@ d:Patient9 a :Patient ;
     :unitText "cm"
   ] .
 
-d:Patient10 a :Patient ;
+patients:Patient10 a :Patient ;
   :gender "female" ;
   :birthDate "1978-09-24" ;
   :healthCondition diseases:Hypertension ;

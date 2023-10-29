@@ -11,20 +11,20 @@
 @prefix drugs: <http://project-wold.fr/drugs/data#> .
 @prefix diseases: <http://project-wold.fr/diseases/data#> .
 @prefix doctors: <http://project-wold.fr/doctors/data#> .
-@prefix d: <http://project-wold.fr/medical_tests/data#> .
+@prefix tests: <http://project-wold.fr/medical_tests/data#> .
 
-d:CovidTest a :MedicalTest ;
+tests:CovidTest a :MedicalTest ;
   :name "Covid test"@en , "Test Covid"@fr ;
   :usedToDiagnose diseases:Covid .
 
-d:PulmonaryRadiography a :MedicalTest ;
+tests:PulmonaryRadiography a :MedicalTest ;
   :name "Pulmonary radiography"@en , "Radiographie pulmonaire"@fr ;
   :usedToDiagnose diseases:Pneumonia .
 
-d:BloodTest a :MedicalTest ;
+tests:BloodTest a :MedicalTest ;
   :name "Blood test"@en , "Prise de sang"@fr ;
   :usedToDiagnose diseases:Diabetes .
 
-d:BloodPressureMesurement a :MedicalTest ;
+tests:BloodPressureMesurement a :MedicalTest ;
   :name "Blood pressure mesurement"@en , "Mesure de la pression artérielle"@fr ;
   :usedToDiagnose diseases:Hypertension .

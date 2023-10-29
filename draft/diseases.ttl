@@ -10,56 +10,56 @@
 @prefix treatments: <http://project-wold.fr/treatments/data#> .
 @prefix symptoms: <http://project-wold.fr/symptoms/data#> .
 @prefix drugs: <http://project-wold.fr/drugs/data#> .
-@prefix d: <http://project-wold.fr/diseases/data#> .
+@prefix diseases: <http://project-wold.fr/diseases/data#> .
 
-d:Flu a :MedicalCondition ;
-  sname "Flue"@en , "Grippe"@fr ;
-  ssignOrSymptom symptoms:Fever, symptoms:Cough, 
-                  symptoms:Fatigue, symptoms:ArticularPain ,
-                  symptoms:MuscularPain, symptoms:Chills ;
-  spossibleTreatment treatments:ParacetamolPrescription,
-                      treatments:IbuprofenePrescription .
+diseases:Flu a :MedicalCondition ;
+        :name "Flue"@en , "Grippe"@fr ;
+        :signOrSymptom symptoms:Fever, symptoms:Cough, 
+                        symptoms:Fatigue, symptoms:ArticularPain ,
+                        symptoms:MuscularPain, symptoms:Chills ;
+        :possibleTreatment treatments:ParacetamolPrescription,
+                            treatments:IbuprofenePrescription .
 
-d:Pneumonia a :MedicalCondition ;
-  :name "Pneumonia"@en , "Pneumonie"@fr ;
-  :signOrSymptom symptoms:Fever, symptoms:Cough, 
-                  symptoms:Fatigue, symptoms:ChestPain,
-                  symptoms:ShortnessBreath, symptoms:Nausea ;
-  :possibleTreatment treatments:AmoxicillinPrescription,
-                      treatments:ParacetamolPrescription .
+diseases:Pneumonia a :MedicalCondition ;
+        :name "Pneumonia"@en , "Pneumonie"@fr ;
+        :signOrSymptom symptoms:Fever, symptoms:Cough, 
+                        symptoms:Fatigue, symptoms:ChestPain,
+                        symptoms:ShortnessBreath, symptoms:Nausea ;
+        :possibleTreatment treatments:AmoxicillinPrescription,
+                            treatments:ParacetamolPrescription .
 
-d:Covid a :MedicalCondition ;
-  :name "Covid"@en , "Covid"@fr ;
-  :signOrSymptom symptoms:Fever, symptoms:Cough, 
-                  symptoms:Fatigue, symptoms:Chills,
-                  symptoms:ShortnessBreath, symptoms:Headache,
-                  symptoms:LossOfSmell ;
-  :possibleTreatment treatments:ParacetamolPrescription .
+diseases:Covid a :MedicalCondition ;
+        :name "Covid"@en , "Covid"@fr ;
+        :signOrSymptom symptoms:Fever, symptoms:Cough, 
+                        symptoms:Fatigue, symptoms:Chills,
+                        symptoms:ShortnessBreath, symptoms:Headache,
+                        symptoms:LossOfSmell ;
+        :possibleTreatment treatments:ParacetamolPrescription .
 
-d:Bronchitis a :MedicalCondition ;
-  :name "Bronchitis"@en , "Bronchite"@fr ;
-  :signOrSymptom symptoms:Cough, symptoms:SoreThroat, 
-                  symptoms:Fatigue, symptoms:Headache ;
-  :possibleTreatment treatments:ParacetamolPrescription .
+diseases:Bronchitis a :MedicalCondition ;
+        :name "Bronchitis"@en , "Bronchite"@fr ;
+        :signOrSymptom symptoms:Cough, symptoms:SoreThroat, 
+                        symptoms:Fatigue, symptoms:Headache ;
+        :possibleTreatment treatments:ParacetamolPrescription .
 
-d:Diabetes a :MedicalCondition ;
-  :name "Diabetes"@en , "Diabète"@fr ;
-  :signOrSymptom symptoms:Polyphagia, symptoms:Polyuria, 
-                  symptoms:Polydipsia, symptoms:DrySkin,
-                  symptoms:WeightLoss ;
-  :possibleTreatment treatments:MetforminPrescription,
-                      treatments:InsulinPrescription,
-                      treatments:TherapeuticEducation,
-                      treatments:BalancedDiet,
-                      treatments:PhysicalExercice .
+diseases:Diabetes a :MedicalCondition ;
+        :name "Diabetes"@en , "Diabète"@fr ;
+        :signOrSymptom symptoms:Polyphagia, symptoms:Polyuria, 
+                        symptoms:Polydipsia, symptoms:DrySkin,
+                        symptoms:WeightLoss ;
+        :possibleTreatment treatments:MetforminPrescription,
+                            treatments:InsulinPrescription,
+                            treatments:TherapeuticEducation,
+                            treatments:BalancedDiet,
+                            treatments:PhysicalExercice .
 
-d:Hypertension a :MedicalCondition ;
-  :name "Hypertension"@en , "Hypertension"@fr ;
-  :signOrSymptom symptoms:Headache, symptoms:Nausea, 
-                  symptoms:Dizziness, symptoms:Anxiety,
-                  symptoms:BlurredVision, symptoms:ChestPain,
-                  symptoms:ShortnessBreath;
-  :possibleTreatment treatments:TherapeuticEducation,
-                      treatments:BalancedDiet,
-                      treatments:PhysicalExercice .
+diseases:Hypertension a :MedicalCondition ;
+        :name "Hypertension"@en , "Hypertension"@fr ;
+        :signOrSymptom symptoms:Headache, symptoms:Nausea, 
+                        symptoms:Dizziness, symptoms:Anxiety,
+                        symptoms:BlurredVision, symptoms:ChestPain,
+                        symptoms:ShortnessBreath;
+        :possibleTreatment treatments:TherapeuticEducation,
+                            treatments:BalancedDiet,
+                            treatments:PhysicalExercice .
                       

@@ -10,64 +10,64 @@
 @prefix treatments: <http://project-wold.fr/treatments/data#> .
 @prefix drugs: <http://project-wold.fr/drugs/data#> .
 @prefix diseases: <http://project-wold.fr/diseases/data#> .
-@prefix d: <http://project-wold.fr/symptoms/data#> .
+@prefix symptoms: <http://project-wold.fr/symptoms/data#> .
 
-d:Fever a :MedicalSignOrSymptom ;
+symptoms:Fever a :MedicalSignOrSymptom ;
   :name "Fever"@en , "Fièvre"@fr .
 
-d:Cough a :MedicalSignOrSymptom ;
+symptoms:Cough a :MedicalSignOrSymptom ;
   :name "Cough"@en , "Toux"@fr .
 
-d:Fatigue a :MedicalSignOrSymptom ;
+symptoms:Fatigue a :MedicalSignOrSymptom ;
   :name "Fatigue"@en , "Fatigue"@fr .
 
-d:ArticularPain a :MedicalSignOrSymptom ;
+symptoms:ArticularPain a :MedicalSignOrSymptom ;
   :name "Articular pain"@en , "Douleur articulaire"@fr .
 
-d:MuscularPain a :MedicalSignOrSymptom ;
+symptoms:MuscularPain a :MedicalSignOrSymptom ;
   :name "Muscular pain"@en , "Douleur musculaire"@fr .
 
-d:ChestPain a :MedicalSignOrSymptom ;
+symptoms:ChestPain a :MedicalSignOrSymptom ;
   :name "Chest pain"@en , "Douleur thoracique"@fr .
 
-d:Headache a :MedicalSignOrSymptom ;
+symptoms:Headache a :MedicalSignOrSymptom ;
   :name "Headache"@en , "Mal de tête"@fr .
 
-d:SoreThroat a :MedicalSignOrSymptom ;
+symptoms:SoreThroat a :MedicalSignOrSymptom ;
   :name "Sore throat"@en , "Mal de gorge"@fr .
 
-d:LossOfSmell a :MedicalSignOrSymptom ;
+symptoms:LossOfSmell a :MedicalSignOrSymptom ;
   :name "Loss of smell"@en , "Perte d'odorat"@fr .
 
-d:ShortnessBreath a :MedicalSignOrSymptom ;
+symptoms:ShortnessBreath a :MedicalSignOrSymptom ;
   :name "Shortness of breath"@en , "Essouflement"@fr .
 
-d:Chills a :MedicalSignOrSymptom ;
+symptoms:Chills a :MedicalSignOrSymptom ;
   :name "Chills"@en , "Frissons"@fr .
 
-d:WeightLoss a :MedicalSignOrSymptom ;
+symptoms:WeightLoss a :MedicalSignOrSymptom ;
   :name "Weight loss"@en , "Perte de poid"@fr .
 
-d:DrySkin a :MedicalSignOrSymptom ;
+symptoms:DrySkin a :MedicalSignOrSymptom ;
   :name "Dry skin"@en , "Peau sèche"@fr .
 
-d:Polyphagia a :MedicalSignOrSymptom ; 
+symptoms:Polyphagia a :MedicalSignOrSymptom ; 
   :name "Polyphagia"@en, "Polyphagie"@fr .
 
-d:Polyuria a :MedicalSignOrSymptom ; 
+symptoms:Polyuria a :MedicalSignOrSymptom ; 
   :name "Polyuria"@en, "Polyurie"@fr .
 
-d:Polydipsia a :MedicalSignOrSymptom ; 
+symptoms:Polydipsia a :MedicalSignOrSymptom ; 
   :name "Polydipsia"@en, "Polydipsie"@fr .
 
-d:Nausea a :MedicalSignOrSymptom ;
+symptoms:Nausea a :MedicalSignOrSymptom ;
   :name "Nausea"@en , "Nausée"@fr .
 
-d:Dizziness a :MedicalSignOrSymptom ;
+symptoms:Dizziness a :MedicalSignOrSymptom ;
   :name "Dizziness"@en , "Vertiges"@fr .
 
-d:Anxiety a :MedicalSignOrSymptom ;
+symptoms:Anxiety a :MedicalSignOrSymptom ;
   :name "Anxiety"@en , "Anxiété"@fr .
 
-d:BlurredVision a :MedicalSignOrSymptom ;
+symptoms:BlurredVision a :MedicalSignOrSymptom ;
   :name "Blurred vision"@en , "Vision trouble"@fr .

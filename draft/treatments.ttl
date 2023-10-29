@@ -4,7 +4,7 @@
 @prefix reports: <http://project-wold.fr/case_reports/data#> .
 @prefix treatments: <http://project-wold.fr/treatments/data#> .
 @prefix symptoms: <http://project-wold.fr/symptoms/data#> .
-@prefix d: <http://project-wold.fr/drugs/data#> .
+@prefix drugs: <http://project-wold.fr/drugs/data#> .
 @prefix tests: <http://project-wold.fr/medical_tests/data#> .
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -13,7 +13,7 @@
 @prefix diseases: <http://project-wold.fr/diseases/data#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-d:ParacetamolPrescription a :MedicalTherapy ;
+treatments:ParacetamolPrescription a :MedicalTherapy ;
   :drug drugs:Paracetamol ;
   :doseSchedule [
     :doseUnit "mg" ;
@@ -21,7 +21,7 @@ d:ParacetamolPrescription a :MedicalTherapy ;
     :frequency "every 6 hours"@en, "toutes les 6 heures"@fr
   ] .
 
-d:IbuprofenePrescription a :MedicalTherapy ;
+treatments:IbuprofenePrescription a :MedicalTherapy ;
   :drug drugs:Ibuprofene ;
   :doseSchedule [
     :doseUnit "mg" ;
@@ -29,7 +29,7 @@ d:IbuprofenePrescription a :MedicalTherapy ;
     :frequency "every 8 hours"@en, "toutes les 8 heures"@fr
   ] .
 
-d:AmoxicillinPrescription a :MedicalTherapy ;
+treatments:AmoxicillinPrescription a :MedicalTherapy ;
   :drug drugs:Amoxicillin ;
   :doseSchedule [
     :doseUnit "mg" ;
@@ -37,7 +37,7 @@ d:AmoxicillinPrescription a :MedicalTherapy ;
     :frequency "morning and night"@en, "matin et soir"@fr
   ] .
 
-d:MetforminPrescription a :MedicalTherapy ;
+treatments:MetforminPrescription a :MedicalTherapy ;
   :drug drugs:Metformin ;
   :doseSchedule [
     :doseUnit "mg" ;
@@ -45,7 +45,7 @@ d:MetforminPrescription a :MedicalTherapy ;
     :frequency "morning and night"@en, "matin et soir"@fr
   ] .
 
-d:InsulinPrescription a :MedicalTherapy ;
+treatments:InsulinPrescription a :MedicalTherapy ;
   :drug drugs:Insulin ;
   :doseSchedule [
     :doseUnit "UI" ;
@@ -53,12 +53,12 @@ d:InsulinPrescription a :MedicalTherapy ;
     :frequency "0.2 UI / kg"@en, "0.2 UI / kg"@fr
   ] .
 
-d:TherapeuticEducation a :MedicalTherapy ;
+treatments:TherapeuticEducation a :MedicalTherapy ;
   :name "Therapeutic Education"@en, "Education thérapeutique"@fr .
 
-d:BalancedDiet a :MedicalTherapy ;
+treatments:BalancedDiet a :MedicalTherapy ;
   :name "Balanced diet"@en, "Régime alimentaire équilibré"@fr .
 
-d:PhysicalExercice a :MedicalTherapy ;
+treatments:PhysicalExercice a :MedicalTherapy ;
   :name "Physical Exercice"@en, "Exercice Physique"@fr .
 

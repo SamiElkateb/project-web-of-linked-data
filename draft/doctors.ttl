@@ -11,28 +11,28 @@
 @prefix symptoms: <http://project-wold.fr/symptoms/data#> .
 @prefix drugs: <http://project-wold.fr/drugs/data#> .
 @prefix diseases: <http://project-wold.fr/diseases/data#> .
-@prefix d: <http://project-wold.fr/doctors/data#> .
+@prefix doctors: <http://project-wold.fr/doctors/data#> .
 
 
-d:DoctorMichu a :Doctor ;
+doctors:DoctorMichu a :Doctor ;
   :gender "male" ;
   :familyName "Michu";
   :givenName "Monsieur";
   :jobTitle "Family Physician"@en, "Médecin Généraliste"@fr .
 
-d:DoctorSmith a :Doctor ;
+doctors:DoctorSmith a :Doctor ;
   :gender "female" ;
   :familyName "Smith";
   :givenName "Jane";
   :jobTitle "Pediatrician"@en, "Pédiatre"@fr .
 
-d:DoctorLopez a :Doctor ;
+doctors:DoctorLopez a :Doctor ;
   :gender "male" ;
   :familyName "Lopez";
   :givenName "Carlos";
   :jobTitle "Pulmonologist"@en, "Pneumologue"@fr .
 
-d:DoctorDoe a :Doctor ;
+doctors:DoctorDoe a :Doctor ;
   :gender "female" ;
   :familyName "Jane";
   :givenName "Doe";

@@ -210,7 +210,7 @@ diseases:Hypertension a :MedicalCondition ;
 doctors:DoctorMichu a :Doctor ;
   :gender "male" ;
   :familyName "Michu";
-  :givenName "Monsieur";
+  :givenName "Pierre";
   :jobTitle "Family Physician"@en, "Médecin Généraliste"@fr .
 
 doctors:DoctorSmith a :Doctor ;

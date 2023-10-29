@@ -102,15 +102,46 @@ prefix reports: <http://project-wold.fr/case_reports/data#>
 
 SELECT ?examination ?test
 WHERE {
-
     ?examination a :ClinicalExamination ;
             :hasMedicalTest ?test .
 }
 ```
 
-8. Quels ont été les examens cliniques ayant les mêmes symptômes mais des maladies différentes?
+8. Récupérer pour chaque examen clinique, les diagnostics et s'ils existent les examens complémentaires réalisés (Medical Test)?
+```sparql
+prefix : <http://project-wold.fr/schema#>
+
+SELECT ?exam ?diagnosis ?medicalTest
+WHERE {
+    ?exam a :ClinicalExamination ;
+          :hasDiagnosis ?diagnosis .
+    OPTIONAL {
+        ?exam :hasMedicalTest ?medicalTest .
+    }
+}
+```
 
 
 9. Générer une relation hasDoctor entre les patients et les docteurs assignés à leur case report
+```sparql
+prefix : <http://project-wold.fr/schema#>
 
-10. 
+CONSTRUCT {
+    ?patient :hasDoctor ?doctor .
+}
+WHERE {
+    ?caseReport a :CaseReport ;
+    :hasPatient ?patient ;
+    :hasDoctor ?doctor .
+}
+```
+
+10. Quelles est la maladie pouvant être traitée par un médicament dont la fréquence de prise est "toutes les 8 heures" ?
+```sparql
+prefix : <http://project-wold.fr/schema#>
+
+SELECT ?disease WHERE {
+    ?disease a :MedicalCondition ;
+        :possibleTreatment/:doseSchedule/:frequency "toutes les 8 heures"@fr .
+}
+```

@@ -30,6 +30,22 @@ WHERE {
 5. Quels sont les patients dont l'examen clinique a été réalisé par un praticien autre que celui du rapport de cas ?
 
 6. Quels sont les patients ayant plus de 60 ans ?
+référence: https://stackoverflow.com/questions/74532061/how-to-get-todays-date-in-sparql
+```sparql
+prefix : <http://project-wold.fr/schema#>
+SELECT ?patient ?birthDate
+WHERE {
+    ?patient a :Patient ;
+             :birthDate ?birthDate .
+
+    BIND( now() AS ?currentDateTime ) .
+    BIND(year(?currentDateTime) - 60 AS ?sixtyYearsAgo) .
+    BIND(CONCAT(STR(?sixtyYearsAgo), "-",
+                STR(month(?currentDateTime)), "-",
+                STR(day(?currentDateTime))) AS ?limitDate) .
+    FILTER (?birthDate < ?limitDate)
+}
+```
 
 7. Quels sont les rapports de cas ayant eu besoin d'examens complémentaire ?
 

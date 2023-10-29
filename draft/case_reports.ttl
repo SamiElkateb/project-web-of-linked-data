@@ -109,3 +109,43 @@ d:Case7 a :CaseReport ;
   :hasDoctor doctors:DoctorLopez .
   :hasMedicalTherapy treatments:AmoxicillinPrescription,
                      treatments:ParacetamolPrescription .
+
+d:P8CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Cough, symptoms:Fever,
+                    symptoms:Fatigue, symptoms:Chills, 
+                    symptoms:LossOfSmell ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasDiagnosis diseases:Covid ;
+  :hasDoctor doctors:DoctorLopez .
+
+d:Case8 a :CaseReport ;
+  :hasPatient patients:Patient8 ;
+  :hasClinicalExamination d:P8CE ;
+  :hasDoctor doctors:DoctorLopez .
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+d:P9CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Cough, symptoms:Fatigue ;
+  :hasDiagnosis diseases:Bronchitis ;
+  :hasDoctor doctors:DoctorSmith .
+
+d:Case9 a :CaseReport ;
+  :hasPatient patients:Patient9 ;
+  :hasClinicalExamination d:P9CE ;
+  :hasDoctor doctors:DoctorSmith .
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+
+d:P10CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Cough, symptoms:Fever,
+                    symptoms:Fatigue, symptoms:Chills, 
+                    symptoms:MuscularPain ;
+  :hasDiagnosis diseases:Flu ;
+  :hasDoctor doctors:DoctorMichu .
+
+d:Case10 a :CaseReport ;
+  :hasPatient patients:Patient10 ;
+  :hasClinicalExamination d:P10CE ;
+  :hasDoctor doctors:DoctorMichu .
+  :hasMedicalTherapy treatments:Ibuprofene,
+                     treatments:ParacetamolPrescription .

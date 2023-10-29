@@ -5,7 +5,6 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-
 : a owl:Ontology :
   rdfs:label "Medical Ontology";
   rdfs:comment "An ontology representing medical entities and their relationships.";
@@ -89,7 +88,6 @@
 :weight a owl:ObjectProperty ;
     owl:equivalentProperty schema:weight .
 
-
 :familyName a owl:ObjectProperty ;
     owl:equivalentProperty schema:familyName .
 
@@ -135,7 +133,6 @@
   rdfs:comment  "Relates an entity to a medical sign or symptom it exhibits or experiences."@en,
                 "Relie une entité à un signe médical ou à un symptôme qu'elle présente ou ressent."@fr;
   rdfs:range :MedicalSignOrSymptom .
-
 
 :hasPatient a rdf:Property;
   rdfs:label   "has patient"@en, "a un patient"@fr;

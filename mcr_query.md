@@ -24,6 +24,20 @@ LIMIT 3
 ```
 
 3. Quelles sont les maladies ayant pour symptôme la fatigue mais n'étant pas traités par l'Amoxicilline ?
+```sparql
+prefix : <http://project-wold.fr/schema#>
+prefix symptoms: <http://project-wold.fr/symptoms/data#>
+prefix treatments: <http://project-wold.fr/treatments/data#>
+
+SELECT ?disease
+WHERE {
+    ?disease :signOrSymptom symptoms:Fatigue .
+    MINUS { 
+        ?disease :possibleTreatment treatments:AmoxicillinPrescription .
+    }
+}
+```
+
 
 4. Quel est le nom de famille du médecin effectuant le plus de prescription de paracétamol ?
 ```sparql

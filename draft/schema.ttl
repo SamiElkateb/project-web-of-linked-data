@@ -36,66 +36,66 @@
   owl:equivalentClass s:Drug .
 
 :name a owl:ObjectProperty ;
-    owl:equivalentProperty s:name .
+  owl:equivalentProperty s:name .
 
 :signOrSymptom a owl:ObjectProperty ;
-    owl:equivalentProperty s:signOrSymptom .
+  owl:equivalentProperty s:signOrSymptom .
 
 :possibleTreatment a owl:ObjectProperty ;
-    owl:equivalentProperty s:possibleTreatment .
+  owl:equivalentProperty s:possibleTreatment .
 
 :usedToDiagnose a owl:ObjectProperty ;
-    owl:equivalentProperty s:usedToDiagnose .
+  owl:equivalentProperty s:usedToDiagnose .
 
 :doseUnit a owl:ObjectProperty ;
-    owl:equivalentProperty s:doseUnit .
+  owl:equivalentProperty s:doseUnit .
 
 :doseValue a owl:ObjectProperty ;
-    owl:equivalentProperty s:doseValue .
+  owl:equivalentProperty s:doseValue .
 
 :frequency a owl:ObjectProperty ;
-    owl:equivalentProperty s:frequency .
+  owl:equivalentProperty s:frequency .
 
 :activeIngredient a owl:ObjectProperty ;
-    owl:equivalentProperty s:activeIngredient .
+  owl:equivalentProperty s:activeIngredient .
 
 :drugUnit a owl:ObjectProperty ;
-    owl:equivalentProperty s:drugUnit .
+  owl:equivalentProperty s:drugUnit .
 
 :dosageForm a owl:ObjectProperty ;
-    owl:equivalentProperty s:dosageForm .
+  owl:equivalentProperty s:dosageForm .
 
 :drug a owl:ObjectProperty ;
-    owl:equivalentProperty s:drug .
+  owl:equivalentProperty s:drug .
 
 :doseSchedule a owl:ObjectProperty ;
-    owl:equivalentProperty s:doseSchedule .
+  owl:equivalentProperty s:doseSchedule .
 
 :gender a owl:ObjectProperty ;
-    owl:equivalentProperty s:gender .
+  owl:equivalentProperty s:gender .
 
 :birthDate a owl:ObjectProperty ;
-    owl:equivalentProperty s:birthDate .
+  owl:equivalentProperty s:birthDate .
 
 :healthCondition a owl:ObjectProperty ;
-    owl:equivalentProperty s:healthCondition .
+  owl:equivalentProperty s:healthCondition .
 
 :value a owl:ObjectProperty ;
-    owl:equivalentProperty s:value .
+  owl:equivalentProperty s:value .
 
 :unitText a owl:ObjectProperty ;
-    owl:equivalentProperty s:unitText .
+  owl:equivalentProperty s:unitText .
 :weight a owl:ObjectProperty ;
-    owl:equivalentProperty s:weight .
+  owl:equivalentProperty s:weight .
 
 :familyName a owl:ObjectProperty ;
-    owl:equivalentProperty s:familyName .
+  owl:equivalentProperty s:familyName .
 
 :givenName a owl:ObjectProperty ;
-    owl:equivalentProperty s:givenName .
+  owl:equivalentProperty s:givenName .
 
 :jobTitle a owl:ObjectProperty ;
-    owl:equivalentProperty s:jobTitle .
+  owl:equivalentProperty s:jobTitle .
 
 # Schema étendu
 :CaseReport a rdfs:Class;
@@ -150,10 +150,10 @@
   rdfs:label    "has medical therapy"@en, "a une thérapie médicale"@fr;
   rdfs:comment  "Associates an entity with a specific medical treatment or therapy."@en,
                 "Associe une entité à un traitement ou une thérapie médicale spécifique."@fr;
-  rdfs:range :MedicalTherapy.
+  rdfs:range :MedicalTherapy .
 
 :hasMedicalTest a rdf:Property;
   rdfs:label    "has medical test"@en, "a un test médical"@fr;
   rdfs:comment  "Connects an entity to a specific medical test that was conducted."@en,
                 "Connecte une entité à un test médical spécifique qui a été réalisé."@fr;
-  rdfs:range :MedicalTest.
+  rdfs:range :MedicalTest .

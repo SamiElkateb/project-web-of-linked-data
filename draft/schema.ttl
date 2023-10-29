@@ -85,6 +85,7 @@
 
 :unitText a owl:ObjectProperty ;
   owl:equivalentProperty s:unitText .
+
 :weight a owl:ObjectProperty ;
   owl:equivalentProperty s:weight .
 

@@ -1360,7 +1360,7 @@
         ],
         "http://project-wold.fr/schema#givenName": [
             {
-                "@value": "Monsieur"
+                "@value": "Pierre"
             }
         ],
         "http://project-wold.fr/schema#jobTitle": [

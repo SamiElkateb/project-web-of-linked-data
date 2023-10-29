@@ -1,0 +1,520 @@
+@prefix : <http://project-wold.fr/schema#> .
+
+@prefix patients: <http://project-wold.fr/patients/data#> .
+@prefix reports: <http://project-wold.fr/case_reports/data#> .
+@prefix treatments: <http://project-wold.fr/treatments/data#> .
+@prefix symptoms: <http://project-wold.fr/symptoms/data#> .
+@prefix drugs: <http://project-wold.fr/drugs/data#> .
+@prefix tests: <http://project-wold.fr/medical_tests/data#> .
+@prefix doctors: <http://project-wold.fr/doctors/data#> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix diseases: <http://project-wold.fr/diseases/data#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+reports:P1CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:Chills, symptoms:Fatigue ;
+  :hasDiagnosis diseases:Flu ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasDoctor doctors:DoctorMichu .
+
+reports:Case1 a :CaseReport ;
+  :hasPatient patients:Patient1 ;
+  :hasClinicalExamination reports:P1CE ;
+  :hasDoctor doctors:DoctorMichu ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+reports:P2CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:Chills, symptoms:Fatigue ;
+  :hasDiagnosis diseases:Covid ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasDoctor doctors:DoctorSmith .
+
+reports:Case2 a :CaseReport ;
+  :hasPatient patients:Patient2 ;
+  :hasClinicalExamination reports:P2CE ;
+  :hasDoctor doctors:DoctorMichu ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+reports:P3CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:Fatigue, symptoms:ChestPain,
+                    symptoms:ShortnessBreath, symptoms:Nausea ;
+  :hasDiagnosis diseases:Pneumonia ;
+  :hasMedicalTest tests:PulmonaryRadiography ;
+  :hasDoctor doctors:DoctorDoe .
+
+reports:Case3 a :CaseReport ;
+  :hasPatient patients:Patient3 ;
+  :hasClinicalExamination reports:P3CE ;
+  :hasDoctor doctors:DoctorDoe ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription, 
+                     treatments:AmoxicillinPrescription .
+
+reports:P4CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Cough, symptoms:SoreThroat;  
+  :hasDiagnosis diseases:Bronchitis ;
+  :hasDoctor doctors:DoctorLopez  .
+
+reports:Case4 a :CaseReport ;
+  :hasPatient patients:Patient4 ;
+  :hasClinicalExamination reports:P4CE ;
+  :hasDoctor doctors:DoctorLopez ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+reports:P5CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Polyphagia, symptoms:Polyuria,   
+                    symptoms:Polydipsia, symptoms:DrySkin ;
+  :hasDiagnosis diseases:Diabetes ;
+  :hasMedicalTest tests:BloodTest ;
+  :hasDoctor doctors:DoctorLopez .
+
+reports:Case5 a :CaseReport ;
+  :hasPatient patients:Patient5 ;
+  :hasClinicalExamination reports:P5CE ;
+  :hasDoctor doctors:DoctorDoe ;
+  :hasMedicalTherapy treatments:MetforminPrescription,
+                     treatments:BalancedDiet .
+
+reports:P6CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:ShortnessBreath, symptoms:ChestPain, 
+                    symptoms:Nausea, symptoms:Headache ;
+  :hasDiagnosis diseases:Hypertension ;
+  :hasMedicalTest tests:BloodPressureMesurement ;
+  :hasDoctor doctors:DoctorMichu .
+
+reports:Case6 a :CaseReport ;
+  :hasPatient patients:Patient6 ;
+  :hasClinicalExamination reports:P6CE ;
+  :hasDoctor doctors:DoctorMichu ;
+  :hasMedicalTherapy treatments:TherapeuticEducation,
+                      treatments:BalancedDiet,
+                      treatments:PhysicalExercice .
+
+reports:P7CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:ShortnessBreath, symptoms:Fatigue ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasMedicalTest tests:PulmonaryRadiography ;
+  :hasDiagnosis diseases:Pneumonia ;
+  :hasDoctor doctors:DoctorLopez .
+
+reports:Case7 a :CaseReport ;
+  :hasPatient patients:Patient7 ;
+  :hasClinicalExamination reports:P7CE ;
+  :hasDoctor doctors:DoctorLopez ;
+  :hasMedicalTherapy treatments:AmoxicillinPrescription,
+                     treatments:ParacetamolPrescription .
+
+reports:P8CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Cough, symptoms:Fever,
+                    symptoms:Fatigue, symptoms:Chills, 
+                    symptoms:LossOfSmell ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasDiagnosis diseases:Covid ;
+  :hasDoctor doctors:DoctorLopez .
+
+reports:Case8 a :CaseReport ;
+  :hasPatient patients:Patient8 ;
+  :hasClinicalExamination reports:P8CE ;
+  :hasDoctor doctors:DoctorLopez ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+reports:P9CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Cough, symptoms:Fatigue ;
+  :hasDiagnosis diseases:Bronchitis ;
+  :hasDoctor doctors:DoctorSmith .
+
+reports:Case9 a :CaseReport ;
+  :hasPatient patients:Patient9 ;
+  :hasClinicalExamination reports:P9CE ;
+  :hasDoctor doctors:DoctorSmith ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+
+reports:P10CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Cough, symptoms:Fever,
+                    symptoms:Fatigue, symptoms:Chills, 
+                    symptoms:MuscularPain ;
+  :hasDiagnosis diseases:Flu ;
+  :hasDoctor doctors:DoctorMichu .
+
+reports:Case10 a :CaseReport ;
+  :hasPatient patients:Patient10 ;
+  :hasClinicalExamination reports:P10CE ;
+  :hasDoctor doctors:DoctorMichu ;
+  :hasMedicalTherapy treatments:Ibuprofene,
+                     treatments:ParacetamolPrescription .
+
+
+
+diseases:Flu a :MedicalCondition ;
+        :name "Flue"@en , "Grippe"@fr ;
+        :signOrSymptom symptoms:Fever, symptoms:Cough, 
+                        symptoms:Fatigue, symptoms:ArticularPain ,
+                        symptoms:MuscularPain, symptoms:Chills ;
+        :possibleTreatment treatments:ParacetamolPrescription,
+                            treatments:IbuprofenePrescription .
+
+diseases:Pneumonia a :MedicalCondition ;
+        :name "Pneumonia"@en , "Pneumonie"@fr ;
+        :signOrSymptom symptoms:Fever, symptoms:Cough, 
+                        symptoms:Fatigue, symptoms:ChestPain,
+                        symptoms:ShortnessBreath, symptoms:Nausea ;
+        :possibleTreatment treatments:AmoxicillinPrescription,
+                            treatments:ParacetamolPrescription .
+
+diseases:Covid a :MedicalCondition ;
+        :name "Covid"@en , "Covid"@fr ;
+        :signOrSymptom symptoms:Fever, symptoms:Cough, 
+                        symptoms:Fatigue, symptoms:Chills,
+                        symptoms:ShortnessBreath, symptoms:Headache,
+                        symptoms:LossOfSmell ;
+        :possibleTreatment treatments:ParacetamolPrescription .
+
+diseases:Bronchitis a :MedicalCondition ;
+        :name "Bronchitis"@en , "Bronchite"@fr ;
+        :signOrSymptom symptoms:Cough, symptoms:SoreThroat, 
+                        symptoms:Fatigue, symptoms:Headache ;
+        :possibleTreatment treatments:ParacetamolPrescription .
+
+diseases:Diabetes a :MedicalCondition ;
+        :name "Diabetes"@en , "Diabète"@fr ;
+        :signOrSymptom symptoms:Polyphagia, symptoms:Polyuria, 
+                        symptoms:Polydipsia, symptoms:DrySkin,
+                        symptoms:WeightLoss ;
+        :possibleTreatment treatments:MetforminPrescription,
+                            treatments:InsulinPrescription,
+                            treatments:TherapeuticEducation,
+                            treatments:BalancedDiet,
+                            treatments:PhysicalExercice .
+
+diseases:Hypertension a :MedicalCondition ;
+        :name "Hypertension"@en , "Hypertension"@fr ;
+        :signOrSymptom symptoms:Headache, symptoms:Nausea, 
+                        symptoms:Dizziness, symptoms:Anxiety,
+                        symptoms:BlurredVision, symptoms:ChestPain,
+                        symptoms:ShortnessBreath;
+        :possibleTreatment treatments:TherapeuticEducation,
+                            treatments:BalancedDiet,
+                            treatments:PhysicalExercice .
+                      
+
+
+
+
+doctors:DoctorMichu a :Doctor ;
+  :gender "male" ;
+  :familyName "Michu";
+  :givenName "Monsieur";
+  :jobTitle "Family Physician"@en, "Médecin Généraliste"@fr .
+
+doctors:DoctorSmith a :Doctor ;
+  :gender "female" ;
+  :familyName "Smith";
+  :givenName "Jane";
+  :jobTitle "Pediatrician"@en, "Pédiatre"@fr .
+
+doctors:DoctorLopez a :Doctor ;
+  :gender "male" ;
+  :familyName "Lopez";
+  :givenName "Carlos";
+  :jobTitle "Pulmonologist"@en, "Pneumologue"@fr .
+
+doctors:DoctorDoe a :Doctor ;
+  :gender "female" ;
+  :familyName "Jane";
+  :givenName "Doe";
+  :jobTitle "Endocrinologist"@en, "Endocrinologue"@fr .
+
+
+
+
+drugs:Paracetamol a :Drug ;
+  :activeIngredient "Paracetamol" ;
+  :drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé"@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .
+
+drugs:Ibuprofene a :Drug ;
+  :activeIngredient "Ibuprofene" ;
+  :drugUnit "400mg tablet"@en, "200mg tablet"@en, "200mg comprimé"@en, "400mg comprimé"@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .
+
+drugs:Amoxicillin a :Drug ;
+  :activeIngredient "Amoxicillin"@en, "Amoxicilline"@fr ;
+  :drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé "@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .
+
+drugs:Insulin a :Drug ;
+  :activeIngredient "Insulin"@en, "Insuline"@fr ;
+  :drugUnit "UI" ;
+  :dosageForm "injection"@en, "injectable"@fr .
+
+drugs:Metformin a :Drug ;
+  :activeIngredient "Metformin"@en, "Metformine"@fr ;
+  :drugUnit "500mg tablet"@en, "500mg  comprimé "@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .
+
+
+
+tests:CovidTest a :MedicalTest ;
+  :name "Covid test"@en , "Test Covid"@fr ;
+  :usedToDiagnose diseases:Covid .
+
+tests:PulmonaryRadiography a :MedicalTest ;
+  :name "Pulmonary radiography"@en , "Radiographie pulmonaire"@fr ;
+  :usedToDiagnose diseases:Pneumonia .
+
+tests:BloodTest a :MedicalTest ;
+  :name "Blood test"@en , "Prise de sang"@fr ;
+  :usedToDiagnose diseases:Diabetes .
+
+tests:BloodPressureMesurement a :MedicalTest ;
+  :name "Blood pressure mesurement"@en , "Mesure de la pression artérielle"@fr ;
+  :usedToDiagnose diseases:Hypertension .
+
+
+
+patients:Patient1 a :Patient ;
+  :gender "male" ;
+  :birthDate "1960-05-20"^^xsd:date ;
+  :healthCondition diseases:Diabetes ;
+  :weight [ 
+    :value "80"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "180"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient2 a :Patient ;
+  :gender "female" ;
+  :birthDate "1970-04-10"^^xsd:date ;
+  :weight [ 
+    :value "65"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "165"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient3 a :Patient ;
+  :gender "male" ;
+  :birthDate "1985-02-28"^^xsd:date ;
+  :weight [ 
+    :value "90"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "175"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient4 a :Patient ;
+  :gender "female"^^xsd:unsignedInt ;
+  :birthDate "1975-08-15"^^xsd:date ;
+  :healthCondition diseases:Hypertension ;
+  :weight [ 
+    :value "60" ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "162"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient5 a :Patient ;
+  :gender "male" ;
+  :birthDate "1965-12-05"^^xsd:date ;
+  :healthCondition diseases:Diabetes ;
+  :weight [ 
+    :value "78"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "182"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient6 a :Patient ;
+  :gender "female" ;
+  :birthDate "1980-03-30"^^xsd:date ;
+  :hasDiagnosis diseases:Hypertension ;
+  :weight [ 
+    :value "58"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "159"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient7 a :Patient ;
+  :gender "male" ;
+  :birthDate "1955-07-25"^^xsd:date ;
+  :weight [ 
+    :value "85"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "179"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient8 a :Patient ;
+  :gender "female" ;
+  :birthDate "1990-11-10"^^xsd:date ;
+  :healthCondition diseases:Diabetes ;
+  :weight [ 
+    :value "54"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "163"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient9 a :Patient ;
+  :gender "male" ;
+  :birthDate "2010-06-12"^^xsd:date ;
+  :weight [ 
+    :value "54"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "154"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient10 a :Patient ;
+  :gender "female" ;
+  :birthDate "1978-09-24"^^xsd:date ;
+  :healthCondition diseases:Hypertension ;
+  :weight [ 
+    :value "62"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "168"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+
+
+symptoms:Fever a :MedicalSignOrSymptom ;
+  :name "Fever"@en , "Fièvre"@fr .
+
+symptoms:Cough a :MedicalSignOrSymptom ;
+  :name "Cough"@en , "Toux"@fr .
+
+symptoms:Fatigue a :MedicalSignOrSymptom ;
+  :name "Fatigue"@en , "Fatigue"@fr .
+
+symptoms:ArticularPain a :MedicalSignOrSymptom ;
+  :name "Articular pain"@en , "Douleur articulaire"@fr .
+
+symptoms:MuscularPain a :MedicalSignOrSymptom ;
+  :name "Muscular pain"@en , "Douleur musculaire"@fr .
+
+symptoms:ChestPain a :MedicalSignOrSymptom ;
+  :name "Chest pain"@en , "Douleur thoracique"@fr .
+
+symptoms:Headache a :MedicalSignOrSymptom ;
+  :name "Headache"@en , "Mal de tête"@fr .
+
+symptoms:SoreThroat a :MedicalSignOrSymptom ;
+  :name "Sore throat"@en , "Mal de gorge"@fr .
+
+symptoms:LossOfSmell a :MedicalSignOrSymptom ;
+  :name "Loss of smell"@en , "Perte d'odorat"@fr .
+
+symptoms:ShortnessBreath a :MedicalSignOrSymptom ;
+  :name "Shortness of breath"@en , "Essouflement"@fr .
+
+symptoms:Chills a :MedicalSignOrSymptom ;
+  :name "Chills"@en , "Frissons"@fr .
+
+symptoms:WeightLoss a :MedicalSignOrSymptom ;
+  :name "Weight loss"@en , "Perte de poid"@fr .
+
+symptoms:DrySkin a :MedicalSignOrSymptom ;
+  :name "Dry skin"@en , "Peau sèche"@fr .
+
+symptoms:Polyphagia a :MedicalSignOrSymptom ; 
+  :name "Polyphagia"@en, "Polyphagie"@fr .
+
+symptoms:Polyuria a :MedicalSignOrSymptom ; 
+  :name "Polyuria"@en, "Polyurie"@fr .
+
+symptoms:Polydipsia a :MedicalSignOrSymptom ; 
+  :name "Polydipsia"@en, "Polydipsie"@fr .
+
+symptoms:Nausea a :MedicalSignOrSymptom ;
+  :name "Nausea"@en , "Nausée"@fr .
+
+symptoms:Dizziness a :MedicalSignOrSymptom ;
+  :name "Dizziness"@en , "Vertiges"@fr .
+
+symptoms:Anxiety a :MedicalSignOrSymptom ;
+  :name "Anxiety"@en , "Anxiété"@fr .
+
+symptoms:BlurredVision a :MedicalSignOrSymptom ;
+  :name "Blurred vision"@en , "Vision trouble"@fr .
+
+
+
+treatments:ParacetamolPrescription a :MedicalTherapy ;
+  :drug drugs:Paracetamol ;
+  :doseSchedule [
+    :doseUnit "mg" ;
+    :doseValue "1000"^^xsd:unsignedInt ;
+    :frequency "every 6 hours"@en, "toutes les 6 heures"@fr
+  ] .
+
+treatments:IbuprofenePrescription a :MedicalTherapy ;
+  :drug drugs:Ibuprofene ;
+  :doseSchedule [
+    :doseUnit "mg" ;
+    :doseValue "1000"^^xsd:unsignedInt ;
+    :frequency "every 8 hours"@en, "toutes les 8 heures"@fr
+  ] .
+
+treatments:AmoxicillinPrescription a :MedicalTherapy ;
+  :drug drugs:Amoxicillin ;
+  :doseSchedule [
+    :doseUnit "mg" ;
+    :doseValue "1000"^^xsd:unsignedInt ;
+    :frequency "morning and night"@en, "matin et soir"@fr
+  ] .
+
+treatments:MetforminPrescription a :MedicalTherapy ;
+  :drug drugs:Metformin ;
+  :doseSchedule [
+    :doseUnit "mg" ;
+    :doseValue "500"^^xsd:unsignedInt ;
+    :frequency "morning and night"@en, "matin et soir"@fr
+  ] .
+
+treatments:InsulinPrescription a :MedicalTherapy ;
+  :drug drugs:Insulin ;
+  :doseSchedule [
+    :doseUnit "UI" ;
+    :doseValue "1"^^xsd:unsignedInt ;
+    :frequency "0.2 UI / kg"@en, "0.2 UI / kg"@fr
+  ] .
+
+treatments:TherapeuticEducation a :MedicalTherapy ;
+  :name "Therapeutic Education"@en, "Education thérapeutique"@fr .
+
+treatments:BalancedDiet a :MedicalTherapy ;
+  :name "Balanced diet"@en, "Régime alimentaire équilibré"@fr .
+
+treatments:PhysicalExercice a :MedicalTherapy ;
+  :name "Physical Exercice"@en, "Exercice Physique"@fr .
+

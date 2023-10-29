@@ -95,9 +95,21 @@ WHERE {
 }
 ```
 
-7. Quels sont les rapports de cas ayant eu besoin d'examens complémentaire ?
+7. Quels sont les rapports de cas ayant eu besoin d'examens complémentaire (Medical Test) ?
+```sparql
+prefix : <http://project-wold.fr/schema#>
+prefix reports: <http://project-wold.fr/case_reports/data#>
+
+SELECT ?examination ?test
+WHERE {
+
+    ?examination a :ClinicalExamination ;
+            :hasMedicalTest ?test .
+}
+```
 
 8. Quels ont été les examens cliniques ayant les mêmes symptômes mais des maladies différentes?
+
 
 9. Générer une relation hasDoctor entre les patients et les docteurs assignés à leur case report
 

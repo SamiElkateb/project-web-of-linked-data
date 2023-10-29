@@ -57,6 +57,25 @@ LIMIT 1
 ```
 
 5. Quels sont les patients dont l'examen clinique a été réalisé par un praticien autre que celui du rapport de cas ?
+```sparql
+prefix : <http://project-wold.fr/schema#>
+prefix reports: <http://project-wold.fr/case_reports/data#>
+
+SELECT ?patient ?doctor1 ?doctor2
+WHERE {
+
+    ?examination a :ClinicalExamination ;
+            :hasPatient ?patient ;
+            :hasDoctor ?doctor1 .
+
+    ?case a :CaseReport ;
+            :hasClinicalExamination ?examination ;
+            :hasPatient ?patient ;
+            :hasDoctor ?doctor2 .
+
+    FILTER (?doctor1 != ?doctor2)
+}
+```
 
 6. Quels sont les patients ayant plus de 60 ans ?
 référence: https://stackoverflow.com/questions/74532061/how-to-get-todays-date-in-sparql

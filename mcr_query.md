@@ -1,11 +1,13 @@
-1. Quelles sont les maladies pouvant avoir comme signe clinique la fièvre ?
+1. Quelles sont les maladies pouvant avoir comme signe clinique la fièvre ou le mal de tête ?
 ```sparql
 prefix : <http://project-wold.fr/schema#>
 prefix symptoms: <http://project-wold.fr/symptoms/data#>
 
-SELECT ?disease
+SELECT distinct ?disease
 WHERE {
-    ?disease :signOrSymptom symptoms:Fever
+    { ?disease :signOrSymptom symptoms:Fever }
+    UNION
+    { ?disease :signOrSymptom symptoms:Headache }
 }
 ```
 

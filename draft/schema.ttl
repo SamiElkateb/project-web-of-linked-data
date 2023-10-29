@@ -35,66 +35,66 @@
   owl:equivalentClass s:Drug .
 
 :name a owl:ObjectProperty ;
-    owl:equivalentProperty schema:name .
+    owl:equivalentProperty s:name .
 
 :signOrSymptom a owl:ObjectProperty ;
-    owl:equivalentProperty schema:signOrSymptom .
+    owl:equivalentProperty s:signOrSymptom .
 
 :possibleTreatment a owl:ObjectProperty ;
-    owl:equivalentProperty schema:possibleTreatment .
+    owl:equivalentProperty s:possibleTreatment .
 
 :usedToDiagnose a owl:ObjectProperty ;
-    owl:equivalentProperty schema:usedToDiagnose .
+    owl:equivalentProperty s:usedToDiagnose .
 
 :doseUnit a owl:ObjectProperty ;
-    owl:equivalentProperty schema:doseUnit .
+    owl:equivalentProperty s:doseUnit .
 
 :doseValue a owl:ObjectProperty ;
-    owl:equivalentProperty schema:doseValue .
+    owl:equivalentProperty s:doseValue .
 
 :frequency a owl:ObjectProperty ;
-    owl:equivalentProperty schema:frequency .
+    owl:equivalentProperty s:frequency .
 
 :activeIngredient a owl:ObjectProperty ;
-    owl:equivalentProperty schema:activeIngredient .
+    owl:equivalentProperty s:activeIngredient .
 
 :drugUnit a owl:ObjectProperty ;
-    owl:equivalentProperty schema:drugUnit .
+    owl:equivalentProperty s:drugUnit .
 
 :dosageForm a owl:ObjectProperty ;
-    owl:equivalentProperty schema:dosageForm .
+    owl:equivalentProperty s:dosageForm .
 
 :drug a owl:ObjectProperty ;
-    owl:equivalentProperty schema:drug .
+    owl:equivalentProperty s:drug .
 
 :doseSchedule a owl:ObjectProperty ;
-    owl:equivalentProperty schema:doseSchedule .
+    owl:equivalentProperty s:doseSchedule .
 
 :gender a owl:ObjectProperty ;
-    owl:equivalentProperty schema:gender .
+    owl:equivalentProperty s:gender .
 
 :birthDate a owl:ObjectProperty ;
-    owl:equivalentProperty schema:birthDate .
+    owl:equivalentProperty s:birthDate .
 
 :healthCondition a owl:ObjectProperty ;
-    owl:equivalentProperty schema:healthCondition .
+    owl:equivalentProperty s:healthCondition .
 
 :value a owl:ObjectProperty ;
-    owl:equivalentProperty schema:value .
+    owl:equivalentProperty s:value .
 
 :unitText a owl:ObjectProperty ;
-    owl:equivalentProperty schema:unitText .
+    owl:equivalentProperty s:unitText .
 :weight a owl:ObjectProperty ;
-    owl:equivalentProperty schema:weight .
+    owl:equivalentProperty s:weight .
 
 :familyName a owl:ObjectProperty ;
-    owl:equivalentProperty schema:familyName .
+    owl:equivalentProperty s:familyName .
 
 :givenName a owl:ObjectProperty ;
-    owl:equivalentProperty schema:givenName .
+    owl:equivalentProperty s:givenName .
 
 :jobTitle a owl:ObjectProperty ;
-    owl:equivalentProperty schema:jobTitle .
+    owl:equivalentProperty s:jobTitle .
 
 # Schema étendu
 :CaseReport a rdfs:Class;

@@ -18,7 +18,7 @@ d:ParacetamolPrescription a :MedicalTherapy ;
   :doseSchedule [
     :doseUnit "mg" ;
     :doseValue "1000"^^xsd:unsignedInt ;
-    :frequency "every 6 hours"@en, "toutes les 6 heures"@fr .
+    :frequency "every 6 hours"@en, "toutes les 6 heures"@fr
   ] .
 
 d:IbuprofenePrescription a :MedicalTherapy ;
@@ -26,7 +26,7 @@ d:IbuprofenePrescription a :MedicalTherapy ;
   :doseSchedule [
     :doseUnit "mg" ;
     :doseValue "1000"^^xsd:unsignedInt ;
-    :frequency "every 8 hours"@en, "toutes les 8 heures"@fr .
+    :frequency "every 8 hours"@en, "toutes les 8 heures"@fr
   ] .
 
 d:AmoxicillinPrescription a :MedicalTherapy ;
@@ -34,7 +34,7 @@ d:AmoxicillinPrescription a :MedicalTherapy ;
   :doseSchedule [
     :doseUnit "mg" ;
     :doseValue "1000"^^xsd:unsignedInt ;
-    :frequency "morning and night"@en, "matin et soir"@fr .
+    :frequency "morning and night"@en, "matin et soir"@fr
   ] .
 
 d:MetforminPrescription a :MedicalTherapy ;
@@ -42,7 +42,7 @@ d:MetforminPrescription a :MedicalTherapy ;
   :doseSchedule [
     :doseUnit "mg" ;
     :doseValue "500"^^xsd:unsignedInt ;
-    :frequency "morning and night"@en, "matin et soir"@fr .
+    :frequency "morning and night"@en, "matin et soir"@fr
   ] .
 
 d:InsulinPrescription a :MedicalTherapy ;
@@ -50,15 +50,15 @@ d:InsulinPrescription a :MedicalTherapy ;
   :doseSchedule [
     :doseUnit "UI" ;
     :doseValue "1"^^xsd:unsignedInt ;
-    :frequency "0.2 UI / kg"@en, "0.2 UI / kg"@fr .
+    :frequency "0.2 UI / kg"@en, "0.2 UI / kg"@fr
   ] .
 
 d:TherapeuticEducation a :MedicalTherapy ;
-  :name "Therapeutic Education"@en, "Education thérapeutique"@fr
+  :name "Therapeutic Education"@en, "Education thérapeutique"@fr .
 
 d:BalancedDiet a :MedicalTherapy ;
-  :name "Balanced diet"@en, "Régime alimentaire équilibré"@fr
+  :name "Balanced diet"@en, "Régime alimentaire équilibré"@fr .
 
 d:PhysicalExercice a :MedicalTherapy ;
-  :name "Physical Exercice"@en, "Exercice Physique"@fr
+  :name "Physical Exercice"@en, "Exercice Physique"@fr .
 

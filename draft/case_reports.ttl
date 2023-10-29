@@ -24,7 +24,7 @@ d:P1CE a :ClinicalExamination ;
 d:Case1 a :CaseReport ;
   :hasPatient patients:Patient1 ;
   :hasClinicalExamination d:P1CE ;
-  :hasDoctor doctors:DoctorMichu .
+  :hasDoctor doctors:DoctorMichu ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
 
 d:P2CE a :ClinicalExamination ;
@@ -37,7 +37,7 @@ d:P2CE a :ClinicalExamination ;
 d:Case2 a :CaseReport ;
   :hasPatient patients:Patient2 ;
   :hasClinicalExamination d:P2CE ;
-  :hasDoctor doctors:DoctorMichu .
+  :hasDoctor doctors:DoctorMichu ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
 
 d:P3CE a :ClinicalExamination ;
@@ -51,7 +51,7 @@ d:P3CE a :ClinicalExamination ;
 d:Case3 a :CaseReport ;
   :hasPatient patients:Patient3 ;
   :hasClinicalExamination d:P3CE ;
-  :hasDoctor doctors:DoctorDoe .
+  :hasDoctor doctors:DoctorDoe ;
   :hasMedicalTherapy treatments:ParacetamolPrescription, 
                      treatments:AmoxicillinPrescription .
 
@@ -63,7 +63,7 @@ d:P4CE a :ClinicalExamination ;
 d:Case4 a :CaseReport ;
   :hasPatient patients:Patient4 ;
   :hasClinicalExamination d:P4CE ;
-  :hasDoctor doctors:DoctorLopez .
+  :hasDoctor doctors:DoctorLopez :
   :hasMedicalTherapy treatments:ParacetamolPrescription .
 
 d:P5CE a :ClinicalExamination ;
@@ -76,7 +76,7 @@ d:P5CE a :ClinicalExamination ;
 d:Case5 a :CaseReport ;
   :hasPatient patients:Patient5 ;
   :hasClinicalExamination d:P5CE ;
-  :hasDoctor doctors:DoctorDoe .
+  :hasDoctor doctors:DoctorDoe ;
   :hasMedicalTherapy treatments:MetforminPrescription,
                      treatments:BalancedDiet .
 
@@ -90,7 +90,7 @@ d:P6CE a :ClinicalExamination ;
 d:Case6 a :CaseReport ;
   :hasPatient patients:Patient6 ;
   :hasClinicalExamination d:P6CE ;
-  :hasDoctor doctors:DoctorMichu .
+  :hasDoctor doctors:DoctorMichu ;
   :hasMedicalTherapy treatments:TherapeuticEducation,
                       treatments:BalancedDiet,
                       treatments:PhysicalExercice .
@@ -106,7 +106,7 @@ d:P7CE a :ClinicalExamination ;
 d:Case7 a :CaseReport ;
   :hasPatient patients:Patient7 ;
   :hasClinicalExamination d:P7CE ;
-  :hasDoctor doctors:DoctorLopez .
+  :hasDoctor doctors:DoctorLopez ;
   :hasMedicalTherapy treatments:AmoxicillinPrescription,
                      treatments:ParacetamolPrescription .
 
@@ -121,7 +121,7 @@ d:P8CE a :ClinicalExamination ;
 d:Case8 a :CaseReport ;
   :hasPatient patients:Patient8 ;
   :hasClinicalExamination d:P8CE ;
-  :hasDoctor doctors:DoctorLopez .
+  :hasDoctor doctors:DoctorLopez ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
 
 d:P9CE a :ClinicalExamination ;
@@ -132,7 +132,7 @@ d:P9CE a :ClinicalExamination ;
 d:Case9 a :CaseReport ;
   :hasPatient patients:Patient9 ;
   :hasClinicalExamination d:P9CE ;
-  :hasDoctor doctors:DoctorSmith .
+  :hasDoctor doctors:DoctorSmith ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
 
 
@@ -146,6 +146,6 @@ d:P10CE a :ClinicalExamination ;
 d:Case10 a :CaseReport ;
   :hasPatient patients:Patient10 ;
   :hasClinicalExamination d:P10CE ;
-  :hasDoctor doctors:DoctorMichu .
+  :hasDoctor doctors:DoctorMichu ;
   :hasMedicalTherapy treatments:Ibuprofene,
                      treatments:ParacetamolPrescription .

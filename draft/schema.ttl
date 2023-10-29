@@ -7,7 +7,7 @@
 
 : a owl:Ontology :
   rdfs:label "Medical Ontology";
-  rdfs:comment "An ontology representing medical entities and their relationships.";
+  rdfs:comment "An ontology representing medical entities and their relationships." .
 
 # Schéma existant réutilisé
 :Person a owl:Class ;
@@ -84,7 +84,6 @@
 
 :unitText a owl:ObjectProperty ;
     owl:equivalentProperty schema:unitText .
-
 :weight a owl:ObjectProperty ;
     owl:equivalentProperty schema:weight .
 

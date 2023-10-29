@@ -19,11 +19,11 @@ d:Patient1 a :Patient ;
   :healthCondition diseases:Diabetes ;
   :weight [ 
     :value "80"^^xsd:unsignedInt ;
-    :unitText "kg" .
+    :unitText "kg"
   ] ;
   :height [ 
     :value "180"^^xsd:unsignedInt ;
-    :unitText "cm" .
+    :unitText "cm"
   ] .
 
 d:Patient2 a :Patient ;
@@ -31,11 +31,11 @@ d:Patient2 a :Patient ;
   :birthDate "1970-04-10" ;
   :weight [ 
     :value "65"^^xsd:unsignedInt ;
-    :unitText "kg" .
+    :unitText "kg"
   ] ;
   :height [ 
     :value "165"^^xsd:unsignedInt ;
-    :unitText "cm" .
+    :unitText "cm"
   ] .
 
 d:Patient3 a :Patient ;
@@ -43,11 +43,11 @@ d:Patient3 a :Patient ;
   :birthDate "1985-02-28" ;
   :weight [ 
     :value "90"^^xsd:unsignedInt ;
-    :unitText "kg" .
+    :unitText "kg"
   ] ;
   :height [ 
     :value "175"^^xsd:unsignedInt ;
-    :unitText "cm" .
+    :unitText "cm"
   ] .
 
 d:Patient4 a :Patient ;
@@ -56,11 +56,11 @@ d:Patient4 a :Patient ;
   :healthCondition diseases:Hypertension ;
   :weight [ 
     :value "60" ;
-    :unitText "kg" .
+    :unitText "kg"
   ] ;
   :height [ 
     :value "162"^^xsd:unsignedInt ;
-    :unitText "cm" .
+    :unitText "cm"
   ] .
 
 d:Patient5 a :Patient ;
@@ -69,11 +69,11 @@ d:Patient5 a :Patient ;
   :healthCondition diseases:Diabetes ;
   :weight [ 
     :value "78"^^xsd:unsignedInt ;
-    :unitText "kg" .
+    :unitText "kg"
   ] ;
   :height [ 
     :value "182"^^xsd:unsignedInt ;
-    :unitText "cm" .
+    :unitText "cm"
   ] .
 
 d:Patient6 a :Patient ;
@@ -82,11 +82,11 @@ d:Patient6 a :Patient ;
   :hasDiagnosis diseases:Hypertension ;
   :weight [ 
     :value "58"^^xsd:unsignedInt ;
-    :unitText "kg" .
+    :unitText "kg"
   ] ;
   :height [ 
     :value "159"^^xsd:unsignedInt ;
-    :unitText "cm" .
+    :unitText "cm"
   ] .
 
 d:Patient7 a :Patient ;
@@ -94,11 +94,11 @@ d:Patient7 a :Patient ;
   :birthDate "1955-07-25" ;
   :weight [ 
     :value "85"^^xsd:unsignedInt ;
-    :unitText "kg" .
+    :unitText "kg"
   ] ;
   :height [ 
     :value "179"^^xsd:unsignedInt ;
-    :unitText "cm" .
+    :unitText "cm"
   ] .
 
 d:Patient8 a :Patient ;
@@ -107,11 +107,11 @@ d:Patient8 a :Patient ;
   :healthCondition diseases:Diabetes ;
   :weight [ 
     :value "54"^^xsd:unsignedInt ;
-    :unitText "kg" .
+    :unitText "kg"
   ] ;
   :height [ 
     :value "163"^^xsd:unsignedInt ;
-    :unitText "cm" .
+    :unitText "cm"
   ] .
 
 d:Patient9 a :Patient ;
@@ -119,11 +119,11 @@ d:Patient9 a :Patient ;
   :birthDate "2010-06-12" ;
   :weight [ 
     :value "54"^^xsd:unsignedInt ;
-    :unitText "kg" .
+    :unitText "kg"
   ] ;
   :height [ 
     :value "154"^^xsd:unsignedInt ;
-    :unitText "cm" .
+    :unitText "cm"
   ] .
 
 d:Patient10 a :Patient ;
@@ -132,9 +132,9 @@ d:Patient10 a :Patient ;
   :healthCondition diseases:Hypertension ;
   :weight [ 
     :value "62"^^xsd:unsignedInt ;
-    :unitText "kg" .
+    :unitText "kg"
   ] ;
   :height [ 
     :value "168"^^xsd:unsignedInt ;
-    :unitText "cm" .
+    :unitText "cm"
   ] .

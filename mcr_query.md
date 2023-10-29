@@ -1,4 +1,15 @@
-1. Quel sont les 3 signes ou symptômes les plus présents ?
+1. Quelles sont les maladies pouvant avoir comme signe clinique la fièvre ?
+```sparql
+prefix : <http://project-wold.fr/schema#>
+prefix symptoms: <http://project-wold.fr/symptoms/data#>
+
+SELECT ?disease
+WHERE {
+    ?disease :signOrSymptom symptoms:Fever
+}
+```
+
+2. Quel sont les 3 signes ou symptômes les plus présents ?
 ```sparql
 prefix : <http://project-wold.fr/schema#>
 
@@ -12,20 +23,24 @@ ORDER BY DESC(?count)
 LIMIT 3
 ```
 
-2. Quelles sont les maladies pouvant avoir comme signe clinique la fièvre ?
-```sparql
-prefix : <http://project-wold.fr/schema#>
-prefix symptoms: <http://project-wold.fr/symptoms/data#>
-
-SELECT ?disease
-WHERE {
-    ?disease :signOrSymptom symptoms:Fever
-}
-```
-
 3. Quelles sont les maladies ayant pour symptôme la fatigue mais n'étant pas traités par l'Amoxicilline ?
 
-4. Quel est le médecin effectuant le plus de prescription de paracétamol ?
+4. Quel est le nom de famille du médecin effectuant le plus de prescription de paracétamol ?
+```sparql
+prefix : <http://project-wold.fr/schema#>
+prefix treatments: <http://project-wold.fr/treatments/data#> 
+
+SELECT ?doctorName (COUNT(?doctor) AS ?numberParacetamolPrescription)
+WHERE {
+    ?case_report a :CaseReport ;
+            :hasDoctor ?doctor ;
+            :hasMedicalTherapy treatments:ParacetamolPrescription .
+    ?doctor :familyName ?doctorName .
+}
+GROUP BY ?doctorName
+ORDER BY DESC(?numberParacetamolPrescription)
+LIMIT 1
+```
 
 5. Quels sont les patients dont l'examen clinique a été réalisé par un praticien autre que celui du rapport de cas ?
 
@@ -38,7 +53,7 @@ WHERE {
     ?patient a :Patient ;
              :birthDate ?birthDate .
 
-    BIND( now() AS ?currentDateTime ) .
+    BIND(now() AS ?currentDateTime) .
     BIND(year(?currentDateTime) - 60 AS ?sixtyYearsAgo) .
     BIND(CONCAT(STR(?sixtyYearsAgo), "-",
                 STR(month(?currentDateTime)), "-",

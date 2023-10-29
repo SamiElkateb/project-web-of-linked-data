@@ -1,4 +1,3 @@
-@prefix s: <https://schema.org/schema#> .
 @prefix : <http://project-wold.fr/schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -15,26 +14,26 @@
 @prefix d: <http://project-wold.fr/doctors/data#> .
 
 
-d:DoctorMichu a s:Doctor ;
-  s:gender "male" ;
-  s:familyName "Michu";
-  s:givenName "Monsieur";
-  s:jobTitle "Family Physician"@en, "Médecin Généraliste"@fr .
+d:DoctorMichu a :Doctor ;
+  :gender "male" ;
+  :familyName "Michu";
+  :givenName "Monsieur";
+  :jobTitle "Family Physician"@en, "Médecin Généraliste"@fr .
 
-d:DoctorSmith a s:Doctor ;
-  s:gender "female" ;
-  s:familyName "Smith";
-  s:givenName "Jane";
-  s:jobTitle "Pediatrician"@en, "Pédiatre"@fr .
+d:DoctorSmith a :Doctor ;
+  :gender "female" ;
+  :familyName "Smith";
+  :givenName "Jane";
+  :jobTitle "Pediatrician"@en, "Pédiatre"@fr .
 
-d:DoctorLopez a s:Doctor ;
-  s:gender "male" ;
-  s:familyName "Lopez";
-  s:givenName "Carlos";
-  s:jobTitle "Pulmonologist"@en, "Pneumologue"@fr .
+d:DoctorLopez a :Doctor ;
+  :gender "male" ;
+  :familyName "Lopez";
+  :givenName "Carlos";
+  :jobTitle "Pulmonologist"@en, "Pneumologue"@fr .
 
-d:DoctorDoe a s:Doctor ;
-  s:gender "female" ;
-  s:familyName "Jane";
-  s:givenName "Doe";
-  s:jobTitle "Endocrinologist"@en, "Endocrinologue"@fr .
+d:DoctorDoe a :Doctor ;
+  :gender "female" ;
+  :familyName "Jane";
+  :givenName "Doe";
+  :jobTitle "Endocrinologist"@en, "Endocrinologue"@fr .

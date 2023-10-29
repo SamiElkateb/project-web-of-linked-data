@@ -1,4 +1,3 @@
-@prefix s: <https://schema.org/schema#> .
 @prefix : <http://project-wold.fr/schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -14,27 +13,27 @@
 @prefix d: <http://project-wold.fr/drugs/data#> .
 
 
-d:Paracetamol a s:Drug ;
-  s:activeIngredient "Paracetamol" ;
-  s:drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé"@en ;
-  s:dosageForm "tablet"@en, "comprimé"@fr .
+d:Paracetamol a :Drug ;
+  :activeIngredient "Paracetamol" ;
+  :drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé"@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .
 
-d:Ibuprofene a s:Drug ;
-  s:activeIngredient "Ibuprofene" ;
-  s:drugUnit "400mg tablet"@en, "200mg tablet"@en, "200mg comprimé"@en, "400mg comprimé"@en ;
-  s:dosageForm "tablet"@en, "comprimé"@fr .
+d:Ibuprofene a :Drug ;
+  :activeIngredient "Ibuprofene" ;
+  :drugUnit "400mg tablet"@en, "200mg tablet"@en, "200mg comprimé"@en, "400mg comprimé"@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .
 
-d:Amoxicillin a s:Drug ;
-  s:activeIngredient "Amoxicillin"@en, "Amoxicilline"@fr ;
-  s:drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé "@en ;
-  s:dosageForm "tablet"@en, "comprimé"@fr .
+d:Amoxicillin a :Drug ;
+  :activeIngredient "Amoxicillin"@en, "Amoxicilline"@fr ;
+  :drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé "@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .
 
-d:Insulin a s:Drug ;
-  s:activeIngredient "Insulin"@en, "Insuline"@fr ;
-  s:drugUnit "UI" ;
-  s:dosageForm "injection"@en, "injectable"@fr .
+d:Insulin a :Drug ;
+  :activeIngredient "Insulin"@en, "Insuline"@fr ;
+  :drugUnit "UI" ;
+  :dosageForm "injection"@en, "injectable"@fr .
 
-d:Metformin a s:Drug ;
-  s:activeIngredient "Metformin"@en, "Metformine"@fr ;
-  s:drugUnit "500mg tablet"@en, "500mg  comprimé "@en ;
-  s:dosageForm "tablet"@en, "comprimé"@fr .
+d:Metformin a :Drug ;
+  :activeIngredient "Metformin"@en, "Metformine"@fr ;
+  :drugUnit "500mg tablet"@en, "500mg  comprimé "@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .

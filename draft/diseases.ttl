@@ -1,4 +1,3 @@
-@prefix s: <https://schema.org/schema#> .
 @prefix : <http://project-wold.fr/schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -13,54 +12,54 @@
 @prefix drugs: <http://project-wold.fr/drugs/data#> .
 @prefix d: <http://project-wold.fr/diseases/data#> .
 
-d:Flu a s:MedicalCondition ;
-  s:name "Flue"@en , "Grippe"@fr ;
-  s:signOrSymptom symptoms:Fever, symptoms:Cough, 
+d:Flu a :MedicalCondition ;
+  sname "Flue"@en , "Grippe"@fr ;
+  ssignOrSymptom symptoms:Fever, symptoms:Cough, 
                   symptoms:Fatigue, symptoms:ArticularPain ,
                   symptoms:MuscularPain, symptoms:Chills ;
-  s:possibleTreatment treatments:ParacetamolPrescription,
+  spossibleTreatment treatments:ParacetamolPrescription,
                       treatments:IbuprofenePrescription .
 
-d:Pneumonia a s:MedicalCondition ;
-  s:name "Pneumonia"@en , "Pneumonie"@fr ;
-  s:signOrSymptom symptoms:Fever, symptoms:Cough, 
+d:Pneumonia a :MedicalCondition ;
+  :name "Pneumonia"@en , "Pneumonie"@fr ;
+  :signOrSymptom symptoms:Fever, symptoms:Cough, 
                   symptoms:Fatigue, symptoms:ChestPain,
                   symptoms:ShortnessBreath, symptoms:Nausea ;
-  s:possibleTreatment treatments:AmoxicillinPrescription,
+  :possibleTreatment treatments:AmoxicillinPrescription,
                       treatments:ParacetamolPrescription .
 
-d:Covid a s:MedicalCondition ;
-  s:name "Covid"@en , "Covid"@fr ;
-  s:signOrSymptom symptoms:Fever, symptoms:Cough, 
+d:Covid a :MedicalCondition ;
+  :name "Covid"@en , "Covid"@fr ;
+  :signOrSymptom symptoms:Fever, symptoms:Cough, 
                   symptoms:Fatigue, symptoms:Chills,
                   symptoms:ShortnessBreath, symptoms:Headache,
                   symptoms:LossOfSmell ;
-  s:possibleTreatment treatments:ParacetamolPrescription .
+  :possibleTreatment treatments:ParacetamolPrescription .
 
-d:Bronchitis a s:MedicalCondition ;
-  s:name "Bronchitis"@en , "Bronchite"@fr ;
-  s:signOrSymptom symptoms:Cough, symptoms:SoreThroat, 
+d:Bronchitis a :MedicalCondition ;
+  :name "Bronchitis"@en , "Bronchite"@fr ;
+  :signOrSymptom symptoms:Cough, symptoms:SoreThroat, 
                   symptoms:Fatigue, symptoms:Headache ;
-  s:possibleTreatment treatments:ParacetamolPrescription .
+  :possibleTreatment treatments:ParacetamolPrescription .
 
-d:Diabetes a s:MedicalCondition ;
-  s:name "Diabetes"@en , "Diabète"@fr ;
-  s:signOrSymptom symptoms:Polyphagia, symptoms:Polyuria, 
+d:Diabetes a :MedicalCondition ;
+  :name "Diabetes"@en , "Diabète"@fr ;
+  :signOrSymptom symptoms:Polyphagia, symptoms:Polyuria, 
                   symptoms:Polydipsia, symptoms:DrySkin,
                   symptoms:WeightLoss ;
-  s:possibleTreatment treatments:MetforminPrescription,
+  :possibleTreatment treatments:MetforminPrescription,
                       treatments:InsulinPrescription,
                       treatments:TherapeuticEducation,
                       treatments:BalancedDiet,
                       treatments:PhysicalExercice .
 
-d:Hypertension a s:MedicalCondition ;
-  s:name "Hypertension"@en , "Hypertension"@fr ;
-  s:signOrSymptom symptoms:Headache, symptoms:Nausea, 
+d:Hypertension a :MedicalCondition ;
+  :name "Hypertension"@en , "Hypertension"@fr ;
+  :signOrSymptom symptoms:Headache, symptoms:Nausea, 
                   symptoms:Dizziness, symptoms:Anxiety,
                   symptoms:BlurredVision, symptoms:ChestPain,
                   symptoms:ShortnessBreath;
-  s:possibleTreatment treatments:TherapeuticEducation,
+  :possibleTreatment treatments:TherapeuticEducation,
                       treatments:BalancedDiet,
                       treatments:PhysicalExercice .
                       

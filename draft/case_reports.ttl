@@ -27,7 +27,6 @@ d:Case1 a :CaseReport ;
   :hasDoctor doctors:DoctorMichu .
   :hasMedicalTherapy treatments:ParacetamolPrescription .
 
-
 d:P2CE a :ClinicalExamination ;
   :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
                     symptoms:Chills, symptoms:Fatigue ;
@@ -40,7 +39,6 @@ d:Case2 a :CaseReport ;
   :hasClinicalExamination d:P2CE ;
   :hasDoctor doctors:DoctorMichu .
   :hasMedicalTherapy treatments:ParacetamolPrescription .
-
 
 d:P3CE a :ClinicalExamination ;
   :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
@@ -57,3 +55,57 @@ d:Case3 a :CaseReport ;
   :hasMedicalTherapy treatments:ParacetamolPrescription, 
                      treatments:AmoxicillinPrescription .
 
+d:P4CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Cough, symptoms:SoreThroat;  
+  :hasDiagnosis diseases:Bronchitis ;
+  :hasDoctor doctors:DoctorLopez  .
+
+d:Case4 a :CaseReport ;
+  :hasPatient patients:Patient4 ;
+  :hasClinicalExamination d:P4CE ;
+  :hasDoctor doctors:DoctorLopez .
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+d:P5CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Polyphagia, symptoms:Polyuria,   
+                    symptoms:Polydipsia, symptoms:DrySkin ;
+  :hasDiagnosis diseases:Diabetes ;
+  :hasMedicalTest tests:BloodTest ;
+  :hasDoctor doctors:DoctorLopez .
+
+d:Case5 a :CaseReport ;
+  :hasPatient patients:Patient5 ;
+  :hasClinicalExamination d:P5CE ;
+  :hasDoctor doctors:DoctorDoe .
+  :hasMedicalTherapy treatments:MetforminPrescription,
+                     treatments:BalancedDiet .
+
+d:P6CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:ShortnessBreath, symptoms:ChestPain, 
+                    symptoms:Nausea, symptoms:Headache ;
+  :hasDiagnosis diseases:Hypertension ;
+  :hasMedicalTest tests:BloodPressureMesurement ;
+  :hasDoctor doctors:DoctorMichu .
+
+d:Case6 a :CaseReport ;
+  :hasPatient patients:Patient6 ;
+  :hasClinicalExamination d:P6CE ;
+  :hasDoctor doctors:DoctorMichu .
+  :hasMedicalTherapy treatments:TherapeuticEducation,
+                      treatments:BalancedDiet,
+                      treatments:PhysicalExercice .
+
+d:P7CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:ShortnessBreath, symptoms:Fatigue ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasMedicalTest tests:PulmonaryRadiography ;
+  :hasDiagnosis diseases:Pneumonia ;
+  :hasDoctor doctors:DoctorLopez .
+
+d:Case7 a :CaseReport ;
+  :hasPatient patients:Patient7 ;
+  :hasClinicalExamination d:P7CE ;
+  :hasDoctor doctors:DoctorLopez .
+  :hasMedicalTherapy treatments:AmoxicillinPrescription,
+                     treatments:ParacetamolPrescription .

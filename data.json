@@ -1,404 +1,5 @@
 [
     {
-        "@id": "_:b0",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "80",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "kg"
-            }
-        ]
-    },
-    {
-        "@id": "_:b1",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "180",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "cm"
-            }
-        ]
-    },
-    {
-        "@id": "_:b10",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "58",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "kg"
-            }
-        ]
-    },
-    {
-        "@id": "_:b11",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "159",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "cm"
-            }
-        ]
-    },
-    {
-        "@id": "_:b12",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "85",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "kg"
-            }
-        ]
-    },
-    {
-        "@id": "_:b13",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "179",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "cm"
-            }
-        ]
-    },
-    {
-        "@id": "_:b14",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "54",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "kg"
-            }
-        ]
-    },
-    {
-        "@id": "_:b15",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "163",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "cm"
-            }
-        ]
-    },
-    {
-        "@id": "_:b16",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "54",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "kg"
-            }
-        ]
-    },
-    {
-        "@id": "_:b17",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "154",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "cm"
-            }
-        ]
-    },
-    {
-        "@id": "_:b18",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "62",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "kg"
-            }
-        ]
-    },
-    {
-        "@id": "_:b19",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "168",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "cm"
-            }
-        ]
-    },
-    {
-        "@id": "_:b2",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "65",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "kg"
-            }
-        ]
-    },
-    {
-        "@id": "_:b20",
-        "http://project-wold.fr/schema#doseUnit": [
-            {
-                "@value": "mg"
-            }
-        ],
-        "http://project-wold.fr/schema#doseValue": [
-            {
-                "@value": "1000",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#frequency": [
-            {
-                "@value": "every 6 hours",
-                "@language": "en"
-            },
-            {
-                "@value": "toutes les 6 heures",
-                "@language": "fr"
-            }
-        ]
-    },
-    {
-        "@id": "_:b21",
-        "http://project-wold.fr/schema#doseUnit": [
-            {
-                "@value": "mg"
-            }
-        ],
-        "http://project-wold.fr/schema#doseValue": [
-            {
-                "@value": "1000",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#frequency": [
-            {
-                "@value": "every 8 hours",
-                "@language": "en"
-            },
-            {
-                "@value": "toutes les 8 heures",
-                "@language": "fr"
-            }
-        ]
-    },
-    {
-        "@id": "_:b22",
-        "http://project-wold.fr/schema#doseUnit": [
-            {
-                "@value": "mg"
-            }
-        ],
-        "http://project-wold.fr/schema#doseValue": [
-            {
-                "@value": "1000",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#frequency": [
-            {
-                "@value": "morning and night",
-                "@language": "en"
-            },
-            {
-                "@value": "matin et soir",
-                "@language": "fr"
-            }
-        ]
-    },
-    {
-        "@id": "_:b23",
-        "http://project-wold.fr/schema#doseUnit": [
-            {
-                "@value": "mg"
-            }
-        ],
-        "http://project-wold.fr/schema#doseValue": [
-            {
-                "@value": "500",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#frequency": [
-            {
-                "@value": "morning and night",
-                "@language": "en"
-            },
-            {
-                "@value": "matin et soir",
-                "@language": "fr"
-            }
-        ]
-    },
-    {
-        "@id": "_:b24",
-        "http://project-wold.fr/schema#doseUnit": [
-            {
-                "@value": "UI"
-            }
-        ],
-        "http://project-wold.fr/schema#doseValue": [
-            {
-                "@value": "1",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#frequency": [
-            {
-                "@value": "0.2 UI / kg",
-                "@language": "en"
-            },
-            {
-                "@value": "0.2 UI / kg",
-                "@language": "fr"
-            }
-        ]
-    },
-    {
-        "@id": "_:b3",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "165",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "cm"
-            }
-        ]
-    },
-    {
-        "@id": "_:b4",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "90",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "kg"
-            }
-        ]
-    },
-    {
-        "@id": "_:b5",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "175",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "cm"
-            }
-        ]
-    },
-    {
-        "@id": "_:b6",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "60"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "kg"
-            }
-        ]
-    },
-    {
-        "@id": "_:b7",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "162",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "cm"
-            }
-        ]
-    },
-    {
-        "@id": "_:b8",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "78",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "kg"
-            }
-        ]
-    },
-    {
-        "@id": "_:b9",
-        "http://project-wold.fr/schema#value": [
-            {
-                "@value": "182",
-                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
-            }
-        ],
-        "http://project-wold.fr/schema#unitText": [
-            {
-                "@value": "cm"
-            }
-        ]
-    },
-    {
         "@id": "http://project-wold.fr/case_reports/data#Case1",
         "@type": [
             "http://project-wold.fr/schema#CaseReport"
@@ -2454,6 +2055,405 @@
             {
                 "@value": "Education th\u00e9rapeutique",
                 "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "_:b0",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "80",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b1",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "180",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b10",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "58",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b11",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "159",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b12",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "85",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b13",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "179",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b14",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "54",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b15",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "163",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b16",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "54",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b17",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "154",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b18",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "62",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b19",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "168",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b2",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "65",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b20",
+        "http://project-wold.fr/schema#doseUnit": [
+            {
+                "@value": "mg"
+            }
+        ],
+        "http://project-wold.fr/schema#doseValue": [
+            {
+                "@value": "1000",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#frequency": [
+            {
+                "@value": "every 6 hours",
+                "@language": "en"
+            },
+            {
+                "@value": "toutes les 6 heures",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "_:b21",
+        "http://project-wold.fr/schema#doseUnit": [
+            {
+                "@value": "mg"
+            }
+        ],
+        "http://project-wold.fr/schema#doseValue": [
+            {
+                "@value": "1000",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#frequency": [
+            {
+                "@value": "every 8 hours",
+                "@language": "en"
+            },
+            {
+                "@value": "toutes les 8 heures",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "_:b22",
+        "http://project-wold.fr/schema#doseUnit": [
+            {
+                "@value": "mg"
+            }
+        ],
+        "http://project-wold.fr/schema#doseValue": [
+            {
+                "@value": "1000",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#frequency": [
+            {
+                "@value": "morning and night",
+                "@language": "en"
+            },
+            {
+                "@value": "matin et soir",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "_:b23",
+        "http://project-wold.fr/schema#doseUnit": [
+            {
+                "@value": "mg"
+            }
+        ],
+        "http://project-wold.fr/schema#doseValue": [
+            {
+                "@value": "500",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#frequency": [
+            {
+                "@value": "morning and night",
+                "@language": "en"
+            },
+            {
+                "@value": "matin et soir",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "_:b24",
+        "http://project-wold.fr/schema#doseUnit": [
+            {
+                "@value": "UI"
+            }
+        ],
+        "http://project-wold.fr/schema#doseValue": [
+            {
+                "@value": "1",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#frequency": [
+            {
+                "@value": "0.2 UI / kg",
+                "@language": "en"
+            },
+            {
+                "@value": "0.2 UI / kg",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "_:b3",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "165",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b4",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "90",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b5",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "175",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b6",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "60"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b7",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "162",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b8",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "78",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b9",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "182",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
             }
         ]
     }

@@ -148,13 +148,13 @@
   rdfs:range :Doctor .
 
 :hasMedicalTherapy a rdf:Property;
-  rdfs:label    "has medical therapy"@en, "a une thérapie médicale"@fr;
+  rdfs:label    "has medical therapy"@en, "a un traitement médical"@fr;
   rdfs:comment  "Associates an entity with a specific medical treatment or therapy."@en,
-                "Associe une entité à un traitement ou une thérapie médicale spécifique."@fr;
+                "Associe une entité à un traitement médical spécifique."@fr;
   rdfs:range :MedicalTherapy .
 
 :hasMedicalTest a rdf:Property;
-  rdfs:label    "has medical test"@en, "a un test médical"@fr;
+  rdfs:label    "has medical test"@en, "a un examen complémentaire"@fr;
   rdfs:comment  "Connects an entity to a specific medical test that was conducted."@en,
-                "Connecte une entité à un test médical spécifique qui a été réalisé."@fr;
+                "Connecte une entité à un examen complémentaire spécifique qui a été réalisé."@fr;
   rdfs:range :MedicalTest .

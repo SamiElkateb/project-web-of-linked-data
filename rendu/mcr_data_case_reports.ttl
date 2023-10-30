@@ -1,0 +1,161 @@
+@prefix : <http://project-wold.fr/schema#> .
+
+@prefix patients: <http://project-wold.fr/patients/data#> .
+@prefix reports: <http://project-wold.fr/case_reports/data#> .
+@prefix treatments: <http://project-wold.fr/treatments/data#> .
+@prefix symptoms: <http://project-wold.fr/symptoms/data#> .
+@prefix drugs: <http://project-wold.fr/drugs/data#> .
+@prefix tests: <http://project-wold.fr/medical_tests/data#> .
+@prefix doctors: <http://project-wold.fr/doctors/data#> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix diseases: <http://project-wold.fr/diseases/data#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+reports:P1CE a :ClinicalExamination ;
+  :hasPatient patients:Patient1 ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:Chills, symptoms:Fatigue ;
+  :hasDiagnosis diseases:Flu ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasDoctor doctors:DoctorMichu .
+
+reports:Case1 a :CaseReport ;
+  :hasPatient patients:Patient1 ;
+  :hasClinicalExamination reports:P1CE ;
+  :hasDoctor doctors:DoctorMichu ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+reports:P2CE a :ClinicalExamination ;
+  :hasPatient patients:Patient2 ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:Chills, symptoms:Fatigue ;
+  :hasDiagnosis diseases:Covid ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasDoctor doctors:DoctorSmith .
+
+reports:Case2 a :CaseReport ;
+  :hasPatient patients:Patient2 ;
+  :hasClinicalExamination reports:P2CE ;
+  :hasDoctor doctors:DoctorMichu ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+reports:P3CE a :ClinicalExamination ;
+  :hasPatient patients:Patient3 ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:Fatigue, symptoms:ChestPain,
+                    symptoms:ShortnessBreath, symptoms:Nausea ;
+  :hasDiagnosis diseases:Pneumonia ;
+  :hasMedicalTest tests:PulmonaryRadiography ;
+  :hasDoctor doctors:DoctorDoe .
+
+reports:Case3 a :CaseReport ;
+  :hasPatient patients:Patient3 ;
+  :hasClinicalExamination reports:P3CE ;
+  :hasDoctor doctors:DoctorDoe ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription, 
+                     treatments:AmoxicillinPrescription .
+
+reports:P4CE a :ClinicalExamination ;
+  :hasPatient patients:Patient4 ;
+  :hasSignOrSymptom symptoms:Cough, symptoms:SoreThroat;  
+  :hasDiagnosis diseases:Bronchitis ;
+  :hasDoctor doctors:DoctorLopez  .
+
+reports:Case4 a :CaseReport ;
+  :hasPatient patients:Patient4 ;
+  :hasClinicalExamination reports:P4CE ;
+  :hasDoctor doctors:DoctorLopez ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+reports:P5CE a :ClinicalExamination ;
+  :hasPatient patients:Patient5 ;
+  :hasSignOrSymptom symptoms:Polyphagia, symptoms:Polyuria,   
+                    symptoms:Polydipsia, symptoms:DrySkin ;
+  :hasDiagnosis diseases:Diabetes ;
+  :hasMedicalTest tests:BloodTest ;
+  :hasDoctor doctors:DoctorLopez .
+
+reports:Case5 a :CaseReport ;
+  :hasPatient patients:Patient5 ;
+  :hasClinicalExamination reports:P5CE ;
+  :hasDoctor doctors:DoctorDoe ;
+  :hasMedicalTherapy treatments:MetforminPrescription,
+                     treatments:BalancedDiet .
+
+reports:P6CE a :ClinicalExamination ;
+  :hasPatient patients:Patient6 ;
+  :hasSignOrSymptom symptoms:ShortnessBreath, symptoms:ChestPain, 
+                    symptoms:Nausea, symptoms:Headache ;
+  :hasDiagnosis diseases:Hypertension ;
+  :hasMedicalTest tests:BloodPressureMesurement ;
+  :hasDoctor doctors:DoctorMichu .
+
+reports:Case6 a :CaseReport ;
+  :hasPatient patients:Patient6 ;
+  :hasClinicalExamination reports:P6CE ;
+  :hasDoctor doctors:DoctorMichu ;
+  :hasMedicalTherapy treatments:TherapeuticEducation,
+                      treatments:BalancedDiet,
+                      treatments:PhysicalExercice .
+
+reports:P7CE a :ClinicalExamination ;
+  :hasPatient patients:Patient7 ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:ShortnessBreath, symptoms:Fatigue ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasMedicalTest tests:PulmonaryRadiography ;
+  :hasDiagnosis diseases:Pneumonia ;
+  :hasDoctor doctors:DoctorLopez .
+
+reports:Case7 a :CaseReport ;
+  :hasPatient patients:Patient7 ;
+  :hasClinicalExamination reports:P7CE ;
+  :hasDoctor doctors:DoctorLopez ;
+  :hasMedicalTherapy treatments:AmoxicillinPrescription,
+                     treatments:ParacetamolPrescription .
+
+reports:P8CE a :ClinicalExamination ;
+  :hasPatient patients:Patient8 ;
+  :hasSignOrSymptom symptoms:Cough, symptoms:Fever,
+                    symptoms:Fatigue, symptoms:Chills, 
+                    symptoms:LossOfSmell ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasDiagnosis diseases:Covid ;
+  :hasDoctor doctors:DoctorLopez .
+
+reports:Case8 a :CaseReport ;
+  :hasPatient patients:Patient8 ;
+  :hasClinicalExamination reports:P8CE ;
+  :hasDoctor doctors:DoctorLopez ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+reports:P9CE a :ClinicalExamination ;
+  :hasPatient patients:Patient9 ;
+  :hasSignOrSymptom symptoms:Cough, symptoms:Fatigue ;
+  :hasDiagnosis diseases:Bronchitis ;
+  :hasDoctor doctors:DoctorSmith .
+
+reports:Case9 a :CaseReport ;
+  :hasPatient patients:Patient9 ;
+  :hasClinicalExamination reports:P9CE ;
+  :hasDoctor doctors:DoctorSmith ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+
+reports:P10CE a :ClinicalExamination ;
+  :hasPatient patients:Patient10 ;
+  :hasSignOrSymptom symptoms:Cough, symptoms:Fever,
+                    symptoms:Fatigue, symptoms:Chills, 
+                    symptoms:MuscularPain ;
+  :hasDiagnosis diseases:Flu ;
+  :hasDoctor doctors:DoctorMichu .
+
+reports:Case10 a :CaseReport ;
+  :hasPatient patients:Patient10 ;
+  :hasClinicalExamination reports:P10CE ;
+  :hasDoctor doctors:DoctorMichu ;
+  :hasMedicalTherapy treatments:Ibuprofene,
+                     treatments:ParacetamolPrescription .

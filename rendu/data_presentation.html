@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" vocab="http://project-wold.fr/schema#" prefix="schema: http://project-wold.fr/schema#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    xsd: http://www.w3.org/2001/XMLSchema#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#">
+
+<head>
+  <title>Case Report</title>
+  <style>
+    body {
+      line-height: 1.6;
+      margin: 3rem;
+      background-color: #f4f4f4;
+    }
+
+    h1,
+    h2 {
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      border-bottom: 1px solid #666;
+      padding-bottom: 0.5rm;
+      margin-top: 1rem;
+    }
+
+    article {
+      background-color: #fff;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      margin: auto;
+      border-radius: 0.5rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    strong {
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Case Report</h1>
+  <article typeof="CaseReport" about="http://project-wold.fr/case_reports/data#Case1">
+    <section rel="hasPatient">
+      <h2>Patient Information</h2>
+      <div about="http://project-wold.fr/patients/data#Patient1" typeof="Patient">
+        <p><strong>Gender:</strong> <span property="gender">male</span></p>
+        <p><strong>Birth Date:</strong> <time property="birthDate" datatype="xsd:date">1960-05-20</time></p>
+        <p rel="weight"><strong>Weight:</strong>
+          <span typeof="schema:QuantitativeValue">
+            <span property="value" datatype="xsd:unsignedInt">80</span>
+            <span property="unitText">kg</span>
+          </span>
+        </p>
+        <p rel="height"><strong>Height:</strong>
+          <span typeof="schema:QuantitativeValue">
+            <span property="value" datatype="xsd:unsignedInt">180</span>
+            <span property="unitText">cm</span>
+          </span>
+        </p>
+        <p rel="healthCondition"><strong>Health Condition:</strong>
+          <span resource="http://project-wold.fr/diseases/data#Diabetes">Diabetes</span>
+        </p>
+      </div>
+    </section>
+
+    <section rel="hasPatient">
+      <h2>Clinical Examination</h2>
+      <div about="http://project-wold.fr/case_reports/data#P1CE" typeof="ClinicalExamination">
+        <p><strong>Diagnosis:</strong> <span rel="hasDiagnosis"
+            resource="http://project-wold.fr/diseases/data#Flu">Flu</span></p>
+        <p><strong>Signs and Symptoms:</strong>
+          <span rel="hasSignOrSymptom" resource="http://project-wold.fr/symptoms/data#Fever">Fever</span>,
+          <span rel="hasSignOrSymptom" resource="http://project-wold.fr/symptoms/data#Cough">Cough</span>,
+          <span rel="hasSignOrSymptom" resource="http://project-wold.fr/symptoms/data#Chills">Chills</span>,
+          <span rel="hasSignOrSymptom" resource="http://project-wold.fr/symptoms/data#Fatigue">Fatigue</span>
+        </p>
+        <p><strong>Medical Test:</strong> <span rel="hasMedicalTest"
+            resource="http://project-wold.fr/medical_tests/data#CovidTest">Covid
+            test</span>
+        </p>
+      </div>
+    </section>
+
+    <section rel="hasMedicalTherapy">
+      <h2>Treatment</h2>
+      <div about="http://project-wold.fr/treatments/data#ParacetamolPrescription" typeof="MedicalTherapy">
+        <p><strong>Drug:</strong> <span rel="drug"
+            resource="http://project-wold.fr/drugs/data#Paracetamol">Paracetamol</span></p>
+        <p><strong>Dosage:</strong>
+          <span property="doseValue" datatype="xsd:unsignedInt">1000</span> mg
+          <span property="frequency">every 6 hours</span>
+        </p>
+      </div>
+    </section>
+
+    <section rel="hasDoctor">
+      <h2>Doctor</h2>
+      <div about="http://project-wold.fr/doctors/data#DoctorMichu" typeof="Doctor">
+        <p><strong>Name:</strong> <span property="givenName">Pierre</span> <span property="familyName">Michu</span></p>
+        <p><strong>Job Title:</strong> <span property="jobTitle">Family Physician</span></p>
+      </div>
+    </section>
+  </article>
+</body>
+
+</html>

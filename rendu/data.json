@@ -1,0 +1,2460 @@
+[
+    {
+        "@id": "http://project-wold.fr/case_reports/data#Case1",
+        "@type": [
+            "http://project-wold.fr/schema#CaseReport"
+        ],
+        "http://project-wold.fr/schema#hasPatient": [
+            {
+                "@id": "http://project-wold.fr/patients/data#Patient1"
+            }
+        ],
+        "http://project-wold.fr/schema#hasClinicalExamination": [
+            {
+                "@id": "http://project-wold.fr/case_reports/data#P1CE"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorMichu"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTherapy": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#Case10",
+        "@type": [
+            "http://project-wold.fr/schema#CaseReport"
+        ],
+        "http://project-wold.fr/schema#hasPatient": [
+            {
+                "@id": "http://project-wold.fr/patients/data#Patient10"
+            }
+        ],
+        "http://project-wold.fr/schema#hasClinicalExamination": [
+            {
+                "@id": "http://project-wold.fr/case_reports/data#P10CE"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorMichu"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTherapy": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#Ibuprofene"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#Case2",
+        "@type": [
+            "http://project-wold.fr/schema#CaseReport"
+        ],
+        "http://project-wold.fr/schema#hasPatient": [
+            {
+                "@id": "http://project-wold.fr/patients/data#Patient2"
+            }
+        ],
+        "http://project-wold.fr/schema#hasClinicalExamination": [
+            {
+                "@id": "http://project-wold.fr/case_reports/data#P2CE"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorMichu"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTherapy": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#Case3",
+        "@type": [
+            "http://project-wold.fr/schema#CaseReport"
+        ],
+        "http://project-wold.fr/schema#hasPatient": [
+            {
+                "@id": "http://project-wold.fr/patients/data#Patient3"
+            }
+        ],
+        "http://project-wold.fr/schema#hasClinicalExamination": [
+            {
+                "@id": "http://project-wold.fr/case_reports/data#P3CE"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorDoe"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTherapy": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#AmoxicillinPrescription"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#Case4",
+        "@type": [
+            "http://project-wold.fr/schema#CaseReport"
+        ],
+        "http://project-wold.fr/schema#hasPatient": [
+            {
+                "@id": "http://project-wold.fr/patients/data#Patient4"
+            }
+        ],
+        "http://project-wold.fr/schema#hasClinicalExamination": [
+            {
+                "@id": "http://project-wold.fr/case_reports/data#P4CE"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorLopez"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTherapy": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#Case5",
+        "@type": [
+            "http://project-wold.fr/schema#CaseReport"
+        ],
+        "http://project-wold.fr/schema#hasPatient": [
+            {
+                "@id": "http://project-wold.fr/patients/data#Patient5"
+            }
+        ],
+        "http://project-wold.fr/schema#hasClinicalExamination": [
+            {
+                "@id": "http://project-wold.fr/case_reports/data#P5CE"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorDoe"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTherapy": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#MetforminPrescription"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#BalancedDiet"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#Case6",
+        "@type": [
+            "http://project-wold.fr/schema#CaseReport"
+        ],
+        "http://project-wold.fr/schema#hasPatient": [
+            {
+                "@id": "http://project-wold.fr/patients/data#Patient6"
+            }
+        ],
+        "http://project-wold.fr/schema#hasClinicalExamination": [
+            {
+                "@id": "http://project-wold.fr/case_reports/data#P6CE"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorMichu"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTherapy": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#TherapeuticEducation"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#BalancedDiet"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#PhysicalExercice"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#Case7",
+        "@type": [
+            "http://project-wold.fr/schema#CaseReport"
+        ],
+        "http://project-wold.fr/schema#hasPatient": [
+            {
+                "@id": "http://project-wold.fr/patients/data#Patient7"
+            }
+        ],
+        "http://project-wold.fr/schema#hasClinicalExamination": [
+            {
+                "@id": "http://project-wold.fr/case_reports/data#P7CE"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorLopez"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTherapy": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#AmoxicillinPrescription"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#Case8",
+        "@type": [
+            "http://project-wold.fr/schema#CaseReport"
+        ],
+        "http://project-wold.fr/schema#hasPatient": [
+            {
+                "@id": "http://project-wold.fr/patients/data#Patient8"
+            }
+        ],
+        "http://project-wold.fr/schema#hasClinicalExamination": [
+            {
+                "@id": "http://project-wold.fr/case_reports/data#P8CE"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorLopez"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTherapy": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#Case9",
+        "@type": [
+            "http://project-wold.fr/schema#CaseReport"
+        ],
+        "http://project-wold.fr/schema#hasPatient": [
+            {
+                "@id": "http://project-wold.fr/patients/data#Patient9"
+            }
+        ],
+        "http://project-wold.fr/schema#hasClinicalExamination": [
+            {
+                "@id": "http://project-wold.fr/case_reports/data#P9CE"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorSmith"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTherapy": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#P10CE",
+        "@type": [
+            "http://project-wold.fr/schema#ClinicalExamination"
+        ],
+        "http://project-wold.fr/schema#hasSignOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Cough"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fever"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fatigue"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Chills"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#MuscularPain"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDiagnosis": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Flu"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorMichu"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#P1CE",
+        "@type": [
+            "http://project-wold.fr/schema#ClinicalExamination"
+        ],
+        "http://project-wold.fr/schema#hasSignOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fever"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Cough"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Chills"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fatigue"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDiagnosis": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Flu"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTest": [
+            {
+                "@id": "http://project-wold.fr/medical_tests/data#CovidTest"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorMichu"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#P2CE",
+        "@type": [
+            "http://project-wold.fr/schema#ClinicalExamination"
+        ],
+        "http://project-wold.fr/schema#hasSignOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fever"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Cough"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Chills"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fatigue"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDiagnosis": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Covid"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTest": [
+            {
+                "@id": "http://project-wold.fr/medical_tests/data#CovidTest"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorSmith"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#P3CE",
+        "@type": [
+            "http://project-wold.fr/schema#ClinicalExamination"
+        ],
+        "http://project-wold.fr/schema#hasSignOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fever"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Cough"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fatigue"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#ChestPain"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#ShortnessBreath"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Nausea"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDiagnosis": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Pneumonia"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTest": [
+            {
+                "@id": "http://project-wold.fr/medical_tests/data#PulmonaryRadiography"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorDoe"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#P4CE",
+        "@type": [
+            "http://project-wold.fr/schema#ClinicalExamination"
+        ],
+        "http://project-wold.fr/schema#hasSignOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Cough"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#SoreThroat"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDiagnosis": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Bronchitis"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorLopez"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#P5CE",
+        "@type": [
+            "http://project-wold.fr/schema#ClinicalExamination"
+        ],
+        "http://project-wold.fr/schema#hasSignOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Polyphagia"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Polyuria"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Polydipsia"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#DrySkin"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDiagnosis": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Diabetes"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTest": [
+            {
+                "@id": "http://project-wold.fr/medical_tests/data#BloodTest"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorLopez"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#P6CE",
+        "@type": [
+            "http://project-wold.fr/schema#ClinicalExamination"
+        ],
+        "http://project-wold.fr/schema#hasSignOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#ShortnessBreath"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#ChestPain"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Nausea"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Headache"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDiagnosis": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Hypertension"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTest": [
+            {
+                "@id": "http://project-wold.fr/medical_tests/data#BloodPressureMesurement"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorMichu"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#P7CE",
+        "@type": [
+            "http://project-wold.fr/schema#ClinicalExamination"
+        ],
+        "http://project-wold.fr/schema#hasSignOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fever"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Cough"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#ShortnessBreath"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fatigue"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTest": [
+            {
+                "@id": "http://project-wold.fr/medical_tests/data#CovidTest"
+            },
+            {
+                "@id": "http://project-wold.fr/medical_tests/data#PulmonaryRadiography"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDiagnosis": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Pneumonia"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorLopez"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#P8CE",
+        "@type": [
+            "http://project-wold.fr/schema#ClinicalExamination"
+        ],
+        "http://project-wold.fr/schema#hasSignOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Cough"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fever"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fatigue"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Chills"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#LossOfSmell"
+            }
+        ],
+        "http://project-wold.fr/schema#hasMedicalTest": [
+            {
+                "@id": "http://project-wold.fr/medical_tests/data#CovidTest"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDiagnosis": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Covid"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorLopez"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/case_reports/data#P9CE",
+        "@type": [
+            "http://project-wold.fr/schema#ClinicalExamination"
+        ],
+        "http://project-wold.fr/schema#hasSignOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Cough"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fatigue"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDiagnosis": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Bronchitis"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDoctor": [
+            {
+                "@id": "http://project-wold.fr/doctors/data#DoctorSmith"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/diseases/data#Bronchitis",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalCondition"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Bronchitis",
+                "@language": "en"
+            },
+            {
+                "@value": "Bronchite",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#signOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Cough"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#SoreThroat"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fatigue"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Headache"
+            }
+        ],
+        "http://project-wold.fr/schema#possibleTreatment": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/diseases/data#Covid",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalCondition"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Covid",
+                "@language": "en"
+            },
+            {
+                "@value": "Covid",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#signOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fever"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Cough"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fatigue"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Chills"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#ShortnessBreath"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Headache"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#LossOfSmell"
+            }
+        ],
+        "http://project-wold.fr/schema#possibleTreatment": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/diseases/data#Diabetes",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalCondition"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Diabetes",
+                "@language": "en"
+            },
+            {
+                "@value": "Diab\u00e8te",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#signOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Polyphagia"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Polyuria"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Polydipsia"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#DrySkin"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#WeightLoss"
+            }
+        ],
+        "http://project-wold.fr/schema#possibleTreatment": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#MetforminPrescription"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#InsulinPrescription"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#TherapeuticEducation"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#BalancedDiet"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#PhysicalExercice"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/diseases/data#Flu",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalCondition"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Flue",
+                "@language": "en"
+            },
+            {
+                "@value": "Grippe",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#signOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fever"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Cough"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fatigue"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#ArticularPain"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#MuscularPain"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Chills"
+            }
+        ],
+        "http://project-wold.fr/schema#possibleTreatment": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#IbuprofenePrescription"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/diseases/data#Hypertension",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalCondition"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Hypertension",
+                "@language": "en"
+            },
+            {
+                "@value": "Hypertension",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#signOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Headache"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Nausea"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Dizziness"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Anxiety"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#BlurredVision"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#ChestPain"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#ShortnessBreath"
+            }
+        ],
+        "http://project-wold.fr/schema#possibleTreatment": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#TherapeuticEducation"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#BalancedDiet"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#PhysicalExercice"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/diseases/data#Pneumonia",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalCondition"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Pneumonia",
+                "@language": "en"
+            },
+            {
+                "@value": "Pneumonie",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#signOrSymptom": [
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fever"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Cough"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Fatigue"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#ChestPain"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#ShortnessBreath"
+            },
+            {
+                "@id": "http://project-wold.fr/symptoms/data#Nausea"
+            }
+        ],
+        "http://project-wold.fr/schema#possibleTreatment": [
+            {
+                "@id": "http://project-wold.fr/treatments/data#AmoxicillinPrescription"
+            },
+            {
+                "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/doctors/data#DoctorDoe",
+        "@type": [
+            "http://project-wold.fr/schema#Doctor"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "female"
+            }
+        ],
+        "http://project-wold.fr/schema#familyName": [
+            {
+                "@value": "Jane"
+            }
+        ],
+        "http://project-wold.fr/schema#givenName": [
+            {
+                "@value": "Doe"
+            }
+        ],
+        "http://project-wold.fr/schema#jobTitle": [
+            {
+                "@value": "Endocrinologist",
+                "@language": "en"
+            },
+            {
+                "@value": "Endocrinologue",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/doctors/data#DoctorLopez",
+        "@type": [
+            "http://project-wold.fr/schema#Doctor"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "male"
+            }
+        ],
+        "http://project-wold.fr/schema#familyName": [
+            {
+                "@value": "Lopez"
+            }
+        ],
+        "http://project-wold.fr/schema#givenName": [
+            {
+                "@value": "Carlos"
+            }
+        ],
+        "http://project-wold.fr/schema#jobTitle": [
+            {
+                "@value": "Pulmonologist",
+                "@language": "en"
+            },
+            {
+                "@value": "Pneumologue",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/doctors/data#DoctorMichu",
+        "@type": [
+            "http://project-wold.fr/schema#Doctor"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "male"
+            }
+        ],
+        "http://project-wold.fr/schema#familyName": [
+            {
+                "@value": "Michu"
+            }
+        ],
+        "http://project-wold.fr/schema#givenName": [
+            {
+                "@value": "Pierre"
+            }
+        ],
+        "http://project-wold.fr/schema#jobTitle": [
+            {
+                "@value": "Family Physician",
+                "@language": "en"
+            },
+            {
+                "@value": "M\u00e9decin G\u00e9n\u00e9raliste",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/doctors/data#DoctorSmith",
+        "@type": [
+            "http://project-wold.fr/schema#Doctor"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "female"
+            }
+        ],
+        "http://project-wold.fr/schema#familyName": [
+            {
+                "@value": "Smith"
+            }
+        ],
+        "http://project-wold.fr/schema#givenName": [
+            {
+                "@value": "Jane"
+            }
+        ],
+        "http://project-wold.fr/schema#jobTitle": [
+            {
+                "@value": "Pediatrician",
+                "@language": "en"
+            },
+            {
+                "@value": "P\u00e9diatre",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/drugs/data#Amoxicillin",
+        "@type": [
+            "http://project-wold.fr/schema#Drug"
+        ],
+        "http://project-wold.fr/schema#activeIngredient": [
+            {
+                "@value": "Amoxicillin",
+                "@language": "en"
+            },
+            {
+                "@value": "Amoxicilline",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#drugUnit": [
+            {
+                "@value": "1g tablet",
+                "@language": "en"
+            },
+            {
+                "@value": "500mg tablet",
+                "@language": "en"
+            },
+            {
+                "@value": "1g comprim\u00e9 ",
+                "@language": "en"
+            },
+            {
+                "@value": "500mg  comprim\u00e9 ",
+                "@language": "en"
+            }
+        ],
+        "http://project-wold.fr/schema#dosageForm": [
+            {
+                "@value": "tablet",
+                "@language": "en"
+            },
+            {
+                "@value": "comprim\u00e9",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/drugs/data#Ibuprofene",
+        "@type": [
+            "http://project-wold.fr/schema#Drug"
+        ],
+        "http://project-wold.fr/schema#activeIngredient": [
+            {
+                "@value": "Ibuprofene"
+            }
+        ],
+        "http://project-wold.fr/schema#drugUnit": [
+            {
+                "@value": "400mg tablet",
+                "@language": "en"
+            },
+            {
+                "@value": "200mg tablet",
+                "@language": "en"
+            },
+            {
+                "@value": "200mg comprim\u00e9",
+                "@language": "en"
+            },
+            {
+                "@value": "400mg comprim\u00e9",
+                "@language": "en"
+            }
+        ],
+        "http://project-wold.fr/schema#dosageForm": [
+            {
+                "@value": "tablet",
+                "@language": "en"
+            },
+            {
+                "@value": "comprim\u00e9",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/drugs/data#Insulin",
+        "@type": [
+            "http://project-wold.fr/schema#Drug"
+        ],
+        "http://project-wold.fr/schema#activeIngredient": [
+            {
+                "@value": "Insulin",
+                "@language": "en"
+            },
+            {
+                "@value": "Insuline",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#drugUnit": [
+            {
+                "@value": "UI"
+            }
+        ],
+        "http://project-wold.fr/schema#dosageForm": [
+            {
+                "@value": "injection",
+                "@language": "en"
+            },
+            {
+                "@value": "injectable",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/drugs/data#Metformin",
+        "@type": [
+            "http://project-wold.fr/schema#Drug"
+        ],
+        "http://project-wold.fr/schema#activeIngredient": [
+            {
+                "@value": "Metformin",
+                "@language": "en"
+            },
+            {
+                "@value": "Metformine",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#drugUnit": [
+            {
+                "@value": "500mg tablet",
+                "@language": "en"
+            },
+            {
+                "@value": "500mg  comprim\u00e9 ",
+                "@language": "en"
+            }
+        ],
+        "http://project-wold.fr/schema#dosageForm": [
+            {
+                "@value": "tablet",
+                "@language": "en"
+            },
+            {
+                "@value": "comprim\u00e9",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/drugs/data#Paracetamol",
+        "@type": [
+            "http://project-wold.fr/schema#Drug"
+        ],
+        "http://project-wold.fr/schema#activeIngredient": [
+            {
+                "@value": "Paracetamol"
+            }
+        ],
+        "http://project-wold.fr/schema#drugUnit": [
+            {
+                "@value": "1g tablet",
+                "@language": "en"
+            },
+            {
+                "@value": "500mg tablet",
+                "@language": "en"
+            },
+            {
+                "@value": "1g comprim\u00e9 ",
+                "@language": "en"
+            },
+            {
+                "@value": "500mg  comprim\u00e9",
+                "@language": "en"
+            }
+        ],
+        "http://project-wold.fr/schema#dosageForm": [
+            {
+                "@value": "tablet",
+                "@language": "en"
+            },
+            {
+                "@value": "comprim\u00e9",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/medical_tests/data#BloodPressureMesurement",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalTest"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Blood pressure mesurement",
+                "@language": "en"
+            },
+            {
+                "@value": "Mesure de la pression art\u00e9rielle",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#usedToDiagnose": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Hypertension"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/medical_tests/data#BloodTest",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalTest"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Blood test",
+                "@language": "en"
+            },
+            {
+                "@value": "Prise de sang",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#usedToDiagnose": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Diabetes"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/medical_tests/data#CovidTest",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalTest"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Covid test",
+                "@language": "en"
+            },
+            {
+                "@value": "Test Covid",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#usedToDiagnose": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Covid"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/medical_tests/data#PulmonaryRadiography",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalTest"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Pulmonary radiography",
+                "@language": "en"
+            },
+            {
+                "@value": "Radiographie pulmonaire",
+                "@language": "fr"
+            }
+        ],
+        "http://project-wold.fr/schema#usedToDiagnose": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Pneumonia"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/patients/data#Patient1",
+        "@type": [
+            "http://project-wold.fr/schema#Patient"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "male"
+            }
+        ],
+        "http://project-wold.fr/schema#birthDate": [
+            {
+                "@value": "1960-05-20",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        ],
+        "http://project-wold.fr/schema#healthCondition": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Diabetes"
+            }
+        ],
+        "http://project-wold.fr/schema#weight": [
+            {
+                "@id": "_:b0"
+            }
+        ],
+        "http://project-wold.fr/schema#height": [
+            {
+                "@id": "_:b1"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/patients/data#Patient10",
+        "@type": [
+            "http://project-wold.fr/schema#Patient"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "female"
+            }
+        ],
+        "http://project-wold.fr/schema#birthDate": [
+            {
+                "@value": "1978-09-24",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        ],
+        "http://project-wold.fr/schema#healthCondition": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Hypertension"
+            }
+        ],
+        "http://project-wold.fr/schema#weight": [
+            {
+                "@id": "_:b18"
+            }
+        ],
+        "http://project-wold.fr/schema#height": [
+            {
+                "@id": "_:b19"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/patients/data#Patient2",
+        "@type": [
+            "http://project-wold.fr/schema#Patient"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "female"
+            }
+        ],
+        "http://project-wold.fr/schema#birthDate": [
+            {
+                "@value": "1970-04-10",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        ],
+        "http://project-wold.fr/schema#weight": [
+            {
+                "@id": "_:b2"
+            }
+        ],
+        "http://project-wold.fr/schema#height": [
+            {
+                "@id": "_:b3"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/patients/data#Patient3",
+        "@type": [
+            "http://project-wold.fr/schema#Patient"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "male"
+            }
+        ],
+        "http://project-wold.fr/schema#birthDate": [
+            {
+                "@value": "1985-02-28",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        ],
+        "http://project-wold.fr/schema#weight": [
+            {
+                "@id": "_:b4"
+            }
+        ],
+        "http://project-wold.fr/schema#height": [
+            {
+                "@id": "_:b5"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/patients/data#Patient4",
+        "@type": [
+            "http://project-wold.fr/schema#Patient"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "female",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#birthDate": [
+            {
+                "@value": "1975-08-15",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        ],
+        "http://project-wold.fr/schema#healthCondition": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Hypertension"
+            }
+        ],
+        "http://project-wold.fr/schema#weight": [
+            {
+                "@id": "_:b6"
+            }
+        ],
+        "http://project-wold.fr/schema#height": [
+            {
+                "@id": "_:b7"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/patients/data#Patient5",
+        "@type": [
+            "http://project-wold.fr/schema#Patient"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "male"
+            }
+        ],
+        "http://project-wold.fr/schema#birthDate": [
+            {
+                "@value": "1965-12-05",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        ],
+        "http://project-wold.fr/schema#healthCondition": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Diabetes"
+            }
+        ],
+        "http://project-wold.fr/schema#weight": [
+            {
+                "@id": "_:b8"
+            }
+        ],
+        "http://project-wold.fr/schema#height": [
+            {
+                "@id": "_:b9"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/patients/data#Patient6",
+        "@type": [
+            "http://project-wold.fr/schema#Patient"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "female"
+            }
+        ],
+        "http://project-wold.fr/schema#birthDate": [
+            {
+                "@value": "1980-03-30",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        ],
+        "http://project-wold.fr/schema#hasDiagnosis": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Hypertension"
+            }
+        ],
+        "http://project-wold.fr/schema#weight": [
+            {
+                "@id": "_:b10"
+            }
+        ],
+        "http://project-wold.fr/schema#height": [
+            {
+                "@id": "_:b11"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/patients/data#Patient7",
+        "@type": [
+            "http://project-wold.fr/schema#Patient"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "male"
+            }
+        ],
+        "http://project-wold.fr/schema#birthDate": [
+            {
+                "@value": "1955-07-25",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        ],
+        "http://project-wold.fr/schema#weight": [
+            {
+                "@id": "_:b12"
+            }
+        ],
+        "http://project-wold.fr/schema#height": [
+            {
+                "@id": "_:b13"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/patients/data#Patient8",
+        "@type": [
+            "http://project-wold.fr/schema#Patient"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "female"
+            }
+        ],
+        "http://project-wold.fr/schema#birthDate": [
+            {
+                "@value": "1990-11-10",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        ],
+        "http://project-wold.fr/schema#healthCondition": [
+            {
+                "@id": "http://project-wold.fr/diseases/data#Diabetes"
+            }
+        ],
+        "http://project-wold.fr/schema#weight": [
+            {
+                "@id": "_:b14"
+            }
+        ],
+        "http://project-wold.fr/schema#height": [
+            {
+                "@id": "_:b15"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/patients/data#Patient9",
+        "@type": [
+            "http://project-wold.fr/schema#Patient"
+        ],
+        "http://project-wold.fr/schema#gender": [
+            {
+                "@value": "male"
+            }
+        ],
+        "http://project-wold.fr/schema#birthDate": [
+            {
+                "@value": "2010-06-12",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        ],
+        "http://project-wold.fr/schema#weight": [
+            {
+                "@id": "_:b16"
+            }
+        ],
+        "http://project-wold.fr/schema#height": [
+            {
+                "@id": "_:b17"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/schema#CaseReport"
+    },
+    {
+        "@id": "http://project-wold.fr/schema#ClinicalExamination"
+    },
+    {
+        "@id": "http://project-wold.fr/schema#Doctor"
+    },
+    {
+        "@id": "http://project-wold.fr/schema#Drug"
+    },
+    {
+        "@id": "http://project-wold.fr/schema#MedicalCondition"
+    },
+    {
+        "@id": "http://project-wold.fr/schema#MedicalSignOrSymptom"
+    },
+    {
+        "@id": "http://project-wold.fr/schema#MedicalTest"
+    },
+    {
+        "@id": "http://project-wold.fr/schema#MedicalTherapy"
+    },
+    {
+        "@id": "http://project-wold.fr/schema#Patient"
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#Anxiety",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Anxiety",
+                "@language": "en"
+            },
+            {
+                "@value": "Anxi\u00e9t\u00e9",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#ArticularPain",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Articular pain",
+                "@language": "en"
+            },
+            {
+                "@value": "Douleur articulaire",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#BlurredVision",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Blurred vision",
+                "@language": "en"
+            },
+            {
+                "@value": "Vision trouble",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#ChestPain",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Chest pain",
+                "@language": "en"
+            },
+            {
+                "@value": "Douleur thoracique",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#Chills",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Chills",
+                "@language": "en"
+            },
+            {
+                "@value": "Frissons",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#Cough",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Cough",
+                "@language": "en"
+            },
+            {
+                "@value": "Toux",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#Dizziness",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Dizziness",
+                "@language": "en"
+            },
+            {
+                "@value": "Vertiges",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#DrySkin",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Dry skin",
+                "@language": "en"
+            },
+            {
+                "@value": "Peau s\u00e8che",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#Fatigue",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Fatigue",
+                "@language": "en"
+            },
+            {
+                "@value": "Fatigue",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#Fever",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Fever",
+                "@language": "en"
+            },
+            {
+                "@value": "Fi\u00e8vre",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#Headache",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Headache",
+                "@language": "en"
+            },
+            {
+                "@value": "Mal de t\u00eate",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#LossOfSmell",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Loss of smell",
+                "@language": "en"
+            },
+            {
+                "@value": "Perte d'odorat",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#MuscularPain",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Muscular pain",
+                "@language": "en"
+            },
+            {
+                "@value": "Douleur musculaire",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#Nausea",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Nausea",
+                "@language": "en"
+            },
+            {
+                "@value": "Naus\u00e9e",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#Polydipsia",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Polydipsia",
+                "@language": "en"
+            },
+            {
+                "@value": "Polydipsie",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#Polyphagia",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Polyphagia",
+                "@language": "en"
+            },
+            {
+                "@value": "Polyphagie",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#Polyuria",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Polyuria",
+                "@language": "en"
+            },
+            {
+                "@value": "Polyurie",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#ShortnessBreath",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Shortness of breath",
+                "@language": "en"
+            },
+            {
+                "@value": "Essouflement",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#SoreThroat",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Sore throat",
+                "@language": "en"
+            },
+            {
+                "@value": "Mal de gorge",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/symptoms/data#WeightLoss",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalSignOrSymptom"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Weight loss",
+                "@language": "en"
+            },
+            {
+                "@value": "Perte de poid",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/treatments/data#AmoxicillinPrescription",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalTherapy"
+        ],
+        "http://project-wold.fr/schema#drug": [
+            {
+                "@id": "http://project-wold.fr/drugs/data#Amoxicillin"
+            }
+        ],
+        "http://project-wold.fr/schema#doseSchedule": [
+            {
+                "@id": "_:b22"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/treatments/data#BalancedDiet",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalTherapy"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Balanced diet",
+                "@language": "en"
+            },
+            {
+                "@value": "R\u00e9gime alimentaire \u00e9quilibr\u00e9",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/treatments/data#Ibuprofene"
+    },
+    {
+        "@id": "http://project-wold.fr/treatments/data#IbuprofenePrescription",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalTherapy"
+        ],
+        "http://project-wold.fr/schema#drug": [
+            {
+                "@id": "http://project-wold.fr/drugs/data#Ibuprofene"
+            }
+        ],
+        "http://project-wold.fr/schema#doseSchedule": [
+            {
+                "@id": "_:b21"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/treatments/data#InsulinPrescription",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalTherapy"
+        ],
+        "http://project-wold.fr/schema#drug": [
+            {
+                "@id": "http://project-wold.fr/drugs/data#Insulin"
+            }
+        ],
+        "http://project-wold.fr/schema#doseSchedule": [
+            {
+                "@id": "_:b24"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/treatments/data#MetforminPrescription",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalTherapy"
+        ],
+        "http://project-wold.fr/schema#drug": [
+            {
+                "@id": "http://project-wold.fr/drugs/data#Metformin"
+            }
+        ],
+        "http://project-wold.fr/schema#doseSchedule": [
+            {
+                "@id": "_:b23"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/treatments/data#ParacetamolPrescription",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalTherapy"
+        ],
+        "http://project-wold.fr/schema#drug": [
+            {
+                "@id": "http://project-wold.fr/drugs/data#Paracetamol"
+            }
+        ],
+        "http://project-wold.fr/schema#doseSchedule": [
+            {
+                "@id": "_:b20"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/treatments/data#PhysicalExercice",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalTherapy"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Physical Exercice",
+                "@language": "en"
+            },
+            {
+                "@value": "Exercice Physique",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "http://project-wold.fr/treatments/data#TherapeuticEducation",
+        "@type": [
+            "http://project-wold.fr/schema#MedicalTherapy"
+        ],
+        "http://project-wold.fr/schema#name": [
+            {
+                "@value": "Therapeutic Education",
+                "@language": "en"
+            },
+            {
+                "@value": "Education th\u00e9rapeutique",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "_:b0",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "80",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b1",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "180",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b10",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "58",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b11",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "159",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b12",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "85",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b13",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "179",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b14",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "54",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b15",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "163",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b16",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "54",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b17",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "154",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b18",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "62",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b19",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "168",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b2",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "65",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b20",
+        "http://project-wold.fr/schema#doseUnit": [
+            {
+                "@value": "mg"
+            }
+        ],
+        "http://project-wold.fr/schema#doseValue": [
+            {
+                "@value": "1000",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#frequency": [
+            {
+                "@value": "every 6 hours",
+                "@language": "en"
+            },
+            {
+                "@value": "toutes les 6 heures",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "_:b21",
+        "http://project-wold.fr/schema#doseUnit": [
+            {
+                "@value": "mg"
+            }
+        ],
+        "http://project-wold.fr/schema#doseValue": [
+            {
+                "@value": "1000",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#frequency": [
+            {
+                "@value": "every 8 hours",
+                "@language": "en"
+            },
+            {
+                "@value": "toutes les 8 heures",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "_:b22",
+        "http://project-wold.fr/schema#doseUnit": [
+            {
+                "@value": "mg"
+            }
+        ],
+        "http://project-wold.fr/schema#doseValue": [
+            {
+                "@value": "1000",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#frequency": [
+            {
+                "@value": "morning and night",
+                "@language": "en"
+            },
+            {
+                "@value": "matin et soir",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "_:b23",
+        "http://project-wold.fr/schema#doseUnit": [
+            {
+                "@value": "mg"
+            }
+        ],
+        "http://project-wold.fr/schema#doseValue": [
+            {
+                "@value": "500",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#frequency": [
+            {
+                "@value": "morning and night",
+                "@language": "en"
+            },
+            {
+                "@value": "matin et soir",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "_:b24",
+        "http://project-wold.fr/schema#doseUnit": [
+            {
+                "@value": "UI"
+            }
+        ],
+        "http://project-wold.fr/schema#doseValue": [
+            {
+                "@value": "1",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#frequency": [
+            {
+                "@value": "0.2 UI / kg",
+                "@language": "en"
+            },
+            {
+                "@value": "0.2 UI / kg",
+                "@language": "fr"
+            }
+        ]
+    },
+    {
+        "@id": "_:b3",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "165",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b4",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "90",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b5",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "175",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b6",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "60"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b7",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "162",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    },
+    {
+        "@id": "_:b8",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "78",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "kg"
+            }
+        ]
+    },
+    {
+        "@id": "_:b9",
+        "http://project-wold.fr/schema#value": [
+            {
+                "@value": "182",
+                "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt"
+            }
+        ],
+        "http://project-wold.fr/schema#unitText": [
+            {
+                "@value": "cm"
+            }
+        ]
+    }
+]

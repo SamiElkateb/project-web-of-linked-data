@@ -12,7 +12,7 @@ Ainsi, nous avons défini une classe intitulée "rapport de cas" (CaseReport) qu
 un médecin, un examen clinique et une thérapie.
 Pour ce faire, nous avons introduit les propriétés hasClinicalExamination (a un examen clinique), 
 hasDoctor, hasPatient et hasMedicalTherapy (a un traitement médical). 
-Nous avons choisi de spécifier uniquement la range de ces propriétés, car elles peuvent s'appliquer à de nombreux domaines. 
+Nous avons choisi de spécifier uniquement l'étendu (le range) de ces propriétés, car elles peuvent s'appliquer à de nombreux domaines. 
 Par exemple, nous pouvons lier un patient à un examen clinique dont il est le sujet ou à un médecin qui le prend en charge.
 
 Dans notre modèle, nous avons intégré les classes "patient" et "traitement médical" (Medical Therapy) de l'ontologie de schema.org.

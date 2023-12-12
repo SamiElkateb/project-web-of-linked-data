@@ -35,7 +35,6 @@ To do :
 
 ## Property restrictions
 - restriction of property values
-- restriction of some property values
 - restriction to a single property value
 - restriction of a property value to its subject
 - cardinality restriction
@@ -47,3 +46,4 @@ Done :
 - owl:inverseOf (:hasDoctor and :hasPatient)
 - owl:IrreflexiveProperty (:hasPatient a patient cannot be the patient of itself but a Doctor technically can diagnose itself)
 - owl:differentFrom (:doseUnit and :doseValue)
+- restriction of some property values (:CaseReport must be associated to at least one :ClinicalExamination)

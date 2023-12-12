@@ -30,8 +30,6 @@ To do :
 - disjoint union : owl:disjointUnionOf
 
 ## Equivalences and alignements
-- owl:equivalentClass
-- owl:equivalentProperty
 - owl:sameAs
 - owl:differentFrom
 - owl:hasKey
@@ -44,6 +42,8 @@ To do :
 - cardinality restriction
 
 Done :
+- owl:equivalentClass (done during previous project)
+- owl:equivalentProperty (done during previous project)
 - owl:AsymmetricProperty (:hasDoctor and :hasPatient)
 - owl:inverseOf (:hasDoctor and :hasPatient)
 - owl:IrreflexiveProperty (:hasPatient a patient cannot be the patient of itself but a Doctor technically can diagnose itself)

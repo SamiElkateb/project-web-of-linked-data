@@ -46,4 +46,6 @@ Done :
 - owl:inverseOf (:hasDoctor and :hasPatient)
 - owl:IrreflexiveProperty (:hasPatient a patient cannot be the patient of itself but a Doctor technically can diagnose itself)
 - owl:differentFrom (:doseUnit and :doseValue)
-- restriction of some property values (:CaseReport must be associated to at least one :ClinicalExamination)
+- restriction of some property values #1 (:CaseReport must be associated to at least one :ClinicalExamination)
+- restriction of some property values #2 (:Patient must be associated with at least one :CaseReport)
+

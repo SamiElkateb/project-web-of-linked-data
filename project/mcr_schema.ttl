@@ -27,7 +27,11 @@
   owl:equivalentClass s:MedicalTherapy .
 
 :Patient a owl:Class ;
-  owl:equivalentClass s:Patient .
+  owl:equivalentClass s:Patient ;
+  rdfs:subClassOf [ 
+      a owl:Restriction ; 
+      owl:onProperty :hasPatient ;
+      owl:someValuesFrom :CaseReport ] .
 
 :MedicalTest a owl:Class ;
   owl:equivalentClass s:MedicalTest .

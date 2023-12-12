@@ -1,48 +1,16 @@
 # Projet
-https://lov.okfn.org/dataset/lov/  
-https://lov.linkeddata.es/dataset/lov/vocabs/medred  
-https://lov.linkeddata.es/dataset/lov/vocabs/obo  
 
-## Link to written report 
-https://docs.google.com/document/d/1QEQe_vPuW1t35e2oRJi8rssv7_0DQiK1DA-xBmAOg9w/edit?usp=sharing
+Improve and refine your previous home work. 
+Replace the RDFS schema(s) by OWL ontologies,
+introduce SKOS thesaurus (i) as and when it is relevant, add SHACL constraints to your RDF graph(s).
 
-##  Section 1
-Propose an RDFS model for describing medical case reports.   
-You may reuse existing ontologies and complement them with your own schema (mcr_schema.ttl).
-- https://en.wikipedia.org/wiki/Case_report
-- https://fr.wikipedia.org/wiki/Observation_m%C3%A9dicale
-- https://fr.wikipedia.org/wiki/Examen_clinique
-- https://fr.wikipedia.org/wiki/Examen_compl%C3%A9mentaire
+Experiment and explain SPARQL querying with OWL entailment,
+consistency checking wrt an OWL ontology, and SHACL constraint checking using short simple extracts taken from your project.
 
-##  Section 2
-Write a short report (mcr_report.pdf) presenting in natural language your modeling choices.
-
-##  Section 3
-Write an RDF graph (mcr_data_.ttl) describing medical case reports of a few people.  
-- Describe the data in one or several RDF graphs, stored in a file mcr_data.ttl or files mcr_data_xxx.ttl. 
-  Possibly link your data to RDF graphs from the Linked Open Data (e.g. DBpedia).
-- Describe your model in one or several RDFS vocabulary(ies), stored in file(s) mcr_schema.ttl or mcr_schema_xxx.ttl. 
-  Possibly reuse exististing vocabularies from the Web of Linked Data (e.g. FOAF, SOSA) and complete it with your own vocabulary.
-- Provide a version of your RDF graph in JSON (data.json)
-- Write an HTML page (data_presentation.html) presenting (part of) your data to human users 
-  (if you are not fluent with HTML do not spend too much time writing a complicated stylesheet) and containing (part of) your RDF graph in RDFa.
-
-##  Section 4
-Write 10 interesting SPARQL queries implementing competency questions dealing with case report. 
-Store all of them in a single file mcr_query.txt where, for each one, 
-indicate in natural language the competency question it implements.
+Write a report 
+1) explaining the rationale of your model and 
+2) explaining OWL entailment,
+consistency checking and SHACL constraint checking. 
 
 
-Upload a single zip file containing your entire work.
-
-
-
-## SKOS?
-https://www.w3.org/2001/sw/wiki/SKOS/Datasets#Drug_Administration_Forms  
-Drug Administration Forms  
-Clinical drug administration forms mapped to SNOMED CT and FDA codes: http://www.agfa.com/w3c/2009/drugAdministrationForms#  
-
-
-# vocabulaires
-https://bioportal.bioontology.org/
-https://bioportal.bioontology.org/ontologies/NCBITAXON
+Prepare an individual oral defense

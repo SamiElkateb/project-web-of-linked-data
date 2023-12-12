@@ -1,0 +1,152 @@
+@prefix : <http://project-wold.fr/schema#> .
+
+@prefix patients: <http://project-wold.fr/patients/data#> .
+@prefix reports: <http://project-wold.fr/case_reports/data#> .
+@prefix treatments: <http://project-wold.fr/treatments/data#> .
+@prefix symptoms: <http://project-wold.fr/symptoms/data#> .
+@prefix drugs: <http://project-wold.fr/drugs/data#> .
+@prefix tests: <http://project-wold.fr/medical_tests/data#> .
+@prefix doctors: <http://project-wold.fr/doctors/data#> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix diseases: <http://project-wold.fr/diseases/data#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+reports:P1CE a :ClinicalExamination ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:Chills, symptoms:Fatigue ;
+  :hasDiagnosis diseases:Flu ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasDoctor doctors:DoctorMichu .
+
+reports:Case1 a :CaseReport ;
+  :hasPatient patients:Patient1 ;
+  :hasClinicalExamination reports:P1CE ;
+  :hasDoctor doctors:DoctorMichu ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .
+
+treatments:ParacetamolPrescription a :MedicalTherapy ;
+  :drug drugs:Paracetamol ;
+  :doseSchedule [
+    :doseUnit "mg" ;
+    :doseValue "1000"^^xsd:unsignedInt ;
+    :frequency "every 6 hours"@en, "toutes les 6 heures"@fr
+  ] .
+
+doctors:DoctorMichu a :Doctor ;
+  :gender "male" ;
+  :familyName "Michu";
+  :givenName "Pierre";
+  :jobTitle "Family Physician"@en, "Médecin Généraliste"@fr .
+
+patients:Patient1 a :Patient ;
+  :gender "male" ;
+  :birthDate "1960-05-20"^^xsd:date ;
+  :healthCondition diseases:Diabetes ;
+  :weight [ 
+    :value "80"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "180"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+tests:CovidTest a :MedicalTest ;
+  :name "Covid test"@en , "Test Covid"@fr ;
+  :usedToDiagnose diseases:Covid .
+
+diseases:Flu a :MedicalCondition ;
+        :name "Flue"@en , "Grippe"@fr ;
+        :signOrSymptom symptoms:Fever, symptoms:Cough, 
+                        symptoms:Fatigue, symptoms:ArticularPain ,
+                        symptoms:MuscularPain, symptoms:Chills ;
+        :possibleTreatment treatments:ParacetamolPrescription,
+                            treatments:IbuprofenePrescription .
+
+symptoms:Fever a :MedicalSignOrSymptom ;
+  :name "Fever"@en , "Fièvre"@fr .
+
+symptoms:Cough a :MedicalSignOrSymptom ;
+  :name "Cough"@en , "Toux"@fr .
+
+symptoms:Fatigue a :MedicalSignOrSymptom ;
+  :name "Fatigue"@en , "Fatigue"@fr .
+
+symptoms:Chills a :MedicalSignOrSymptom ;
+  :name "Chills"@en , "Frissons"@fr .
+
+symptoms:ArticularPain a :MedicalSignOrSymptom ;
+  :name "Articular pain"@en , "Douleur articulaire"@fr .
+
+symptoms:MuscularPain a :MedicalSignOrSymptom ;
+  :name "Muscular pain"@en , "Douleur musculaire"@fr .
+
+drugs:Paracetamol a :Drug ;
+  :activeIngredient "Paracetamol" ;
+  :drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé"@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .
+
+treatments:IbuprofenePrescription a :MedicalTherapy ;
+  :drug drugs:Ibuprofene ;
+  :doseSchedule [
+    :doseUnit "mg" ;
+    :doseValue "1000"^^xsd:unsignedInt ;
+    :frequency "every 8 hours"@en, "toutes les 8 heures"@fr
+  ] .
+
+
+
+diseases:Diabetes a :MedicalCondition ;
+        :name "Diabetes"@en , "Diabète"@fr ;
+        :signOrSymptom symptoms:Polyphagia, symptoms:Polyuria, 
+                        symptoms:Polydipsia, symptoms:DrySkin,
+                        symptoms:WeightLoss ;
+        :possibleTreatment treatments:MetforminPrescription,
+                            treatments:InsulinPrescription,
+                            treatments:TherapeuticEducation,
+                            treatments:BalancedDiet,
+                            treatments:PhysicalExercice .
+
+symptoms:WeightLoss a :MedicalSignOrSymptom ;
+  :name "Weight loss"@en , "Perte de poid"@fr .
+
+symptoms:DrySkin a :MedicalSignOrSymptom ;
+  :name "Dry skin"@en , "Peau sèche"@fr .
+
+symptoms:Polyphagia a :MedicalSignOrSymptom ; 
+  :name "Polyphagia"@en, "Polyphagie"@fr .
+
+symptoms:Polyuria a :MedicalSignOrSymptom ; 
+  :name "Polyuria"@en, "Polyurie"@fr .
+
+symptoms:Polydipsia a :MedicalSignOrSymptom ; 
+  :name "Polydipsia"@en, "Polydipsie"@fr .
+
+treatments:MetforminPrescription a :MedicalTherapy ;
+  :drug drugs:Metformin ;
+  :doseSchedule [
+    :doseUnit "mg" ;
+    :doseValue "500"^^xsd:unsignedInt ;
+    :frequency "morning and night"@en, "matin et soir"@fr
+  ] .
+
+treatments:InsulinPrescription a :MedicalTherapy ;
+  :drug drugs:Insulin ;
+  :doseSchedule [
+    :doseUnit "UI" ;
+    :doseValue "1"^^xsd:unsignedInt ;
+    :frequency "0.2 UI / kg"@en, "0.2 UI / kg"@fr
+  ] .
+
+treatments:TherapeuticEducation a :MedicalTherapy ;
+  :name "Therapeutic Education"@en, "Education thérapeutique"@fr .
+
+treatments:BalancedDiet a :MedicalTherapy ;
+  :name "Balanced diet"@en, "Régime alimentaire équilibré"@fr .
+
+treatments:PhysicalExercice a :MedicalTherapy ;
+  :name "Physical Exercice"@en, "Exercice Physique"@fr .

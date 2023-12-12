@@ -15,7 +15,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 
-diseases:Flu a :MedicalCondition ;
+diseases:Flu a :MedicalCondition,
+        skos:Concept ;
         :name "Flue"@en , "Grippe"@fr ;
         :signOrSymptom symptoms:Fever, symptoms:Cough, 
                         symptoms:Fatigue, symptoms:ArticularPain ,

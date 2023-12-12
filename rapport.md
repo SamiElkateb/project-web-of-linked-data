@@ -64,3 +64,9 @@ la fièvre et le mal de tête.
 De plus, nous avons sélectionné des requêtes
 nous permettant de mettre en pratique les différents concepts abordés en cours,
 notamment les unions, les optionals, les constructs et les Paths.
+
+
+
+$x_c, y_c$: position du centre  
+$s$: échelle  
+$a$: ratio  

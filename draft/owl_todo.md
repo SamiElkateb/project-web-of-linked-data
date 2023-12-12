@@ -1,6 +1,7 @@
 # Owl list of propert
 
 To do :
+- Transform gender into male or female (owl:disjointWith)
 
 ## List of properties
 - owl:ObjectProperty

@@ -141,14 +141,16 @@
   rdfs:comment "Associates a medical event or entity with a specific patient."@en,
                "Associe un événement médical ou une entité à un patient spécifique."@fr;
   rdfs:range :Patient ;
-  rdf:type owl:AsymmetricProperty .
+  rdf:type owl:AsymmetricProperty ;
+  owl:inverseOf :hasDoctor .
 
 :hasDoctor a owl:ObjectProperty;
   rdfs:label    "has doctor"@en, "a un médecin"@fr;
   rdfs:comment  "Links a medical case, examination, or event to the attending physician."@en,
                 "Relie un cas médical, un examen ou un événement à un médecin."@fr;
   rdfs:range :Doctor ;
-  rdfs:type owl:AsymmetricProperty .
+  rdfs:type owl:AsymmetricProperty ;
+  owl:inverseOf :hasPatient .
 
 :hasMedicalTherapy a owl:ObjectProperty;
   rdfs:label    "has medical therapy"@en, "a un traitement médical"@fr;

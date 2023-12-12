@@ -15,7 +15,6 @@ To do :
 - owl:ReflexiveProperty
 - owl:IrreflexiveProperty
 
-- owl:inverseOf
 - owl:propertyDisjointWith
 
 - owl:propertyChainAxiom
@@ -47,3 +46,4 @@ To do :
 
 Done :
 - owl:AsymmetricProperty (:hasDoctor and :hasPatient)
+- owl:inverseOf (:hasDoctor and :hasPatient)

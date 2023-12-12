@@ -48,10 +48,12 @@
   owl:equivalentProperty s:usedToDiagnose .
 
 :doseUnit a owl:DatatypeProperty ;
-  owl:equivalentProperty s:doseUnit .
+  owl:equivalentProperty s:doseUnit ;
+  owl:differentFrom :doseValue .
 
 :doseValue a owl:ObjectProperty ;
-  owl:equivalentProperty s:doseValue .
+  owl:equivalentProperty s:doseValue ;
+  owl:differentFrom :doseUnit . 
 
 :frequency a owl:DatatypeProperty ;
   owl:equivalentProperty s:frequency .

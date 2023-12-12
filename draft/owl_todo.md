@@ -31,7 +31,6 @@ To do :
 
 ## Equivalences and alignements
 - owl:sameAs
-- owl:differentFrom
 - owl:hasKey
 
 ## Property restrictions
@@ -47,3 +46,4 @@ Done :
 - owl:AsymmetricProperty (:hasDoctor and :hasPatient)
 - owl:inverseOf (:hasDoctor and :hasPatient)
 - owl:IrreflexiveProperty (:hasPatient a patient cannot be the patient of itself but a Doctor technically can diagnose itself)
+- owl:differentFrom (:doseUnit and :doseValue)

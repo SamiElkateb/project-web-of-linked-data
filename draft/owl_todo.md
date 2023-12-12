@@ -13,7 +13,6 @@ To do :
 - owl:propertyDisjointWith
 
 - owl:ReflexiveProperty
-- owl:IrreflexiveProperty
 
 - owl:propertyDisjointWith
 
@@ -47,3 +46,4 @@ To do :
 Done :
 - owl:AsymmetricProperty (:hasDoctor and :hasPatient)
 - owl:inverseOf (:hasDoctor and :hasPatient)
+- owl:IrreflexiveProperty (:hasPatient a patient cannot be the patient of itself but a Doctor technically can diagnose itself)

@@ -142,7 +142,8 @@
                "Associe un événement médical ou une entité à un patient spécifique."@fr;
   rdfs:range :Patient ;
   rdf:type owl:AsymmetricProperty ;
-  owl:inverseOf :hasDoctor .
+  owl:inverseOf :hasDoctor ;
+  rdf:type owl:IrreflexiveProperty .
 
 :hasDoctor a owl:ObjectProperty;
   rdfs:label    "has doctor"@en, "a un médecin"@fr;

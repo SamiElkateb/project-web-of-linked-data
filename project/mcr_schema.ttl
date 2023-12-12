@@ -47,22 +47,22 @@
 :usedToDiagnose a owl:ObjectProperty ;
   owl:equivalentProperty s:usedToDiagnose .
 
-:doseUnit a owl:ObjectProperty ;
+:doseUnit a owl:DatatypeProperty ;
   owl:equivalentProperty s:doseUnit .
 
 :doseValue a owl:ObjectProperty ;
   owl:equivalentProperty s:doseValue .
 
-:frequency a owl:ObjectProperty ;
+:frequency a owl:DatatypeProperty ;
   owl:equivalentProperty s:frequency .
 
-:activeIngredient a owl:ObjectProperty ;
+:activeIngredient a owl:DatatypeProperty ;
   owl:equivalentProperty s:activeIngredient .
 
-:drugUnit a owl:ObjectProperty ;
+:drugUnit a owl:DatatypeProperty ;
   owl:equivalentProperty s:drugUnit .
 
-:dosageForm a owl:ObjectProperty ;
+:dosageForm a owl:DatatypeProperty ;
   owl:equivalentProperty s:dosageForm .
 
 :drug a owl:ObjectProperty ;
@@ -71,7 +71,7 @@
 :doseSchedule a owl:ObjectProperty ;
   owl:equivalentProperty s:doseSchedule .
 
-:gender a owl:ObjectProperty ;
+:gender a owl:ObjectProperty ; # TODO: Enlever
   owl:equivalentProperty s:gender .
 
 :birthDate a owl:ObjectProperty ;
@@ -83,16 +83,16 @@
 :value a owl:ObjectProperty ;
   owl:equivalentProperty s:value .
 
-:unitText a owl:ObjectProperty ;
+:unitText a owl:DatatypeProperty ;
   owl:equivalentProperty s:unitText .
 
 :weight a owl:ObjectProperty ;
   owl:equivalentProperty s:weight .
 
-:familyName a owl:ObjectProperty ;
+:familyName a owl:DatatypeProperty ;
   owl:equivalentProperty s:familyName .
 
-:givenName a owl:ObjectProperty ;
+:givenName a owl:DatatypeProperty ;
   owl:equivalentProperty s:givenName .
 
 :jobTitle a owl:ObjectProperty ;
@@ -116,6 +116,7 @@
   rdfs:comment  "A health professional who practices medicine, which is concerned with promoting, maintaining or restoring health"@en,
                 "Professionnel de la santé titulaire d'un diplôme de docteur en médecine"@fr;
   rdfs:subClassOf :Person .
+
 
 :hasDiagnosis a owl:ObjectProperty;
   rdfs:label   "has diagnosis"@en, "a un diagnostic"@fr;

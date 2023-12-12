@@ -9,7 +9,6 @@ To do :
 - owl:AnnotationProperty (not important)
 
 - owl:SymmetricProperty
-- owl:AsymmetricProperty
 - owl:TransitiveProperty
 - owl:propertyDisjointWith
 
@@ -47,3 +46,4 @@ To do :
 - cardinality restriction
 
 Done :
+- owl:AsymmetricProperty (:hasDoctor and :hasPatient)

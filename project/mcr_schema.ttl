@@ -99,61 +99,61 @@
   owl:equivalentProperty s:jobTitle .
 
 # Schema étendu
-:CaseReport a rdfs:Class;
+:CaseReport a owl:Class;
   rdfs:label    "Case report"@en, "Observation médicale"@fr ;
   rdfs:comment  "detailed report of the symptoms, signs, diagnosis, treatment, and follow-up of an individual patient."@en,
                 "document créé par le médecin et contenant des informations recueillies lors de l'examen médical d'un patient."@fr ;
   rdfs:subClassOf :MedicalEntity .
 
-:ClinicalExamination a rdfs:Class;
+:ClinicalExamination a owl:Class;
   rdfs:label    "Clinical examination"@en, "Examen clinique"@fr ;
   rdfs:comment  "detailed report of the symptoms, signs, diagnosis, treatment, and follow-up of an individual patient."@en,
                 "L'examen clinique fait partie de l'examen médical ou psychologique qui permet au médecin ou aux infirmiers en pratique avancée de décrire l'état d'un patient"@fr ;
   rdfs:subClassOf :MedicalEntity .
 
-:Doctor a rdfs:Class;
+:Doctor a owl:Class;
   rdfs:label    "Medical practitioner"@en, "Médecin"@fr;
   rdfs:comment  "A health professional who practices medicine, which is concerned with promoting, maintaining or restoring health"@en,
                 "Professionnel de la santé titulaire d'un diplôme de docteur en médecine"@fr;
   rdfs:subClassOf :Person .
 
-:hasDiagnosis a rdf:Property;
+:hasDiagnosis a owl:ObjectProperty;
   rdfs:label   "has diagnosis"@en, "a un diagnostic"@fr;
   rdfs:comment "Relates a case or patient to a specific medical diagnosis."@en,
                "Relie un cas ou un patient à un diagnostic médical spécifique."@fr;
   rdfs:range :MedicalCondition .
 
-:hasClinicalExamination a rdf:Property;
+:hasClinicalExamination a owl:ObjectProperty;
   rdfs:label   "has clinical examination"@en, "a un examen clinique"@fr;
   rdfs:comment "Links a patient or case to their clinical examination details."@en,
                "Relie un patient ou un cas à ses détails d'examen clinique."@fr;
   rdfs:range :ClinicalExamination .
 
-:hasSignOrSymptom a rdf:Property;
+:hasSignOrSymptom a owl:ObjectProperty;
   rdfs:label    "has sign or symptom"@en, "a un signe ou symptôme"@fr;
   rdfs:comment  "Relates an entity to a medical sign or symptom it exhibits or experiences."@en,
                 "Relie une entité à un signe médical ou à un symptôme qu'elle présente ou ressent."@fr;
   rdfs:range :MedicalSignOrSymptom .
 
-:hasPatient a rdf:Property;
+:hasPatient a owl:ObjectProperty;
   rdfs:label   "has patient"@en, "a un patient"@fr;
   rdfs:comment "Associates a medical event or entity with a specific patient."@en,
                "Associe un événement médical ou une entité à un patient spécifique."@fr;
   rdfs:range :Patient .
 
-:hasDoctor a rdf:Property;
+:hasDoctor a owl:ObjectProperty;
   rdfs:label    "has doctor"@en, "a un médecin"@fr;
   rdfs:comment  "Links a medical case, examination, or event to the attending physician."@en,
                 "Relie un cas médical, un examen ou un événement à un médecin."@fr;
   rdfs:range :Doctor .
 
-:hasMedicalTherapy a rdf:Property;
+:hasMedicalTherapy a owl:ObjectProperty;
   rdfs:label    "has medical therapy"@en, "a un traitement médical"@fr;
   rdfs:comment  "Associates an entity with a specific medical treatment or therapy."@en,
                 "Associe une entité à un traitement médical spécifique."@fr;
   rdfs:range :MedicalTherapy .
 
-:hasMedicalTest a rdf:Property;
+:hasMedicalTest a owl:ObjectProperty;
   rdfs:label    "has medical test"@en, "a un examen complémentaire"@fr;
   rdfs:comment  "Connects an entity to a specific medical test that was conducted."@en,
                 "Connecte une entité à un examen complémentaire spécifique qui a été réalisé."@fr;

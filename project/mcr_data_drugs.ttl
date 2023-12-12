@@ -15,27 +15,42 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
-drugs:Paracetamol a :Drug ;
+drugs:Antibiotic a :Drug,
+  skos:Concept ;
+  skos:definition ""@fr ""@en .
+
+drugs:Paracetamol a :Drug,
+  skos:Concept ;
+  skos:definition ""@fr ""@en ;
   :activeIngredient "Paracetamol" ;
   :drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé"@en ;
   :dosageForm "tablet"@en, "comprimé"@fr .
 
-drugs:Ibuprofene a :Drug ;
+drugs:Ibuprofene a :Drug,
+  skos:Concept ;
+  skos:definition ""@fr ""@en ;
   :activeIngredient "Ibuprofene" ;
   :drugUnit "400mg tablet"@en, "200mg tablet"@en, "200mg comprimé"@en, "400mg comprimé"@en ;
   :dosageForm "tablet"@en, "comprimé"@fr .
 
-drugs:Amoxicillin a :Drug ;
+drugs:Amoxicillin a :Drug,
+  skos:Concept ;
+  skos:definition ""@fr ""@en ;
+  skos:broader drugs:Antibiotic ;
   :activeIngredient "Amoxicillin"@en, "Amoxicilline"@fr ;
   :drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé "@en ;
   :dosageForm "tablet"@en, "comprimé"@fr .
 
-drugs:Insulin a :Drug ;
+drugs:Insulin a :Drug,
+  skos:Concept ;
+  skos:definition ""@fr ""@en ;
   :activeIngredient "Insulin"@en, "Insuline"@fr ;
   :drugUnit "UI" ;
   :dosageForm "injection"@en, "injectable"@fr .
 
-drugs:Metformin a :Drug ;
+drugs:Metformin a :Drug,
+  skos:Concept ;
+  skos:definition ""@fr ""@en ;
   :activeIngredient "Metformin"@en, "Metformine"@fr ;
   :drugUnit "500mg tablet"@en, "500mg  comprimé "@en ;
   :dosageForm "tablet"@en, "comprimé"@fr .

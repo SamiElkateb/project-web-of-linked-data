@@ -17,6 +17,7 @@
 
 diseases:Flu a :MedicalCondition,
         skos:Concept ;
+        skos:definition ""@fr ""@en ;
         :name "Flue"@en , "Grippe"@fr ;
         :signOrSymptom symptoms:Fever, symptoms:Cough, 
                         symptoms:Fatigue, symptoms:ArticularPain ,
@@ -25,7 +26,9 @@ diseases:Flu a :MedicalCondition,
                             treatments:IbuprofenePrescription .
         owl:sameAs dbpedia:Influenza
 
-diseases:Pneumonia a :MedicalCondition ;
+diseases:Pneumonia a :MedicalCondition,
+        skos:Concept ;
+        skos:definition ""@fr ""@en ;
         :name "Pneumonia"@en , "Pneumonie"@fr ;
         :signOrSymptom symptoms:Fever, symptoms:Cough, 
                         symptoms:Fatigue, symptoms:ChestPain,
@@ -34,7 +37,9 @@ diseases:Pneumonia a :MedicalCondition ;
                             treatments:ParacetamolPrescription .
         owl:sameAs dbpedia:Pneumonia
 
-diseases:Covid a :MedicalCondition ;
+diseases:Covid a :MedicalCondition,
+        skos:Concept ;
+        skos:definition ""@fr ""@en ;
         :name "Covid"@en , "Covid"@fr ;
         :signOrSymptom symptoms:Fever, symptoms:Cough, 
                         symptoms:Fatigue, symptoms:Chills,
@@ -43,14 +48,18 @@ diseases:Covid a :MedicalCondition ;
         :possibleTreatment treatments:ParacetamolPrescription .
         owl:sameAs dbpedia:COVID-19
 
-diseases:Bronchitis a :MedicalCondition ;
+diseases:Bronchitis a :MedicalCondition,
+        skos:Concept ;
+        skos:definition ""@fr ""@en ;
         :name "Bronchitis"@en , "Bronchite"@fr ;
         :signOrSymptom symptoms:Cough, symptoms:SoreThroat, 
                         symptoms:Fatigue, symptoms:Headache ;
         :possibleTreatment treatments:ParacetamolPrescription .
         owl:sameAs dbpedia:Bronchitis
 
-diseases:Diabetes a :MedicalCondition ;
+diseases:Diabetes a :MedicalCondition,
+        skos:Concept ;
+        skos:definition ""@fr ""@en ;
         :name "Diabetes"@en , "Diabète"@fr ;
         :signOrSymptom symptoms:Polyphagia, symptoms:Polyuria, 
                         symptoms:Polydipsia, symptoms:DrySkin,
@@ -62,7 +71,9 @@ diseases:Diabetes a :MedicalCondition ;
                             treatments:PhysicalExercice .
         owl:sameAs dbpedia:Diabetes
 
-diseases:Hypertension a :MedicalCondition ;
+diseases:Hypertension a :MedicalCondition,
+        skos:Concept ;
+        skos:definition ""@fr ""@en ;
         :name "Hypertension"@en , "Hypertension"@fr ;
         :signOrSymptom symptoms:Headache, symptoms:Nausea, 
                         symptoms:Dizziness, symptoms:Anxiety,

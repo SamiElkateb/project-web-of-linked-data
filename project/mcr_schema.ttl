@@ -198,3 +198,19 @@
   rdfs:comment  "Connects an entity to a specific medical test that was conducted."@en,
                 "Connecte une entité à un examen complémentaire spécifique qui a été réalisé."@fr;
   rdfs:range :MedicalTest .
+
+:ssn a owl:DatatypeProperty,
+  owl:InverseFunctionalProperty ;
+  rdfs:label    "has social security number"@en, "a un numéro de sécurité sociale"@fr;
+  rdfs:comment  "Associates an individual with their unique social security number."@en,
+                "Associe un individu à son numéro unique de sécurité sociale."@fr;
+  rdfs:range xsd:string ;
+  rdfs:domain :Person .
+
+:rpps a owl:DatatypeProperty,
+  owl:InverseFunctionalProperty ;
+  rdfs:label    "has RPPS number"@en, "a un numéro RPPS"@fr;
+  rdfs:comment  "Links a healthcare professional to their unique RPPS identification number."@en,
+                "Relie un professionnel de santé à son numéro d'identification unique RPPS."@fr;
+  rdfs:range xsd:string ;
+  rdfs:domain :Doctor .

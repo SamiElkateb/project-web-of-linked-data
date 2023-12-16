@@ -19,18 +19,22 @@ doctors:DoctorMichu a :Doctor, :Man ;
   :familyName "Michu";
   :givenName "Pierre";
   :jobTitle "Family Physician"@en, "Médecin Généraliste"@fr .
+  :rpps "23456789012"
 
 doctors:DoctorSmith a :Doctor, :Woman ;
   :familyName "Smith";
   :givenName "Jane";
   :jobTitle "Pediatrician"@en, "Pédiatre"@fr .
+  :rpps "34567890123"
 
 doctors:DoctorLopez a :Doctor, :Man ;
   :familyName "Lopez";
   :givenName "Carlos";
   :jobTitle "Pulmonologist"@en, "Pneumologue"@fr .
+  :rpps "45678901234"
 
 doctors:DoctorDoe a :Doctor, :Woman ;
   :familyName "Jane";
   :givenName "Doe";
   :jobTitle "Endocrinologist"@en, "Endocrinologue"@fr .
+  :rpps "12345678901"

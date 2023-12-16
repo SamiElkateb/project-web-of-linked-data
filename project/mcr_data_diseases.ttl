@@ -23,8 +23,8 @@ diseases:Flu a :MedicalCondition,
                         symptoms:Fatigue, symptoms:ArticularPain ,
                         symptoms:MuscularPain, symptoms:Chills ;
         :possibleTreatment treatments:ParacetamolPrescription,
-                            treatments:IbuprofenePrescription .
-        owl:sameAs dbpedia:Influenza
+                            treatments:IbuprofenePrescription ;
+        owl:sameAs dbpedia:Influenza .
 
 diseases:Pneumonia a :MedicalCondition,
         skos:Concept ;
@@ -34,8 +34,8 @@ diseases:Pneumonia a :MedicalCondition,
                         symptoms:Fatigue, symptoms:ChestPain,
                         symptoms:ShortnessBreath, symptoms:Nausea ;
         :possibleTreatment treatments:AmoxicillinPrescription,
-                            treatments:ParacetamolPrescription .
-        owl:sameAs dbpedia:Pneumonia
+                            treatments:ParacetamolPrescription ;
+        owl:sameAs dbpedia:Pneumonia .
 
 diseases:Covid a :MedicalCondition,
         skos:Concept ;
@@ -45,8 +45,8 @@ diseases:Covid a :MedicalCondition,
                         symptoms:Fatigue, symptoms:Chills,
                         symptoms:ShortnessBreath, symptoms:Headache,
                         symptoms:LossOfSmell ;
-        :possibleTreatment treatments:ParacetamolPrescription .
-        owl:sameAs dbpedia:COVID-19
+        :possibleTreatment treatments:ParacetamolPrescription ;
+        owl:sameAs dbpedia:COVID-19 .
 
 diseases:Bronchitis a :MedicalCondition,
         skos:Concept ;
@@ -54,8 +54,8 @@ diseases:Bronchitis a :MedicalCondition,
         :name "Bronchitis"@en , "Bronchite"@fr ;
         :signOrSymptom symptoms:Cough, symptoms:SoreThroat, 
                         symptoms:Fatigue, symptoms:Headache ;
-        :possibleTreatment treatments:ParacetamolPrescription .
-        owl:sameAs dbpedia:Bronchitis
+        :possibleTreatment treatments:ParacetamolPrescription ;
+        owl:sameAs dbpedia:Bronchitis .
 
 diseases:Diabetes a :MedicalCondition,
         skos:Concept ;
@@ -68,8 +68,8 @@ diseases:Diabetes a :MedicalCondition,
                             treatments:InsulinPrescription,
                             treatments:TherapeuticEducation,
                             treatments:BalancedDiet,
-                            treatments:PhysicalExercice .
-        owl:sameAs dbpedia:Diabetes
+                            treatments:PhysicalExercice ;
+        owl:sameAs dbpedia:Diabetes .
 
 diseases:Hypertension a :MedicalCondition,
         skos:Concept ;
@@ -81,5 +81,5 @@ diseases:Hypertension a :MedicalCondition,
                         symptoms:ShortnessBreath;
         :possibleTreatment treatments:TherapeuticEducation,
                             treatments:BalancedDiet,
-                            treatments:PhysicalExercice .
-        owl:sameAs dbpedia:Hypertension
+                            treatments:PhysicalExercice ;
+        owl:sameAs dbpedia:Hypertension .

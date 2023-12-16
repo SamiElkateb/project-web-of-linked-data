@@ -4,19 +4,6 @@ To do :
 - Transform gender into male or female (owl:disjointWith)
 
 ## List of properties
-- owl:ObjectProperty
-- owl:DatatypeProperty
-- owl:AnnotationProperty (not important)
-
-- owl:SymmetricProperty
-- owl:TransitiveProperty
-- owl:propertyDisjointWith
-
-- owl:ReflexiveProperty
-
-- owl:propertyDisjointWith
-
-- owl:propertyChainAxiom
 - owl:FunctionalProperty
 - owl:InverseFunctionalProperty
 
@@ -40,6 +27,10 @@ To do :
 - cardinality restriction
 
 Done :
+- owl:ObjectProperty
+- owl:DatatypeProperty
+- owl:AnnotationProperty (not important)
+
 - owl:equivalentClass (done during previous project)
 - owl:equivalentProperty (done during previous project)
 - owl:AsymmetricProperty (:hasDoctor and :hasPatient)
@@ -48,4 +39,11 @@ Done :
 - owl:differentFrom (:doseUnit and :doseValue)
 - restriction of some property values #1 (:CaseReport must be associated to at least one :ClinicalExamination)
 - restriction of some property values #2 (:Patient must be associated with at least one :CaseReport)
+
+Not possible with our current schema :
+- owl:SymmetricProperty
+- owl:TransitiveProperty
+- owl:propertyDisjointWith
+- owl:ReflexiveProperty
+- owl:propertyChainAxiom
 

@@ -4,7 +4,7 @@ To do :
 - Transform gender into male or female (owl:disjointWith)
 
 ## List of properties
-- owl:InverseFunctionalProperty
+- owl:InverseFunctionalProperty (for a social security number)
 
 ## Class relationships
 - enumerated classes : owl:oneOf

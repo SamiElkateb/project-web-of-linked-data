@@ -80,9 +80,9 @@
 :gender a owl:ObjectProperty ; # TODO: Enlever
   owl:equivalentProperty s:gender .
 
-:birthDate a owl:ObjectProperty ;
-  owl:equivalentProperty s:birthDate ;
-  rdf:type owl:FunctionalProperty .
+:birthDate a owl:ObjectProperty, 
+  owl:FunctionalProperty ;
+  owl:equivalentProperty s:birthDate .
 
 :healthCondition a owl:ObjectProperty ;
   owl:equivalentProperty s:healthCondition .

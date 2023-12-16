@@ -4,14 +4,14 @@
 
 shapes:rpps_object a sh:NodeShape ; 
   sh:targetObjectsOf :rpps ;
-  sh:pattern "^[0-9]{11}$";
+  sh:pattern "^\\d{11}$";
   sh:datatype xsd:string .
 
 shapes:rpps_subject a sh:NodeShape ; 
   sh:targetSubjectsOf :rpps ;
   sh:class :Doctor .
 
-shapes:case_report a sh:NodeShape ; 
+shapes:doctor a sh:NodeShape ; 
   sh:targetClass :Doctor ;
   sh:property [ 
     sh:path :familyName ;
@@ -27,5 +27,7 @@ shapes:case_report a sh:NodeShape ;
   ] ;
   sh:property [ 
     sh:path :rpps ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
   ] .
 

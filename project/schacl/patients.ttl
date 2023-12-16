@@ -1,0 +1,21 @@
+@prefix sh: <http://www.w3.org/ns/shacl#>
+@prefix : <http://project-wold.fr/schema#> .
+@prefix shapes: <http://project-wold.fr/shapes#> .
+
+shapes:ssn_object a sh:NodeShape ; 
+  sh:targetObjectsOf :ssn ;
+  sh:pattern "\\d \\d{2} \\d{2} (\\d{2}|2A|2B) \\d{3} \\d{3} \\d{2}";
+  sh:datatype xsd:string .
+
+shapes:patient a sh:NodeShape ; 
+  sh:targetClass :Patient ;
+  sh:property [ 
+    sh:path :birthDate ;
+    sh:datatype xsd:date;
+  ] ;
+  sh:property [ 
+    sh:path :ssn ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] .
+

@@ -17,8 +17,9 @@
 
 diseases:Flu a :MedicalCondition,
         skos:Concept ;
-        skos:definition ""@fr ""@en ;
-        :name "Flue"@en , "Grippe"@fr ;
+        skos:definition "Flu, also known as influenza, is a viral infection that attacks the respiratory system."@en,
+                       "La grippe, également connue sous le nom d'influenza, est une infection virale qui attaque le système respiratoire."@fr ;
+        :name "Flue"@en, "Grippe"@fr ;
         :signOrSymptom symptoms:Fever, symptoms:Cough, 
                         symptoms:Fatigue, symptoms:ArticularPain ,
                         symptoms:MuscularPain, symptoms:Chills ;
@@ -28,7 +29,8 @@ diseases:Flu a :MedicalCondition,
 
 diseases:Pneumonia a :MedicalCondition,
         skos:Concept ;
-        skos:definition ""@fr ""@en ;
+        skos:definition "Pneumonia is an infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus, causing cough with phlegm or pus, fever, chills, and difficulty breathing."@en,
+                        "La pneumonie est une infection qui enflamme les sacs aériens dans un ou les deux poumons. Les sacs peuvent se remplir de liquide ou de pus, causant une toux avec du flegme ou du pus, de la fièvre, des frissons et des difficultés respiratoires."@fr ;
         :name "Pneumonia"@en , "Pneumonie"@fr ;
         :signOrSymptom symptoms:Fever, symptoms:Cough, 
                         symptoms:Fatigue, symptoms:ChestPain,
@@ -39,7 +41,8 @@ diseases:Pneumonia a :MedicalCondition,
 
 diseases:Covid a :MedicalCondition,
         skos:Concept ;
-        skos:definition ""@fr ""@en ;
+        skos:definition "COVID-19 is an infectious disease caused by the SARS-CoV-2 virus. Symptoms can vary from mild to severe respiratory illness."@en,
+                       "La COVID-19 est une maladie infectieuse causée par le virus SARS-CoV-2. Les symptômes peuvent varier de légers à graves."@fr ;
         :name "Covid"@en , "Covid"@fr ;
         :signOrSymptom symptoms:Fever, symptoms:Cough, 
                         symptoms:Fatigue, symptoms:Chills,
@@ -50,7 +53,8 @@ diseases:Covid a :MedicalCondition,
 
 diseases:Bronchitis a :MedicalCondition,
         skos:Concept ;
-        skos:definition ""@fr ""@en ;
+        skos:definition "Bronchitis is an inflammation of the lining of your bronchial tubes, which carry air to and from your lungs. Bronchitis may cause cough, phlegm production, and breathing difficulties."@en,
+                        "La bronchite est une inflammation de la muqueuse de vos bronches, qui transportent l'air vers et depuis vos poumons. La bronchite peut causer une toux, la production de flegme et des difficultés respiratoires."@fr ;
         :name "Bronchitis"@en , "Bronchite"@fr ;
         :signOrSymptom symptoms:Cough, symptoms:SoreThroat, 
                         symptoms:Fatigue, symptoms:Headache ;
@@ -59,7 +63,8 @@ diseases:Bronchitis a :MedicalCondition,
 
 diseases:Diabetes a :MedicalCondition,
         skos:Concept ;
-        skos:definition ""@fr ""@en ;
+        skos:definition "Diabetes is a chronic disease that occurs when the pancreas is no longer able to make insulin, or when the body cannot make good use of the insulin it produces."@en,
+                        "Le diabète est une maladie chronique qui se produit lorsque le pancréas n'est plus capable de produire de l'insuline, ou lorsque le corps ne peut pas utiliser correctement l'insuline produite."@fr ;
         :name "Diabetes"@en , "Diabète"@fr ;
         :signOrSymptom symptoms:Polyphagia, symptoms:Polyuria, 
                         symptoms:Polydipsia, symptoms:DrySkin,
@@ -73,7 +78,8 @@ diseases:Diabetes a :MedicalCondition,
 
 diseases:Hypertension a :MedicalCondition,
         skos:Concept ;
-        skos:definition ""@fr ""@en ;
+        skos:definition "Hypertension, or high blood pressure, is a condition in which the blood pressure in the arteries is persistently elevated. It can lead to significant health issues and increase the risk of heart disease, stroke, and sometimes death."@en,
+                        "L'hypertension, ou tension artérielle élevée, est une condition dans laquelle la pression sanguine dans les artères est constamment élevée. Elle peut entraîner des problèmes de santé importants et augmenter le risque de maladies cardiaques, d'accidents vasculaires cérébraux et parfois de décès."@fr ;
         :name "Hypertension"@en , "Hypertension"@fr ;
         :signOrSymptom symptoms:Headache, symptoms:Nausea, 
                         symptoms:Dizziness, symptoms:Anxiety,

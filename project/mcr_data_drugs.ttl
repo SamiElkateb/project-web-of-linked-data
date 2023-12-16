@@ -17,25 +17,29 @@
 
 drugs:Antibiotic a :Drug,
   skos:Concept ;
-  skos:definition ""@fr ""@en .
+  skos:definition "Antibiotics are a type of medication used to treat bacterial infections by killing or inhibiting the growth of bacteria."@en ,
+                 "Les antibiotiques sont un type de médicament utilisé pour traiter les infections bactériennes en tuant ou en inhibant la croissance des bactéries."@fr .
 
 drugs:Paracetamol a :Drug,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition "Le paracétamol, est un médicament utilisé pour traiter la douleur et la fièvre. Il est généralement utilisé pour soulager la douleur légère à modérée."@fr ,
+                  "Paracetamol, is a medication used to treat pain and fever. It is typically used for mild to moderate pain relief."@en ;
   :activeIngredient "Paracetamol" ;
   :drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé"@en ;
   :dosageForm "tablet"@en, "comprimé"@fr .
 
 drugs:Ibuprofene a :Drug,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition "L'ibuprofène est un médicament anti-inflammatoire non stéroïdien (AINS) utilisé pour traiter la douleur, la fièvre et l'inflammation."@fr,
+                  "Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) used to treat pain, fever, and inflammation."@en ;
   :activeIngredient "Ibuprofene" ;
   :drugUnit "400mg tablet"@en, "200mg tablet"@en, "200mg comprimé"@en, "400mg comprimé"@en ;
   :dosageForm "tablet"@en, "comprimé"@fr .
 
 drugs:Amoxicillin a :Drug,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition "L'amoxicilline est un antibiotique de la famille des pénicillines qui lutte contre les bactéries. Elle est utilisée pour traiter de nombreux types d'infections causées par des bactéries."@fr,
+                  "Amoxicillin is a penicillin antibiotic that fights bacteria. It is used to treat many different types of infection caused by bacteria."@en ;
   skos:broader drugs:Antibiotic ;
   :activeIngredient "Amoxicillin"@en, "Amoxicilline"@fr ;
   :drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé "@en ;
@@ -43,14 +47,16 @@ drugs:Amoxicillin a :Drug,
 
 drugs:Insulin a :Drug,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition "L'insuline est une hormone qui régule la glycémie. Elle est utilisée dans le traitement du diabète pour contrôler les niveaux de glucose dans le sang."@fr,
+                  "Insulin is a hormone that regulates blood sugar. It is used in the treatment of diabetes to control blood glucose levels."@en ;
   :activeIngredient "Insulin"@en, "Insuline"@fr ;
   :drugUnit "UI" ;
   :dosageForm "injection"@en, "injectable"@fr .
 
 drugs:Metformin a :Drug,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition "La metformine est un médicament oral pour le diabète qui aide à contrôler les niveaux de sucre dans le sang. Elle est utilisée dans le traitement du diabète de type 2."@fr,
+                  "Metformin is an oral diabetes medicine that helps control blood sugar levels. It is used in the treatment of type 2 diabetes."@en ;
   :activeIngredient "Metformin"@en, "Metformine"@fr ;
   :drugUnit "500mg tablet"@en, "500mg  comprimé "@en ;
   :dosageForm "tablet"@en, "comprimé"@fr .

@@ -23,7 +23,6 @@ reports:P1CE a :ClinicalExamination ;
   :hasDoctor doctors:DoctorMichu .
 
 reports:Case1 a :CaseReport ;
-  :hasPatient patients:Patient1 ;
   :hasClinicalExamination reports:P1CE ;
   :hasDoctor doctors:DoctorMichu ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
@@ -37,7 +36,6 @@ reports:P2CE a :ClinicalExamination ;
   :hasDoctor doctors:DoctorSmith .
 
 reports:Case2 a :CaseReport ;
-  :hasPatient patients:Patient2 ;
   :hasClinicalExamination reports:P2CE ;
   :hasDoctor doctors:DoctorMichu ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
@@ -52,7 +50,6 @@ reports:P3CE a :ClinicalExamination ;
   :hasDoctor doctors:DoctorDoe .
 
 reports:Case3 a :CaseReport ;
-  :hasPatient patients:Patient3 ;
   :hasClinicalExamination reports:P3CE ;
   :hasDoctor doctors:DoctorDoe ;
   :hasMedicalTherapy treatments:ParacetamolPrescription, 
@@ -65,7 +62,6 @@ reports:P4CE a :ClinicalExamination ;
   :hasDoctor doctors:DoctorLopez  .
 
 reports:Case4 a :CaseReport ;
-  :hasPatient patients:Patient4 ;
   :hasClinicalExamination reports:P4CE ;
   :hasDoctor doctors:DoctorLopez ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
@@ -79,7 +75,6 @@ reports:P5CE a :ClinicalExamination ;
   :hasDoctor doctors:DoctorLopez .
 
 reports:Case5 a :CaseReport ;
-  :hasPatient patients:Patient5 ;
   :hasClinicalExamination reports:P5CE ;
   :hasDoctor doctors:DoctorDoe ;
   :hasMedicalTherapy treatments:MetforminPrescription,
@@ -94,7 +89,6 @@ reports:P6CE a :ClinicalExamination ;
   :hasDoctor doctors:DoctorMichu .
 
 reports:Case6 a :CaseReport ;
-  :hasPatient patients:Patient6 ;
   :hasClinicalExamination reports:P6CE ;
   :hasDoctor doctors:DoctorMichu ;
   :hasMedicalTherapy treatments:TherapeuticEducation,
@@ -111,7 +105,6 @@ reports:P7CE a :ClinicalExamination ;
   :hasDoctor doctors:DoctorLopez .
 
 reports:Case7 a :CaseReport ;
-  :hasPatient patients:Patient7 ;
   :hasClinicalExamination reports:P7CE ;
   :hasDoctor doctors:DoctorLopez ;
   :hasMedicalTherapy treatments:AmoxicillinPrescription,
@@ -127,7 +120,6 @@ reports:P8CE a :ClinicalExamination ;
   :hasDoctor doctors:DoctorLopez .
 
 reports:Case8 a :CaseReport ;
-  :hasPatient patients:Patient8 ;
   :hasClinicalExamination reports:P8CE ;
   :hasDoctor doctors:DoctorLopez ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
@@ -139,7 +131,6 @@ reports:P9CE a :ClinicalExamination ;
   :hasDoctor doctors:DoctorSmith .
 
 reports:Case9 a :CaseReport ;
-  :hasPatient patients:Patient9 ;
   :hasClinicalExamination reports:P9CE ;
   :hasDoctor doctors:DoctorSmith ;
   :hasMedicalTherapy treatments:ParacetamolPrescription .
@@ -154,7 +145,6 @@ reports:P10CE a :ClinicalExamination ;
   :hasDoctor doctors:DoctorMichu .
 
 reports:Case10 a :CaseReport ;
-  :hasPatient patients:Patient10 ;
   :hasClinicalExamination reports:P10CE ;
   :hasDoctor doctors:DoctorMichu ;
   :hasMedicalTherapy treatments:Ibuprofene,

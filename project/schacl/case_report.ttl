@@ -1,0 +1,33 @@
+@prefix sh: <http://www.w3.org/ns/shacl#>
+@prefix : <http://project-wold.fr/schema#> .
+@prefix shapes: <http://project-wold.fr/shapes#> .
+
+shapes:case_report a sh:NodeShape ; 
+  sh:targetClass :CaseReport ;
+  sh:property [ 
+    sh:path :hasDoctor ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedValueShape [ sh:class :Doctor ]
+  ] ;
+  sh:property [ 
+    sh:path :hasClinicalExamination ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedValueShape [ sh:class :ClinicalExamination ]
+  ] .
+
+shapes:clinical_examination a sh:NodeShape ; 
+  sh:targetClass :ClinicalExamination ;
+  sh:property [ 
+    sh:path :hasPatient ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedValueShape [ sh:class :Patient ]
+  ] ;
+  sh:property [ 
+    sh:path :hasDoctor ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedValueShape [ sh:class :Doctor ]
+  ] .

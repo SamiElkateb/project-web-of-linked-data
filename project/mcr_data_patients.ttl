@@ -127,7 +127,7 @@ patients:Patient9 a :Patient, :Man ;
     :unitText "cm"
   ] .
 
-patients:Patient10 a :Patient, Woman ;
+patients:Patient10 a :Patient, :Woman ;
   :birthDate "1978-09-24"^^xsd:date ;
   :ssn "2 78 09 56 250 010 37";
   :healthCondition diseases:Hypertension ;

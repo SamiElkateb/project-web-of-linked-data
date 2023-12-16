@@ -1,0 +1,31 @@
+@prefix sh: <http://www.w3.org/ns/shacl#>
+@prefix : <http://project-wold.fr/schema#> .
+@prefix shapes: <http://project-wold.fr/shapes#> .
+
+shapes:rpps_object a sh:NodeShape ; 
+  sh:targetObjectsOf :rpps ;
+  sh:pattern "^[0-9]{11}$";
+  sh:datatype xsd:string .
+
+shapes:rpps_subject a sh:NodeShape ; 
+  sh:targetSubjectsOf :rpps ;
+  sh:class :Doctor .
+
+shapes:case_report a sh:NodeShape ; 
+  sh:targetClass :Doctor ;
+  sh:property [ 
+    sh:path :familyName ;
+    sh:datatype xsd:string;
+  ] ;
+  sh:property [ 
+    sh:path :givenName ;
+    sh:datatype xsd:string;
+  ] ;
+  sh:property [ 
+    sh:path :jobTitle ;
+    sh:languageIn ("fr" "en");
+  ] ;
+  sh:property [ 
+    sh:path :rpps ;
+  ] .
+

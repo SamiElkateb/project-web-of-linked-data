@@ -81,7 +81,8 @@
   owl:equivalentProperty s:gender .
 
 :birthDate a owl:ObjectProperty ;
-  owl:equivalentProperty s:birthDate .
+  owl:equivalentProperty s:birthDate ;
+  rdf:type owl:FunctionalProperty .
 
 :healthCondition a owl:ObjectProperty ;
   owl:equivalentProperty s:healthCondition .

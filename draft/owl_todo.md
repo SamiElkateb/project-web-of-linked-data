@@ -4,7 +4,6 @@ To do :
 - Transform gender into male or female (owl:disjointWith)
 
 ## List of properties
-- owl:FunctionalProperty
 - owl:InverseFunctionalProperty
 
 ## Class relationships
@@ -39,6 +38,7 @@ Done :
 - owl:differentFrom (:doseUnit and :doseValue)
 - restriction of some property values #1 (:CaseReport must be associated to at least one :ClinicalExamination)
 - restriction of some property values #2 (:Patient must be associated with at least one :CaseReport)
+- owl:FunctionalProperty (:birthDate like the slides of the lecture)
 
 Not possible with our current schema :
 - owl:SymmetricProperty

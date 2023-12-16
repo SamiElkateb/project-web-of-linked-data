@@ -15,26 +15,22 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
-doctors:DoctorMichu a :Doctor ;
-  :gender "male" ;
+doctors:DoctorMichu a :Doctor, :Man ;
   :familyName "Michu";
   :givenName "Pierre";
   :jobTitle "Family Physician"@en, "Médecin Généraliste"@fr .
 
-doctors:DoctorSmith a :Doctor ;
-  :gender "female" ;
+doctors:DoctorSmith a :Doctor, :Woman ;
   :familyName "Smith";
   :givenName "Jane";
   :jobTitle "Pediatrician"@en, "Pédiatre"@fr .
 
-doctors:DoctorLopez a :Doctor ;
-  :gender "male" ;
+doctors:DoctorLopez a :Doctor, :Man ;
   :familyName "Lopez";
   :givenName "Carlos";
   :jobTitle "Pulmonologist"@en, "Pneumologue"@fr .
 
-doctors:DoctorDoe a :Doctor ;
-  :gender "female" ;
+doctors:DoctorDoe a :Doctor, :Woman ;
   :familyName "Jane";
   :givenName "Doe";
   :jobTitle "Endocrinologist"@en, "Endocrinologue"@fr .

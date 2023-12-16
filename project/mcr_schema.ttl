@@ -77,9 +77,6 @@
 :doseSchedule a owl:ObjectProperty ;
   owl:equivalentProperty s:doseSchedule .
 
-:gender a owl:ObjectProperty ; # TODO: Enlever
-  owl:equivalentProperty s:gender .
-
 :birthDate a owl:ObjectProperty, 
   owl:FunctionalProperty ;
   owl:equivalentProperty s:birthDate .
@@ -120,6 +117,37 @@
   rdfs:comment  "detailed report of the symptoms, signs, diagnosis, treatment, and follow-up of an individual patient."@en,
                 "L'examen clinique fait partie de l'examen médical ou psychologique qui permet au médecin ou aux infirmiers en pratique avancée de décrire l'état d'un patient"@fr ;
   rdfs:subClassOf :MedicalEntity .
+
+:Animal a owl:Class ;
+    rdfs:label "animal"@en, "animal"@fr ;
+    rdfs:comment "a living organism characterized by voluntary movement."@en,
+                 "être vivant doué de sensibilite de mobilité."@fr .
+
+:Female a owl:Class ;
+    owl:disjointWith :Male;
+    rdfs:label "female"@en, "femelle"@fr ;
+    rdfs:comment "an animal that produces gametes (ova) that can be fertilized by male gametes (spermatozoa)."@en,
+                 "animal appartenant au sexe apte à produire des ovules."@fr ;
+    rdfs:subClassOf :Animal .
+
+:Woman a owl:Class ;
+    rdfs:label "woman"@en, "femme"@fr ;
+    rdfs:comment "a female person"@en,
+                 "femelle de l'espèce humaine."@fr ;
+    rdfs:subClassOf :Female, :Person .
+
+:Male a owl:Class;
+  owl:disjointWith :Female;
+  rdfs:label    "male"@en, "mâle"@fr ;
+  rdfs:comment  "an animal that produces gametes (spermatozoa) that can fertilize female gametes (ova)."@en,
+                "individu appartenant au sexe qui possède le pouvoir de fécondation."@fr ;
+  rdfs:subClassOf :Animal .
+
+:Man a owl:Class;
+  rdfs:label    "Man"@en, "Homme"@fr ;
+  rdfs:comment  "a male person"@en,
+                "mâle de l'espèce humaine."@fr ;
+  rdfs:subClassOf :Male, :Person .
 
 :Doctor a owl:Class;
   rdfs:label    "Medical practitioner"@en, "Médecin"@fr;

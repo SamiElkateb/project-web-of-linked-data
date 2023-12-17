@@ -17,109 +17,109 @@
 
 symptoms:Pain a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Pain"@en , "Douleur"@fr .
 
 symptoms:Fever a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Fever"@en , "Fièvre"@fr .
 
 symptoms:Cough a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Cough"@en , "Toux"@fr .
 
 symptoms:Fatigue a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Fatigue"@en , "Fatigue"@fr .
 
 symptoms:ArticularPain a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   skos:broader symptoms:Pain ;
   :name "Articular pain"@en , "Douleur articulaire"@fr .
 
 symptoms:MuscularPain a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   skos:broader symptoms:Pain ;
   :name "Muscular pain"@en , "Douleur musculaire"@fr .
 
 symptoms:ChestPain a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   skos:broader symptoms:Pain ;
   :name "Chest pain"@en , "Douleur thoracique"@fr .
 
 symptoms:Headache a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   skos:broader symptoms:Pain ;
   :name "Headache"@en , "Mal de tête"@fr .
 
 symptoms:SoreThroat a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Sore throat"@en , "Mal de gorge"@fr .
 
 symptoms:LossOfSmell a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Loss of smell"@en , "Perte d'odorat"@fr .
 
 symptoms:ShortnessBreath a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Shortness of breath"@en , "Essouflement"@fr .
 
 symptoms:Chills a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Chills"@en , "Frissons"@fr .
 
 symptoms:WeightLoss a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Weight loss"@en , "Perte de poid"@fr .
 
 symptoms:DrySkin a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Dry skin"@en , "Peau sèche"@fr .
 
 symptoms:Polyphagia a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Polyphagia"@en, "Polyphagie"@fr .
 
 symptoms:Polyuria a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Polyuria"@en, "Polyurie"@fr .
 
 symptoms:Polydipsia a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Polydipsia"@en, "Polydipsie"@fr .
 
 symptoms:Nausea a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Nausea"@en , "Nausée"@fr .
 
 symptoms:Dizziness a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Dizziness"@en , "Vertiges"@fr .
 
 symptoms:Anxiety a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Anxiety"@en , "Anxiété"@fr .
 
 symptoms:BlurredVision a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr ""@en ;
+  skos:definition ""@fr, ""@en ;
   :name "Blurred vision"@en , "Vision trouble"@fr .

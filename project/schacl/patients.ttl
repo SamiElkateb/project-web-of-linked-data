@@ -1,6 +1,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#>
 @prefix : <http://project-wold.fr/schema#> .
 @prefix shapes: <http://project-wold.fr/shapes#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 shapes:ssn_object a sh:NodeShape ; 
   sh:targetObjectsOf :ssn ;

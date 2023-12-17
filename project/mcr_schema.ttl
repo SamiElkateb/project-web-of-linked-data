@@ -119,7 +119,6 @@
   rdfs:label    "has health condition"@en, "a pour maladie"@fr;
   owl:equivalentProperty s:healthCondition .
 
-
 :value a owl:ObjectProperty ;
   rdfs:label    "value"@en, "valeur"@fr;
   owl:equivalentProperty s:value .
@@ -252,22 +251,24 @@
                 "Connecte une entité à un examen complémentaire spécifique qui a été réalisé."@fr;
   rdfs:range :MedicalTest .
 
-:hasSibling a owl:ObjectProperty ;
+:hasSibling a owl:SymmetricProperty ;
     rdfs:label "has for sibling"@en, "a pour frère ou soeur"@fr ;
     rdfs:comment "relation with an individual who has the same parents."@en,
                  "relation avec un individu ayant les mêmes parents."@fr ;
     owl:propertyChainAxiom (:hasParent :hasChild) .
 
-:hasAncestor a owl:TransitiveProperty ;
+:hasAncestor a owl:TransitiveProperty,
+    owl:IrreflexiveProperty;
     rdfs:label "has for ancestor"@en, "a pour ancêtre"@fr ;
     rdfs:comment "relation between an animal and another animal from which it is descended."@en,
                  "relation entre un animal et un autre animal duquel il descend."@fr ;
     rdfs:domain :Animal ;
     rdfs:range  :Animal .
 
-:hasBrother a owl:TransitiveProperty ;
+:hasBrother a owl:TransitiveProperty,
+    owl:IrreflexiveProperty;
     owl:propertyDisjointWith :hasSister ;
-    rdfs:subClassOf :hasSibling ;
+    rdfs:subPropertyOf :hasSibling ;
     rdfs:label "has for brother"@en, "a pour frère"@fr ;
     rdfs:comment "relation with a male who has the same parents."@en,
                  "relation avec un mâle ayant les mêmes parents."@fr ;
@@ -276,14 +277,14 @@
 
 :hasSister a owl:TransitiveProperty ;
     owl:propertyDisjointWith :hasBrother ;
-    rdfs:subClassOf :hasSibling ;
+    rdfs:subPropertyOf :hasSibling ;
     rdfs:label "has for brother"@en, "a pour frère"@fr ;
     rdfs:comment "relation with a male who has the same parents."@en,
                  "relation avec un mâle ayant les mêmes parents."@fr ;
     rdfs:domain :Animal ;
     rdfs:range  :Female .
 
-:hasParent a owl:ObjectProperty ;
+:hasParent a owl:AsymmetricProperty ;
     owl:inverseOf :hasChild ;
     rdfs:subPropertyOf :hasAncestor ;
     rdfs:label "has for parent"@en, "a pour parent"@fr ;
@@ -348,7 +349,7 @@
   ] .
 
 :PersonWithGeneticDiabetesPredisposition a owl:Class ;
-    rdfs:label "Person who has a predisposition d'avoir Diabetes"@en, "Personne susceptible d'avoir le diabète"@fr ;
+    rdfs:label "Person who has a predisposition to have Diabetes"@en, "Personne susceptible d'avoir le diabète"@fr ;
     rdfs:comment "A condition inferred for an individual who has an ancestor with diabetes."@en,
                  "Condition déduite pour un individu ayant un ancêtre atteint de diabète."@fr ;
     owl:unionOf ( 
@@ -363,7 +364,11 @@
         ]
         [ 
             a owl:Restriction ;
-            owl:onProperty :healthCondition ;
-            owl:hasValue diseases:Diabetes
+            owl:onProperty :hasSibling ;
+            owl:someValuesFrom [
+                a owl:Restriction ;
+                owl:onProperty :healthCondition ;
+                owl:hasValue diseases:Diabetes 
+            ]
         ]
     ) .

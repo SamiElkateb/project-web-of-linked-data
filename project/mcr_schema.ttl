@@ -13,94 +13,121 @@
 
 # Schéma existant réutilisé
 :Person a owl:Class ;
+  rdfs:label    "Person"@en, "Personne"@fr;
   owl:equivalentClass s:Person .
 
 :MedicalEntity a owl:Class ;
+  rdfs:label    "Medical Entity"@en, "Entité Médicale"@fr;
   owl:equivalentClass s:MedicalEntity .
 
 :MedicalCondition a owl:Class ;
+  rdfs:label    "Medical Condition"@en, "Maladie"@fr;
   owl:equivalentClass s:MedicalCondition .
 
 :MedicalSignOrSymptom a owl:Class ;
+  rdfs:label    "Medical Sign or Symptom"@en, "Signe ou Symptôme Médical"@fr;
   owl:equivalentClass s:MedicalSignOrSymptom .
 
 :MedicalTherapy a owl:Class ;
+  rdfs:label    "Medical Therapy"@en, "Thérapie Médicale"@fr;
   owl:equivalentClass s:MedicalTherapy .
 
 :Patient a owl:Class ;
   owl:equivalentClass s:Patient ;
+  rdfs:label    "Patient"@en, "Patient"@fr;
   rdfs:subClassOf [ 
       a owl:Restriction ; 
       owl:onProperty :hasPatient ;
       owl:someValuesFrom :CaseReport ] .
 
 :MedicalTest a owl:Class ;
+  rdfs:label    "Medical Test"@en, "Examen complémentaire"@fr;
   owl:equivalentClass s:MedicalTest .
 
 :Drug a owl:Class ;
+  rdfs:label    "Drug"@en, "Médicament"@fr;
   owl:equivalentClass s:Drug .
 
 :name a owl:ObjectProperty ;
+  rdfs:label    "name"@en, "nom"@fr;
   owl:equivalentProperty s:name .
 
 :signOrSymptom a owl:ObjectProperty ;
+  rdfs:label    "has sign or symptom"@en, "a pour signe ou symptome medical"@fr;
   owl:equivalentProperty s:signOrSymptom .
 
 :possibleTreatment a owl:ObjectProperty ;
+  rdfs:label    "has possible treatment"@en, "peut être traité par"@fr;
   owl:equivalentProperty s:possibleTreatment .
 
 :usedToDiagnose a owl:ObjectProperty ;
+  rdfs:label    "used to diagnose"@en, "utilisé pour diagnostiquer"@fr;
   owl:equivalentProperty s:usedToDiagnose .
 
 :doseUnit a owl:DatatypeProperty ;
+  rdfs:label    "dose unit"@en, "unité de dosage"@fr;
   owl:equivalentProperty s:doseUnit ;
   owl:differentFrom :doseValue .
 
 :doseValue a owl:ObjectProperty ;
+  rdfs:label    "dose value"@en, "valeur de la dose"@fr;
   owl:equivalentProperty s:doseValue ;
   owl:differentFrom :doseUnit . 
 
 :frequency a owl:DatatypeProperty ;
+  rdfs:label    "frequency"@en, "fréquence"@fr;
   owl:equivalentProperty s:frequency .
 
 :activeIngredient a owl:DatatypeProperty ;
+  rdfs:label    "active ingredient"@en, "substance active"@fr;
   owl:equivalentProperty s:activeIngredient .
 
 :drugUnit a owl:DatatypeProperty ;
+  rdfs:label    "drug unit"@en, "unité de médicament"@fr;
   owl:equivalentProperty s:drugUnit .
 
 :dosageForm a owl:DatatypeProperty ;
+  rdfs:label    "dosage form"@en, "forme galénique"@fr;
   owl:equivalentProperty s:dosageForm .
 
 :drug a owl:ObjectProperty ;
+  rdfs:label    "drug"@en, "médicament"@fr;
   owl:equivalentProperty s:drug .
 
 :doseSchedule a owl:ObjectProperty ;
+  rdfs:label    "dose schedule"@en, "calendrier de dosage"@fr;
   owl:equivalentProperty s:doseSchedule .
 
-:birthDate a owl:ObjectProperty, 
-  owl:FunctionalProperty ;
+:birthDate a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label    "birth date"@en, "date de naissance"@fr;
   owl:equivalentProperty s:birthDate .
 
 :healthCondition a owl:ObjectProperty ;
+  rdfs:label    "has health condition"@en, "a pour maladie"@fr;
   owl:equivalentProperty s:healthCondition .
 
 :value a owl:ObjectProperty ;
+  rdfs:label    "value"@en, "valeur"@fr;
   owl:equivalentProperty s:value .
 
 :unitText a owl:DatatypeProperty ;
+  rdfs:label    "unit text"@en, "texte d'unité"@fr;
   owl:equivalentProperty s:unitText .
 
 :weight a owl:ObjectProperty ;
+  rdfs:label    "weight"@en, "poids"@fr;
   owl:equivalentProperty s:weight .
 
 :familyName a owl:DatatypeProperty ;
+  rdfs:label    "family name"@en, "nom de famille"@fr;
   owl:equivalentProperty s:familyName .
 
 :givenName a owl:DatatypeProperty ;
+  rdfs:label    "given name"@en, "prénom"@fr;
   owl:equivalentProperty s:givenName .
 
 :jobTitle a owl:ObjectProperty ;
+  rdfs:label    "has job title"@en, "a pour métier"@fr;
   owl:equivalentProperty s:jobTitle .
 
 # Schema étendu
@@ -120,26 +147,26 @@
   rdfs:subClassOf :MedicalEntity .
 
 :Animal a owl:Class ;
-    rdfs:label "animal"@en, "animal"@fr ;
+    rdfs:label "Animal"@en, "Animal"@fr ;
     rdfs:comment "a living organism characterized by voluntary movement."@en,
                  "être vivant doué de sensibilite de mobilité."@fr .
 
 :Female a owl:Class ;
     owl:disjointWith :Male;
-    rdfs:label "female"@en, "femelle"@fr ;
+    rdfs:label "Female"@en, "Femelle"@fr ;
     rdfs:comment "an animal that produces gametes (ova) that can be fertilized by male gametes (spermatozoa)."@en,
                  "animal appartenant au sexe apte à produire des ovules."@fr ;
     rdfs:subClassOf :Animal .
 
 :Woman a owl:Class ;
-    rdfs:label "woman"@en, "femme"@fr ;
+    rdfs:label "Woman"@en, "Femme"@fr ;
     rdfs:comment "a female person"@en,
                  "femelle de l'espèce humaine."@fr ;
     rdfs:subClassOf :Female, :Person .
 
 :Male a owl:Class;
   owl:disjointWith :Female;
-  rdfs:label    "male"@en, "mâle"@fr ;
+  rdfs:label    "Male"@en, "Mâle"@fr ;
   rdfs:comment  "an animal that produces gametes (spermatozoa) that can fertilize female gametes (ova)."@en,
                 "individu appartenant au sexe qui possède le pouvoir de fécondation."@fr ;
   rdfs:subClassOf :Animal .

@@ -22,7 +22,7 @@
   owl:equivalentClass s:MedicalCondition .
 
 :MedicalSignOrSymptom a owl:Class ;
-  owl:equivalentClass s:MedicalCondition .
+  owl:equivalentClass s:MedicalSignOrSymptom .
 
 :MedicalTherapy a owl:Class ;
   owl:equivalentClass s:MedicalTherapy .
@@ -231,23 +231,33 @@
 :Person owl:hasKey ( :ssn ) .
 :Doctor owl:hasKey ( :rpps ) .
 
-
-# TODO: Check
 :RespiratoryDisease a owl:Class ;
   rdfs:label "Respiratory Disease"@en, "Maladie Respiratoire"@fr ;
-  owl:equivalentClass [
-    a owl:Restriction ;
-    owl:onProperty :signOrSymptom ;
-    owl:someValuesFrom symptoms:Cough
-  ] .
+  owl:unionOf (
+      [
+          a owl:Restriction ;
+          owl:onProperty :signOrSymptom ;
+          owl:hasValue symptoms:Cough
+      ]
+      [
+          a owl:Restriction ;
+          owl:onProperty :signOrSymptom ;
+          owl:hasValue symptoms:ShortnessBreath
+      ]
+      [
+          a owl:Restriction ;
+          owl:onProperty :signOrSymptom ;
+          owl:hasValue symptoms:SoreThroat
+      ]
+  ) .
 
 :MedicalTeam a owl:Class;
-  rdfs:label    "has member"@en, "a pour membre"@fr;
+  rdfs:label    "Medical Team"@en, "Equipe Médicale"@fr;
   rdfs:comment  "A team composed exclusively of physicians."@en,
                 "Une équipe composée exclusivement de médecins."@fr;
   owl:equivalentClass [
-    a owl:Restriction ; 
-    owl:onProperty :hasMember; 
-    owl:allValuesFrom :Doctor
-  ]
+    a owl:Restriction;
+    owl:onProperty :hasMember;
+    owl:someValuesFrom :Doctor
+  ] .
 

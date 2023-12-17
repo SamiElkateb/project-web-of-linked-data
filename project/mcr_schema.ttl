@@ -340,12 +340,19 @@
     rdfs:label "Person who has a predisposition d'avoir Diabetes"@en, "Personne susceptible d'avoir le diabète"@fr ;
     rdfs:comment "A condition inferred for an individual who has an ancestor with diabetes."@en,
                  "Condition déduite pour un individu ayant un ancêtre atteint de diabète."@fr ;
-    owl:equivalentClass [ 
-        a owl:Restriction ;
-        owl:onProperty :hasAncestor ;
-        owl:someValuesFrom [
+    owl:unionOf ( 
+        [ 
+            a owl:Restriction ;
+            owl:onProperty :hasAncestor ;
+            owl:someValuesFrom [
+                a owl:Restriction ;
+                owl:onProperty :healthCondition ;
+                owl:hasValue diseases:Diabetes 
+            ]
+        ]
+        [ 
             a owl:Restriction ;
             owl:onProperty :healthCondition ;
-            owl:hasValue diseases:Diabetes 
+            owl:hasValue diseases:Diabetes
         ]
-    ] .
+    ) .

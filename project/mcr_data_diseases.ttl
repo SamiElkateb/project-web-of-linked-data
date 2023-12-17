@@ -20,7 +20,7 @@ diseases:Flu a :MedicalCondition,
         skos:Concept ;
         skos:definition "Flu, also known as influenza, is a viral infection that attacks the respiratory system."@en,
                        "La grippe, également connue sous le nom d'influenza, est une infection virale qui attaque le système respiratoire."@fr ;
-        :name "Flue"@en, "Grippe"@fr ;
+        :name "Flu"@en, "Grippe"@fr ;
         :signOrSymptom symptoms:Fever, symptoms:Cough, 
                         symptoms:Fatigue, symptoms:ArticularPain ,
                         symptoms:MuscularPain, symptoms:Chills ;

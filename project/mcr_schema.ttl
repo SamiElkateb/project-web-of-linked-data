@@ -231,8 +231,9 @@
 :Person owl:hasKey ( :ssn ) .
 :Doctor owl:hasKey ( :rpps ) .
 
-:RespiratoryDisease a owl:Class ;
-  rdfs:label "Respiratory Disease"@en, "Maladie Respiratoire"@fr ;
+:RespiratoryCondition a owl:Class ;
+  rdfs:label "Respiratory Condition"@en, "Maladie Respiratoire"@fr ;
+  rdfs:subClassOf :MedicalCondition ;
   owl:unionOf (
       [
           a owl:Restriction ;
@@ -255,6 +256,7 @@
   rdfs:label    "Medical Team"@en, "Equipe Médicale"@fr;
   rdfs:comment  "A team composed exclusively of physicians."@en,
                 "Une équipe composée exclusivement de médecins."@fr;
+  rdfs:subClassOf :Team ;
   owl:equivalentClass [
     a owl:Restriction;
     owl:onProperty :hasMember;

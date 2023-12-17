@@ -41,7 +41,12 @@ le mal de gorge.
 skos: 
 parler de:
 
-- 
+- on a créé 2 thésaurus: un thésaurus de médicament et un thésaurus de symptomes.
+ceux-ci se prettent bien à être organisés dans un thésaurus car ils peuvent facilement être classés de manières
+hiérarchiques (différentes familles de médicaments, différents types de symptômes). De plus les thésaurus permettent
+d'établir des relations entre les différents termes. Enfin la création de thésaurus permet de normaliser la terminologie.
+Nous avons ainsi
+- on a créé une collection de maladies
 
 ## OWL Entailment
 

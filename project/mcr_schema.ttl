@@ -240,6 +240,50 @@
                 "Connecte une entité à un examen complémentaire spécifique qui a été réalisé."@fr;
   rdfs:range :MedicalTest .
 
+:hasSibling a owl:ObjectProperty ;
+    rdfs:label "has for sibling"@en, "a pour frère ou soeur"@fr ;
+    rdfs:comment "relation with an individual who has the same parents."@en,
+                 "relation avec un individu ayant les mêmes parents."@fr ;
+    owl:propertyChainAxiom (:hasParent :hasChild) .
+
+:hasAncestor a owl:TransitiveProperty ;
+    rdfs:label "has for ancestor"@en, "a pour ancêtre"@fr ;
+    rdfs:comment "relation between an animal and another animal from which it is descended."@en,
+                 "relation entre un animal et un autre animal duquel il descend."@fr ;
+    rdfs:domain :Animal ;
+    rdfs:range  :Animal .
+
+:hasBrother a owl:TransitiveProperty ;
+    owl:propertyDisjointWith :hasSister ;
+    rdfs:subClassOf :hasSibling ;
+    rdfs:label "has for brother"@en, "a pour frère"@fr ;
+    rdfs:comment "relation with a male who has the same parents."@en,
+                 "relation avec un mâle ayant les mêmes parents."@fr ;
+    rdfs:domain :Animal ;
+    rdfs:range  :Male .
+
+:hasSister a owl:TransitiveProperty ;
+    owl:propertyDisjointWith :hasBrother ;
+    rdfs:subClassOf :hasSibling ;
+    rdfs:label "has for brother"@en, "a pour frère"@fr ;
+    rdfs:comment "relation with a male who has the same parents."@en,
+                 "relation avec un mâle ayant les mêmes parents."@fr ;
+    rdfs:domain :Animal ;
+    rdfs:range  :Female .
+
+:hasParent a owl:ObjectProperty ;
+    owl:inverseOf :hasChild ;
+    rdfs:subPropertyOf :hasAncestor ;
+    rdfs:label "has for parent"@en, "a pour parent"@fr ;
+    rdfs:comment "relation between an animal and another animal which gave birth to it."@en,
+                 "relation entre un animal et un autre animal qui lui a donné naissance."@fr .
+
+:hasChild a owl:AsymmetricProperty ;
+    owl:inverseOf :hasParent ;
+    rdfs:label "has for child"@en, "a pour enfant"@fr ;
+    rdfs:comment "relation between an animal and another animal to which it gave birth."@en,
+                 "relation entre un animal et un autre animal auquel il a donné naissance."@fr .
+
 
 :ssn a owl:DatatypeProperty,
   owl:InverseFunctionalProperty ;

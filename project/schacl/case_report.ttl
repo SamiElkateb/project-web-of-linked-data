@@ -7,13 +7,11 @@ shapes:case_report a sh:NodeShape ;
   sh:property [ 
     sh:path :hasDoctor ;
     sh:qualifiedMinCount 1 ;
-    sh:qualifiedMaxCount 1 ;
     sh:qualifiedValueShape [ sh:class :Doctor ]
   ] ;
   sh:property [ 
     sh:path :hasClinicalExamination ;
     sh:qualifiedMinCount 1 ;
-    sh:qualifiedMaxCount 1 ;
     sh:qualifiedValueShape [ sh:class :ClinicalExamination ]
   ] .
 
@@ -28,6 +26,5 @@ shapes:clinical_examination a sh:NodeShape ;
   sh:property [ 
     sh:path :hasDoctor ;
     sh:qualifiedMinCount 1 ;
-    sh:qualifiedMaxCount 1 ;
     sh:qualifiedValueShape [ sh:class :Doctor ]
   ] .

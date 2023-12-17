@@ -4,7 +4,6 @@ To do :
 - Transform gender into male or female (owl:disjointWith)
 
 ## List of properties
-- owl:InverseFunctionalProperty (for a social security number)
 
 ## Class relationships
 - enumerated classes : owl:oneOf
@@ -17,7 +16,7 @@ To do :
 
 ## Equivalences and alignements
 - owl:sameAs
-- owl:hasKey
+
 
 ## Property restrictions
 - restriction of property values
@@ -38,7 +37,10 @@ Done :
 - owl:differentFrom (:doseUnit and :doseValue)
 - restriction of some property values #1 (:CaseReport must be associated to at least one :ClinicalExamination)
 - restriction of some property values #2 (:Patient must be associated with at least one :CaseReport)
+
 - owl:FunctionalProperty (:birthDate like the slides of the lecture)
+- owl:InverseFunctionalProperty (for a social security number, relations or which the same value implies the same subject)
+- owl:hasKey (:ssn and :rpps)
 
 Not possible with our current schema :
 - owl:SymmetricProperty

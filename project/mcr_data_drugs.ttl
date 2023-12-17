@@ -36,7 +36,7 @@ drugs:Paracetamol a :Drug,
   skos:Concept ;
   skos:definition "Le paracétamol, est un médicament utilisé pour traiter la douleur et la fièvre. Il est généralement utilisé pour soulager la douleur légère à modérée."@fr ,
                   "Paracetamol, is a medication used to treat pain and fever. It is typically used for mild to moderate pain relief."@en ;
-  skos:broader drugs:Antipyretics, drucs:Analgesic ;
+  skos:broader drugs:Antipyretics, drugs:Analgesic ;
   :activeIngredient "Paracetamol" ;
   :drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé"@en ;
   :dosageForm "tablet"@en, "comprimé"@fr .
@@ -45,7 +45,7 @@ drugs:Ibuprofene a :Drug,
   skos:Concept ;
   skos:definition "L'ibuprofène est un médicament anti-inflammatoire non stéroïdien (AINS) utilisé pour traiter la douleur, la fièvre et l'inflammation."@fr,
                   "Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) used to treat pain, fever, and inflammation."@en ;
-  skos:broader drugs:Antipyretics, drucs:Analgesic, drugs:AntiInflammatory ;
+  skos:broader drugs:Antipyretics, drugs:Analgesic, drugs:AntiInflammatory ;
   :activeIngredient "Ibuprofene" ;
   :drugUnit "400mg tablet"@en, "200mg tablet"@en, "200mg comprimé"@en, "400mg comprimé"@en ;
   :dosageForm "tablet"@en, "comprimé"@fr .

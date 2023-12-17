@@ -214,3 +214,6 @@
                 "Relie un professionnel de santé à son numéro d'identification unique RPPS."@fr;
   rdfs:range xsd:string ;
   rdfs:domain :Doctor .
+
+:Person owl:hasKey ( :ssn ) .
+:Doctor owl:hasKey ( :rpps ) .

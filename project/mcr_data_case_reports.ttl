@@ -149,3 +149,16 @@ reports:Case10 a :CaseReport ;
   :hasDoctor doctors:DoctorMichu ;
   :hasMedicalTherapy treatments:Ibuprofene,
                      treatments:ParacetamolPrescription .
+
+reports:P11CE a :ClinicalExamination ;
+  :hasPatient patients:Patient5 ;
+  :hasSignOrSymptom symptoms:Fever, symptoms:Cough, 
+                    symptoms:Chills, symptoms:Fatigue ;
+  :hasDiagnosis diseases:Covid ;
+  :hasMedicalTest tests:CovidTest ;
+  :hasDoctor doctors:DoctorLopez .
+
+reports:Case11 a :CaseReport ;
+  :hasClinicalExamination reports:P5CE ;
+  :hasDoctor doctors:DoctorDoe ;
+  :hasMedicalTherapy treatments:ParacetamolPrescription .

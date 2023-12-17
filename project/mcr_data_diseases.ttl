@@ -16,7 +16,7 @@
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-diseases:Flu a :MedicalCondition,
+diseases:Flu a :MedicalCondition, :InfectiousDisease,
         skos:Concept ;
         skos:definition "Flu, also known as influenza, is a viral infection that attacks the respiratory system."@en,
                        "La grippe, également connue sous le nom d'influenza, est une infection virale qui attaque le système respiratoire."@fr ;
@@ -28,7 +28,7 @@ diseases:Flu a :MedicalCondition,
                             treatments:IbuprofenePrescription ;
         owl:sameAs dbpedia:Influenza .
 
-diseases:Pneumonia a :MedicalCondition,
+diseases:Pneumonia a :MedicalCondition, :InfectiousDisease,
         skos:Concept ;
         skos:definition "Pneumonia is an infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus, causing cough with phlegm or pus, fever, chills, and difficulty breathing."@en,
                         "La pneumonie est une infection qui enflamme les sacs aériens dans un ou les deux poumons. Les sacs peuvent se remplir de liquide ou de pus, causant une toux avec du flegme ou du pus, de la fièvre, des frissons et des difficultés respiratoires."@fr ;
@@ -40,7 +40,7 @@ diseases:Pneumonia a :MedicalCondition,
                             treatments:ParacetamolPrescription ;
         owl:sameAs dbpedia:Pneumonia .
 
-diseases:Covid a :MedicalCondition,
+diseases:Covid a :MedicalCondition, :InfectiousDisease,
         skos:Concept ;
         skos:definition "COVID-19 is an infectious disease caused by the SARS-CoV-2 virus. Symptoms can vary from mild to severe respiratory illness."@en,
                        "La COVID-19 est une maladie infectieuse causée par le virus SARS-CoV-2. Les symptômes peuvent varier de légers à graves."@fr ;
@@ -52,7 +52,7 @@ diseases:Covid a :MedicalCondition,
         :possibleTreatment treatments:ParacetamolPrescription ;
         owl:sameAs dbpedia:COVID-19 .
 
-diseases:Bronchitis a :MedicalCondition,
+diseases:Bronchitis a :MedicalCondition, :InfectiousDisease,
         skos:Concept ;
         skos:definition "Bronchitis is an inflammation of the lining of your bronchial tubes, which carry air to and from your lungs. Bronchitis may cause cough, phlegm production, and breathing difficulties."@en,
                         "La bronchite est une inflammation de la muqueuse de vos bronches, qui transportent l'air vers et depuis vos poumons. La bronchite peut causer une toux, la production de flegme et des difficultés respiratoires."@fr ;
@@ -62,7 +62,7 @@ diseases:Bronchitis a :MedicalCondition,
         :possibleTreatment treatments:ParacetamolPrescription ;
         owl:sameAs dbpedia:Bronchitis .
 
-diseases:Diabetes a :MedicalCondition,
+diseases:Diabetes a :MedicalCondition, :NonInfectiousDisease,
         skos:Concept ;
         skos:definition "Diabetes is a chronic disease that occurs when the pancreas is no longer able to make insulin, or when the body cannot make good use of the insulin it produces."@en,
                         "Le diabète est une maladie chronique qui se produit lorsque le pancréas n'est plus capable de produire de l'insuline, ou lorsque le corps ne peut pas utiliser correctement l'insuline produite."@fr ;
@@ -77,7 +77,7 @@ diseases:Diabetes a :MedicalCondition,
                             treatments:PhysicalExercice ;
         owl:sameAs dbpedia:Diabetes .
 
-diseases:Hypertension a :MedicalCondition,
+diseases:Hypertension a :MedicalCondition, :NonInfectiousDisease,
         skos:Concept ;
         skos:definition "Hypertension, or high blood pressure, is a condition in which the blood pressure in the arteries is persistently elevated. It can lead to significant health issues and increase the risk of heart disease, stroke, and sometimes death."@en,
                         "L'hypertension, ou tension artérielle élevée, est une condition dans laquelle la pression sanguine dans les artères est constamment élevée. Elle peut entraîner des problèmes de santé importants et augmenter le risque de maladies cardiaques, d'accidents vasculaires cérébraux et parfois de décès."@fr ;

@@ -27,6 +27,16 @@
   rdfs:label    "Medical Condition"@en, "Maladie"@fr;
   owl:equivalentClass s:MedicalCondition .
 
+:InfectiousDisease a owl:ObjectProperty ;
+  owl:complementOf :NonInfectiousDisease ;
+  rdfs:label    "Infectious Disease"@en, "Maladie Infectieuse"@fr;
+  rdfs:subClassOf :MedicalCondition .
+
+:NonInfectiousDisease a owl:ObjectProperty ;
+  owl:complementOf :InfectiousDisease ;
+  rdfs:label    "Non Infectious Disease"@en, "Maladie Non Infectieuse"@fr ;
+  rdfs:subClassOf :MedicalCondition .
+
 :MedicalSignOrSymptom a owl:Class ;
   rdfs:label    "Medical Sign or Symptom"@en, "Signe ou Symptôme Médical"@fr;
   owl:equivalentClass s:MedicalSignOrSymptom .
@@ -108,6 +118,7 @@
 :healthCondition a owl:ObjectProperty ;
   rdfs:label    "has health condition"@en, "a pour maladie"@fr;
   owl:equivalentProperty s:healthCondition .
+
 
 :value a owl:ObjectProperty ;
   rdfs:label    "value"@en, "valeur"@fr;

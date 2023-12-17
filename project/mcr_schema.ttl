@@ -5,6 +5,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix symptoms: <http://project-wold.fr/symptoms/data#> .
 
 : a owl:Ontology ;
   rdfs:label "Medical Ontology";
@@ -155,6 +156,17 @@
                 "Professionnel de la santé titulaire d'un diplôme de docteur en médecine"@fr;
   rdfs:subClassOf :Person .
 
+:Team a owl:Class ;
+  rdfs:label    "Team"@en, "Équipe"@fr;
+  rdfs:comment  "A group of individuals working together towards a common goal."@en,
+                "Un groupe d'individus travaillant ensemble vers un objectif commun."@fr.
+
+:hasMember a owl:ObjectProperty ;
+  rdfs:label    "has member"@en, "a pour membre"@fr;
+  rdfs:comment  "Relates a team to its individual members."@en,
+                "Relie une équipe à ses membres individuels."@fr;
+  rdfs:range :Person ;
+  rdfs:domain :Team .
 
 :hasDiagnosis a owl:ObjectProperty;
   rdfs:label   "has diagnosis"@en, "a un diagnostic"@fr;
@@ -199,6 +211,7 @@
                 "Connecte une entité à un examen complémentaire spécifique qui a été réalisé."@fr;
   rdfs:range :MedicalTest .
 
+
 :ssn a owl:DatatypeProperty,
   owl:InverseFunctionalProperty ;
   rdfs:label    "has social security number"@en, "a un numéro de sécurité sociale"@fr;
@@ -217,3 +230,24 @@
 
 :Person owl:hasKey ( :ssn ) .
 :Doctor owl:hasKey ( :rpps ) .
+
+
+# TODO: Check
+:RespiratoryDisease a owl:Class ;
+  rdfs:label "Respiratory Disease"@en, "Maladie Respiratoire"@fr ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty :signOrSymptom ;
+    owl:someValuesFrom symptoms:Cough
+  ] .
+
+:MedicalTeam a owl:Class;
+  rdfs:label    "has member"@en, "a pour membre"@fr;
+  rdfs:comment  "A team composed exclusively of physicians."@en,
+                "Une équipe composée exclusivement de médecins."@fr;
+  owl:equivalentClass [
+    a owl:Restriction ; 
+    owl:onProperty :hasMember; 
+    owl:allValuesFrom :Doctor
+  ]
+

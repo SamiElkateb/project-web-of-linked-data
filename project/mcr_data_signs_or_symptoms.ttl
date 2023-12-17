@@ -17,109 +17,130 @@
 
 symptoms:Pain a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "A sensation that hurts."@en ,
+                  "Une sensation douloureuse."@fr ;
   :name "Pain"@en , "Douleur"@fr .
 
 symptoms:Fever a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "An increase in body temperature above the normal range, often a sign of infection or illness."@en ,
+                  "Une élévation de la température corporelle au-dessus de la normale, souvent signe d'infection ou de maladie."@fr ;
   :name "Fever"@en , "Fièvre"@fr .
 
 symptoms:Cough a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "A sudden, forceful expulsion of air from the lungs, often a reflex to clear the airway."@en ,
+                  "Une expulsion d'air soudaine et vigoureuse des poumons, souvent un réflexe pour nettoyer les voies respiratoires."@fr ;
   :name "Cough"@en , "Toux"@fr .
 
 symptoms:Fatigue a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "A feeling of tiredness or exhaustion, often resulting from physical or mental exertion."@en ,
+                  "Un sentiment de fatigue ou d'épuisement, souvent dû à un effort physique ou mental."@fr ;
   :name "Fatigue"@en , "Fatigue"@fr .
 
 symptoms:ArticularPain a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "Pain occurring in the joints, can be a symptom of various diseases or injuries."@en ,
+                  "Douleur survenant dans les articulations, pouvant être un symptôme de diverses maladies ou blessures."@fr ;
   skos:broader symptoms:Pain ;
   :name "Articular pain"@en , "Douleur articulaire"@fr .
 
 symptoms:MuscularPain a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "Pain in the muscles, which can result from overuse, injury, or underlying health conditions."@en ,
+                  "Douleur dans les muscles, pouvant résulter d'une surutilisation, d'une blessure ou de conditions de santé sous-jacentes."@fr ;
   skos:broader symptoms:Pain ;
   :name "Muscular pain"@en , "Douleur musculaire"@fr .
 
 symptoms:ChestPain a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "Pain or discomfort in the chest area, can be a sign of serious heart or lung conditions."@en ,
+                  "Douleur ou inconfort dans la région thoracique, pouvant être un signe de conditions cardiaques ou pulmonaires graves."@fr ;
   skos:broader symptoms:Pain ;
   :name "Chest pain"@en , "Douleur thoracique"@fr .
 
 symptoms:Headache a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "Pain in the head or upper neck, often associated with tension, migraine, or sinus issues."@en ,
+                  "Douleur dans la tête ou le haut du cou, souvent associée à la tension, à la migraine ou aux problèmes de sinus."@fr ;
   skos:broader symptoms:Pain ;
   :name "Headache"@en , "Mal de tête"@fr .
 
 symptoms:SoreThroat a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "A painful, dry, or scratchy feeling in the throat, often a sign of infection or irritation."@en ,
+                  "Une sensation douloureuse, sèche ou irritante dans la gorge, souvent un signe d'infection ou d'irritation."@fr ;
   :name "Sore throat"@en , "Mal de gorge"@fr .
 
 symptoms:LossOfSmell a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "Inability or decreased ability to smell, can be temporary or a sign of a health condition."@en ,
+                  "Incapacité ou diminution de la capacité à sentir, peut être temporaire ou un signe d'une condition de santé."@fr ;
   :name "Loss of smell"@en , "Perte d'odorat"@fr .
 
 symptoms:ShortnessBreath a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "Difficulty breathing or feeling short of breath, can indicate respiratory or cardiac issues."@en ,
+                  "Difficulté à respirer ou sensation d'essoufflement, pouvant indiquer des problèmes respiratoires ou cardiaques."@fr ;
   :name "Shortness of breath"@en , "Essouflement"@fr .
 
 symptoms:Chills a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "A feeling of coldness occurring during a high fever, often accompanied by shivering."@en ,
+                  "Une sensation de froid survenant pendant une forte fièvre, souvent accompagnée de frissons."@fr ;
   :name "Chills"@en , "Frissons"@fr .
 
 symptoms:WeightLoss a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "A decrease in body weight, can be intentional or due to underlying health conditions."@en ,
+                  "Une diminution du poids corporel, pouvant être intentionnelle ou due à des conditions de santé sous-jacentes."@fr ;
   :name "Weight loss"@en , "Perte de poid"@fr .
 
 symptoms:DrySkin a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "A condition where the skin is less hydrated, leading to roughness, flaking, and itching."@en ,
+                  "Une condition où la peau est moins hydratée, menant à la rugosité, à la desquamation et à des démangeaisons."@fr ;
   :name "Dry skin"@en , "Peau sèche"@fr .
 
 symptoms:Polyphagia a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "An abnormally strong sensation of hunger or increased appetite, sometimes a symptom of diabetes."@en ,
+                  "Une sensation de faim anormalement forte ou un appétit accru, parfois un symptôme du diabète."@fr ;
   :name "Polyphagia"@en, "Polyphagie"@fr .
 
 symptoms:Polyuria a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "Excessive or abnormally large production or passage of urine, often a symptom of diabetes."@en ,
+                  "Production ou passage excessif ou anormalement important d'urine, souvent un symptôme du diabète."@fr ;
   :name "Polyuria"@en, "Polyurie"@fr .
 
 symptoms:Polydipsia a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "An abnormally great thirst as a symptom of disease (such as diabetes) or psychological disturbance."@en ,
+                  "Une soif anormalement grande comme symptôme d'une maladie (comme le diabète) ou d'un trouble psychologique."@fr ;
   :name "Polydipsia"@en, "Polydipsie"@fr .
 
 symptoms:Nausea a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "A feeling of sickness with an inclination to vomit, can be a sign of various conditions or illnesses."@en ,
+                  "Une sensation de malaise avec une inclination à vomir, peut être un signe de diverses conditions ou maladies."@fr ;
   :name "Nausea"@en , "Nausée"@fr .
 
 symptoms:Dizziness a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "A sensation of spinning around and losing one's balance, associated with many conditions."@en ,
+                  "Une sensation de tourner autour et de perdre son équilibre, associée à de nombreuses conditions."@fr ;
   :name "Dizziness"@en , "Vertiges"@fr .
 
 symptoms:Anxiety a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "A feeling of worry, nervousness, or unease, typically about an imminent event or something with an uncertain outcome."@en ,
+                  "Un sentiment d'inquiétude, de nervosité ou de malaise, généralement à propos d'un événement imminent ou de quelque chose à l'issue incertaine."@fr ;
   :name "Anxiety"@en , "Anxiété"@fr .
 
 symptoms:BlurredVision a :MedicalSignOrSymptom,
   skos:Concept ;
-  skos:definition ""@fr, ""@en ;
+  skos:definition "A lack of sharpness of vision resulting in the inability to see fine detail, can indicate various eye conditions."@en ,
+                  "Un manque de netteté de la vision entraînant l'incapacité de voir les détails fins, peut indiquer diverses conditions oculaires."@fr ;
   :name "Blurred vision"@en , "Vision trouble"@fr .

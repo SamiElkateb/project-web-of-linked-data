@@ -1,5 +1,6 @@
 @prefix : <http://project-websem.fr/schema#> .
 @prefix symptoms: <http://project-websem.fr/symptoms/data#> .
+@prefix diseases: <http://project-websem.fr/diseases/data#> .
 
 @prefix s: <https://schema.org/schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -284,7 +285,6 @@
     rdfs:comment "relation between an animal and another animal to which it gave birth."@en,
                  "relation entre un animal et un autre animal auquel il a donné naissance."@fr .
 
-
 :ssn a owl:DatatypeProperty,
   owl:InverseFunctionalProperty ;
   rdfs:label    "has social security number"@en, "a un numéro de sécurité sociale"@fr;
@@ -336,3 +336,16 @@
     owl:someValuesFrom :Doctor
   ] .
 
+:PersonWithGeneticDiabetesPredisposition a owl:Class ;
+    rdfs:label "Person who has a predisposition d'avoir Diabetes"@en, "Personne susceptible d'avoir le diabète"@fr ;
+    rdfs:comment "A condition inferred for an individual who has an ancestor with diabetes."@en,
+                 "Condition déduite pour un individu ayant un ancêtre atteint de diabète."@fr ;
+    owl:equivalentClass [ 
+        a owl:Restriction ;
+        owl:onProperty :hasAncestor ;
+        owl:someValuesFrom [
+            a owl:Restriction ;
+            owl:onProperty :healthCondition ;
+            owl:hasValue diseases:Diabetes 
+        ]
+    ] .

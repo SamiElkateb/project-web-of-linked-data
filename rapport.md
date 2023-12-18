@@ -77,3 +77,19 @@ des équipes contenant au moins un médecin. Nous pouvons remarquer que les équ
 contenant des médecins sont inférées comme des équipes médicales alors que l'équipe 3
 ne contenant pas de médecin ne l'est pas.
 
+## Contraintes SHACL 
+
+Lors de notre projet initial, nous avions défini la classe "rapport de cas" 
+(CaseReport) composée d'un médecin, un patient, un examen clinique et éventuellement une thérapie. 
+Cette modélisation a évolué et ne contient plus de patient pour éviter la duplication
+des données présentes dans l'examen clinique. 
+Cette modélisation peut être affinée et contrainte à l'aide d'une contrainte SHACL. 
+Nous avons donc définit `shapes:case_report` qui contraint les rapports
+de cas à avoir au moins un Docteur et un examen clinique.
+De même, nous avons définit les examens cliniques comme associés à un patient unique
+et au minimum à un médecin dans la contrainte `shapes:clinical_examination`. 
+Nous pouvons facilement vérifier que ces contraintes ont l'effet désiré en retirant le médecin de l'examen clinique
+ou du rapport de cas ou en augmentant le nombre de patients.
+
+L'une des évolution de notre projet Web Sémantique a été l'ajout de 3 Thérausus. 
+

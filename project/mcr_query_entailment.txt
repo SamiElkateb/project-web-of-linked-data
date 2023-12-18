@@ -13,7 +13,7 @@ select ?weightValue ?weightUnit where {
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 
-2. Quelles équipes sont des équipes médicales ?
+2. Quelles sont les personnes susceptibles d'avoir une prédisposition au diabète ?
 
 prefix : <http://project-websem.fr/schema#> .
 prefix diseases: <http://project-websem.fr/diseases/data#> .
@@ -27,25 +27,25 @@ select * where {
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 
-3. Quelles sont les personnes susceptibles d'avoir une maladie héréditaire ?
-
-prefix : <http://project-websem.fr/schema#> .
-
-select * where {
-  ?person a :PersonWithGeneticDiabetesPredisposition .
-}
-
---------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------
-
-4. Quelles maladies ont un effet sur les voix respiratoires ? 
+3. Quelles maladies ont un effet sur les voix respiratoires ? 
 Et quels sont les symptômes de ces maladies ?
 
 prefix : <http://project-websem.fr/schema#> .
 
 select * where {
-  ?disease a :RespiratoryCondition .
-  ?disease :signOrSymptom ?s .
+  ?disease a :RespiratoryCondition
+}
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+4. Quelles équipes sont des équipes médicales ?
+
+prefix : <http://project-websem.fr/schema#> .
+
+select * 
+where {
+  ?x a :MedicalTeam .
 }
 
 --------------------------------------------------------------------------------------------

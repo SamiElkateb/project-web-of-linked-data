@@ -93,5 +93,13 @@ ou du rapport de cas ou en augmentant le nombre de patients.
 
 L'une des évolutions de notre projet Web Sémantique a été l'ajout de 3 Thérausus. Pour 
 standardiser les entités de ces thésaurus nous avons créé des contraintes SHACL pour les
-médicaments, les signes et symptômes et les maladies.
+médicaments, les signes et symptômes et les maladies. Ainsi, nous avons pus contraindre les instances
+de ces classes à être incluses dans leur thésaurus respectif. De plus, nous avons
+ajouté aux instances de la classe médicament d'avoir au moins une substance active une unité de médicament et une
+forme galénique. De même, nous avons contraint les maladies à posséder au moins un signe clinique ou symptôme. Nous 
+pouvons vérifier ces contraintes en retirant les propriétés requises ou en incluant des langues non supportées.
 
+Finalement, nous avons définit des contraintes pour les médecins et les patients. Entre autres, les
+instances de ces deux classes doivent être identifiée respectivement par un numéro RPPS et un numéro de sécurité de sécurité sociale.
+Le format de ces numéros est contrôlé à l'aide d'expressions régulières. Nous pouvons utiliser des numéros invalide pour 
+contrôler le bon fonctionnement de ces contraintes.

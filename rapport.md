@@ -7,15 +7,12 @@ author: "EL KATEB Sami, PAUL Thomas"
 
 Pour faire évoluer notre modélisation de rapports médicaux, nous avons commencé
 par intégrer les retours reçus sur notre premier projet. 
-Nous avons donc remplacé la propriété _gender_ par les classes Man et Woman. 
-
+Nous avons commencé par remplacer la propriété _gender_ par les classes Man et Woman. 
 Puis nous avons ajouté les numéros de sécurité sociale des patients et les numéros
 RPPS des médecins. 
-Nous avons pu définir ces propriétés en tant que owl:InverseFunctionalProperty 
-car deux entités ayant la même valeur pour l'une de ces deux propriété implique que les entités sont 
-identique. 
-Par conséquent, nous avons également pu les définir comme valeur de owl:hasKey
-pour les patients et les médecins respectivement.
+Nous avons défini ces propriétés comme owl:InverseFunctionalProperty.
+En effet, si deux entités ont la même valeur pour l'une de ces deux propriété, celles-ci sont identiques.
+Pour la même raison, ce sont également les valeurs de owl:hasKey pour les patients et les médecins respectivement.
 
 Étant donné que nous avions débuté une ontology owl, nous avons avons mis à jour la déclaration
 de notre ontology en ajoutant la référence à la version précédente.

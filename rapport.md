@@ -36,34 +36,20 @@ avons ainsi pu créer la classe PersonWithGeneticDiabetesPredisposition qui incl
 diabétique ou un frère/soeur diabétique. Nous avons choisit de ne pas exclure les personnes diagnostiquées diabétique 
 de cet ensemble car nous considérons que celles-ci sont toujours des personnes prédisposées génétiquement au diabète.
 
--- draft
-parler de:
+Par la suite nous avons définit l'ensemble des maladies respiratoires (RespiratoryCondition) comme l'union des maladies ayant pour symptôme la toux,
+l'essoufflement ou le mal de gorge. Nous avons également définit l'ensemble des maladies infectieuse et son complément, l'ensemble des maladies non
+infectieuses.
 
-- on a définit rpps et ssn comme InverseFunctionalProperty
-- on a utilisé ssn et rpps en haskey ainsi deux personnes ayant le même ssn sont la même personne et de même pour le rpps et les médecin.
+Finalement, nous avons définit une équipe (Team) puis une équipe médicale (MedicalTeam) comme étant une équipe composée
+d'au moins un médecin.
 
-- on a définit une equipe puis une équipe médicale comme étant une équipe composée uniquement de médecins
-- on a définit InfectiousDisease et son complémentaire NonInfectiousDisease
-
-on a ajouter des liens de parenté entre les patients:
-
-ces liens de parentés nous permettent de mettre en évidence des potentielles prédisposition génétiques.
-Ainsi nous avons définit une personne prédisposée à avoir le diabète comme l'union des personnes ayant un ancestre diabétique 
-et celui des frères/soeurs ayant le diabète (siblings)
-
-
-Nous avons définit les maladies respiratoires comme l'union des maladies ayant pour symptome la toux, l'essoufflement ou
-le mal de gorge.
-
-skos: 
-parler de:
-
-- on a créé 2 thésaurus: un thésaurus de médicament et un thésaurus de symptomes.
-ceux-ci se prettent bien à être organisés dans un thésaurus car ils peuvent facilement être classés de manières
-hiérarchiques (différentes familles de médicaments, différents types de symptômes). De plus les thésaurus permettent
+Nous avons également introduit 3 thésaurus SKOS dans nos données: un thésaurus de médicament, un thésaurus de symptômes et un
+thésaurus des maladies.
+Ceux-ci se prêtent bien à être organisés dans un thésaurus car ils peuvent facilement être classés de manières
+hiérarchiques (différentes familles de médicaments, différents types de symptômes et de maladies). De plus les thésaurus permettent
 d'établir des relations entre les différents termes. Enfin la création de thésaurus permet de normaliser la terminologie.
-Nous avons ainsi
-- on a créé une collection de maladies
+Nous avons également créé une collection de maladies contagieuses qui permet de regrouper les maladies
+à travers leur contagiosité alors que le thesaurus est lui organisé par organe atteint. 
 
 ## OWL Entailment
 
@@ -71,5 +57,8 @@ Ainsi en incluant uniquement les relations hasChild dans nos données,
 le raisonneur OWL RL infère que la propriété inverse de hasChild est hasParent qui est elle même 
 une sous-propriété de hasAncestor et infère donc correctement que Patient9 qui n'est pas diagnostiquée
 diabètique a une prédisposition génétique au diabète.
+
+
+Nous retrouvons dans les maladies respiratoire ...
 
 ## 

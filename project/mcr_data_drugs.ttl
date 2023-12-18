@@ -26,18 +26,22 @@ drugs:DrugsThesaurus a skos:ConceptScheme ;
   skos:hasTopConcept drugs:Antipyretic .
 
 drugs:Antibiotic a :Drug, skos:Concept ;
+  skos:prefLabel "Antibiotiques"@fr, "Antibiotics"@en ;
   skos:definition "Antibiotics are a type of medication used to treat bacterial infections by killing or inhibiting the growth of bacteria."@en ,
                  "Les antibiotiques sont un type de médicament utilisé pour traiter les infections bactériennes en tuant ou en inhibant la croissance des bactéries."@fr .
 
 drugs:Analgesic a :Drug, skos:Concept ;
+  skos:prefLabel "Analgésiques"@fr, "Analgesics"@en ;
   skos:definition "Analgesics, also known as painkillers, are medications used to relieve pain. They can range from over-the-counter options like aspirin to stronger prescription medications."@en ,
                  "Les analgésiques, également connus sous le nom d'antidouleurs, sont des médicaments utilisés pour soulager la douleur. Ils peuvent varier des options en vente libre comme l'aspirine aux médicaments sur ordonnance plus forts."@fr .
 
 drugs:AntiInflammatory a :Drug,skos:Concept ;
+  skos:prefLabel "Anti-inflammatoire"@fr, "Anti-inflammatory"@en ;
   skos:definition "Anti-inflammatory drugs are medications designed to reduce inflammation and relieve pain. They can be over-the-counter, like ibuprofen, or prescription medications."@en ,
                  "Les médicaments anti-inflammatoires sont conçus pour réduire l'inflammation et soulager la douleur. Ils peuvent être en vente libre, comme l'ibuprofène, ou sur ordonnance."@fr .
 
 drugs:Antipyretic a :Drug, skos:Concept ;
+  skos:prefLabel "Antipyrétique"@fr, "Antipyretic"@en ;
   skos:definition "Antipyretics are medications that are used to reduce fever. Common examples include acetaminophen and ibuprofen, which can also act as pain relievers."@en ,
                  "Les antipyrétiques sont des médicaments utilisés pour réduire la fièvre. Des exemples courants incluent l'acétaminophène et l'ibuprofène, qui peuvent également agir comme des analgésiques."@fr .
 

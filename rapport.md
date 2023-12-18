@@ -29,13 +29,12 @@ que nous avions définies comme ObjectProperty alors que celles-ci étaient des 
 Nous avons ajouté à notre ontologie des liens de parenté tel que hasAncestor qui est une propriété asymétrique, irreflexive
 et transitive et sa sous-propriété hasParent qui n'est elle pas transitive. Nous avons également ajouté la 
 propriété hasChild qui est l'inverse de hasParent et possède les mêmes types que celle-ci. De plus, nous
-avons ajouté la propriété hasBrother et 
+avons ajouté la propriété hasBrother et hasSister toutes deux disjointes et irréflexives, sous-propriété de hasSibling.
 
-Ces liens de parenté nous permettre de mettre en évidence les prédispositions génétiques. Nous 
+Ces liens de parenté nous permettent de mettre en évidence les prédispositions génétiques. Nous 
 avons ainsi pu créer la classe PersonWithGeneticDiabetesPredisposition qui inclus les personnes ayant un ancêtre
-diabétique ou un frère/soeur diabétique. 
-
-
+diabétique ou un frère/soeur diabétique. Nous avons choisit de ne pas exclure les personnes diagnostiquées diabétique 
+de cet ensemble car nous considérons que celles-ci sont toujours des personnes prédisposées génétiquement au diabète.
 
 -- draft
 parler de:
@@ -67,5 +66,10 @@ Nous avons ainsi
 - on a créé une collection de maladies
 
 ## OWL Entailment
+
+Ainsi en incluant uniquement les relations hasChild dans nos données,
+le raisonneur OWL RL infère que la propriété inverse de hasChild est hasParent qui est elle même 
+une sous-propriété de hasAncestor et infère donc correctement que Patient9 qui n'est pas diagnostiquée
+diabètique a une prédisposition génétique au diabète.
 
 ## 

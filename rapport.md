@@ -19,15 +19,17 @@ nous avons mis à jour la déclaration de notre ontologie en y ajoutant la réf�
 Nous avons également corrigé nos erreurs précédentes où certaines propriétés définies comme ObjectProperty 
 auraient dû être des DataProperty.
 
-Nous avons ajouté à notre ontologie des liens de parenté tel que hasAncestor qui est une propriété asymétrique, irreflexive
-et transitive et sa sous-propriété hasParent qui elle, n'est pas transitive. Nous avons également ajouté la 
-propriété hasChild qui est l'inverse de hasParent et possède les mêmes types que celle-ci. De plus, nous
-avons ajouté la propriété hasBrother et hasSister toutes deux disjointes et irréflexives, sous-propriété de hasSibling.
+Nous avons enrichi notre ontologie par des liens de parenté,
+tels que hasAncestor, une propriété asymétrique,
+irréflexive et transitive, et sa sous-propriété hasParent, qui n'est pas transitive.
+Nous avons aussi ajouté hasChild, l'inverse de hasParent, qui possède les mêmes types que celle-ci.
+Enfin, nous avons ajouté hasBrother et hasSister, toutes deux disjointes, irréflexives et sous-propriétés de hasSibling.
+Ces liens de parenté nous ont permis de mettre en évidence les prédispositions génétiques. Ainsi,
+nous avons créé la classe PersonWithGeneticDiabetesPredisposition,
+incluant les personnes ayant un ancêtre ou un frère/soeur diabétique.
+Nous avons choisi de ne pas exclure les personnes déjà diagnostiquées diabétiques de cet ensemble,
+considérant qu'elles restent prédisposées génétiquement au diabète.
 
-Ces liens de parenté nous permettent de mettre en évidence les prédispositions génétiques. Nous 
-avons ainsi pu créer la classe PersonWithGeneticDiabetesPredisposition qui inclus les personnes ayant un ancêtre
-diabétique ou un frère/soeur diabétique. Nous avons choisit de ne pas exclure les personnes diagnostiquées diabétique 
-de cet ensemble car nous considérons que celles-ci sont toujours des personnes prédisposées génétiquement au diabète.
 
 Par la suite nous avons définit l'ensemble des maladies respiratoires (RespiratoryCondition) comme l'union des maladies ayant pour symptôme la toux,
 l'essoufflement ou le mal de gorge. Nous avons également définit l'ensemble des maladies infectieuse et son complément, l'ensemble des maladies non

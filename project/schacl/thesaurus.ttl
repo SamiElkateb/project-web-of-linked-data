@@ -13,10 +13,12 @@ shapes:medical_sign_or_symptom a sh:NodeShape ;
   sh:property [ 
     sh:path skos:definition ;
     sh:languageIn ("fr" "en");
+    sh:minCount 1
   ] ;
   sh:property [ 
-    sh:path :name ;
+    sh:path skos:prefLabel ;
     sh:languageIn ("fr" "en");
+    sh:minCount 1
   ] .
 
 shapes:drug a sh:NodeShape ; 
@@ -26,8 +28,13 @@ shapes:drug a sh:NodeShape ;
     sh:hasValue skos:Concept ;
   ] ;
   sh:property [ 
+    sh:path skos:prefLabel ;
+    sh:minCount 1
+  ] ;
+  sh:property [ 
     sh:path skos:definition ;
     sh:languageIn ("fr" "en");
+    sh:minCount 1
   ] ;
   sh:property [ 
     sh:path :activeIngredient ;
@@ -36,10 +43,12 @@ shapes:drug a sh:NodeShape ;
   sh:property [ 
     sh:path :drugUnit ;
     sh:languageIn ("fr" "en");
+    sh:minCount 1
   ] ;
   sh:property [ 
     sh:path :dosageForm ;
     sh:languageIn ("fr" "en");
+    sh:minCount 1
   ] .
 
 shapes:medical_condition a sh:NodeShape ; 
@@ -51,10 +60,12 @@ shapes:medical_condition a sh:NodeShape ;
   sh:property [ 
     sh:path skos:definition ;
     sh:languageIn ("fr" "en");
+    sh:minCount 1
   ] ;
   sh:property [ 
-    sh:path :name ;
+    sh:path skos:prefLabel ;
     sh:languageIn ("fr" "en");
+    sh:minCount 1
   ] ;
   sh:property [ 
     sh:path :signOrSymptom ;

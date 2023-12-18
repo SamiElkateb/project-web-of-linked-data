@@ -91,5 +91,7 @@ et au minimum à un médecin dans la contrainte `shapes:clinical_examination`.
 Nous pouvons facilement vérifier que ces contraintes ont l'effet désiré en retirant le médecin de l'examen clinique
 ou du rapport de cas ou en augmentant le nombre de patients.
 
-L'une des évolution de notre projet Web Sémantique a été l'ajout de 3 Thérausus. 
+L'une des évolutions de notre projet Web Sémantique a été l'ajout de 3 Thérausus. Pour 
+standardiser les entités de ces thésaurus nous avons créé des contraintes SHACL pour les
+médicaments, les signes et symptômes et les maladies.
 

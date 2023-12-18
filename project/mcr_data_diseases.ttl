@@ -158,6 +158,6 @@ diseases:Gastroenteritis  a :MedicalCondition,
         skos:prefLabel "Gastroenteritis"@en, "Gastro-entérite"@fr ;
         skos:inScheme diseases:DiseasesThesaurus ;
         skos:broader diseases:GastroIntestinalDisease ;
-        :signOrSymptom  symptoms:Nausea, symptoms:Fever
+        :signOrSymptom  symptoms:Nausea, symptoms:Fever,
                         symptoms:Diarrhea, symptoms:Vomiting;
         owl:sameAs dbpedia:Gastroenteritis .

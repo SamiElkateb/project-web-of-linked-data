@@ -104,7 +104,6 @@ patients:Patient8 a :Patient, :Woman ;
   :birthDate "1990-11-10"^^xsd:date ;
   :ssn "2 90 11 2A 800 008 97";
   :hasChild patients:Patient9 ;
-  :healthCondition diseases:Diabetes ;
   :weight [ 
     :value "54"^^xsd:unsignedInt ;
     :unitText "kg"

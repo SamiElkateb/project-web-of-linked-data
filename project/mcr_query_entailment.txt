@@ -16,10 +16,12 @@ select ?weightValue ?weightUnit where {
 2. Quelles équipes sont des équipes médicales ?
 
 prefix : <http://project-websem.fr/schema#> .
+prefix diseases: <http://project-websem.fr/diseases/data#> .
 
-select * 
-where {
-  ?x a :MedicalTeam .
+select * where {
+  ?person a :PersonWithGeneticDiabetesPredisposition .
+  MINUS
+  { ?person  :healthCondition diseases:Diabetes }
 }
 
 --------------------------------------------------------------------------------------------

@@ -3,10 +3,6 @@ title: "Rapport Projet Web Sémantique"
 author: "EL KATEB Sami, PAUL Thomas"
 ---
 
-[ ] La patient est lié inutilement à casereport et examination qui sont déjà liées
-[ ] Il faudrait avoir au moins un patient qui a plusieurs consultations et examens
-
-
 ## Évolution de notre modélisation de rapports médicaux
 
 Pour faire évoluer notre modélisation de rapports médicaux, nous avons commencé
@@ -72,7 +68,6 @@ d'inférer des prédispositions génétiques à partir des diagnostiques effectu
 Ainsi en incluant uniquement les relations hasChild dans nos données,
 le raisonneur OWL RL infère donc correctement que les patients 2, 8 et 9 qui ne sont pas diagnostiquée
 diabétique ont une prédisposition génétique au diabète (mcr_query_entailment 2).
-
 
 Nous retrouvons dans les maladies respiratoire ...
 

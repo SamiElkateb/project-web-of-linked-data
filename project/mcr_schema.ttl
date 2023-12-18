@@ -16,8 +16,11 @@
 
 # Schéma existant réutilisé
 :Person a owl:Class ;
+  owl:hasKey ( :ssn ) ;
   rdfs:label    "Person"@en, "Personne"@fr;
   owl:equivalentClass s:Person .
+
+
 
 :MedicalEntity a owl:Class ;
   rdfs:label    "Medical Entity"@en, "Entité Médicale"@fr;
@@ -184,6 +187,7 @@
   rdfs:subClassOf :Male, :Person .
 
 :Doctor a owl:Class;
+  owl:hasKey ( :rpps ) ;
   rdfs:label    "Medical practitioner"@en, "Médecin"@fr;
   rdfs:comment  "A health professional who practices medicine, which is concerned with promoting, maintaining or restoring health"@en,
                 "Professionnel de la santé titulaire d'un diplôme de docteur en médecine"@fr;
@@ -307,9 +311,6 @@
                 "Relie un professionnel de santé à son numéro d'identification unique RPPS."@fr;
   rdfs:range xsd:string ;
   rdfs:domain :Doctor .
-
-:Person owl:hasKey ( :ssn ) .
-:Doctor owl:hasKey ( :rpps ) .
 
 :RespiratoryCondition a owl:Class ;
   rdfs:label "Respiratory Condition"@en, "Maladie Respiratoire"@fr ;

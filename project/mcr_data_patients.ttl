@@ -95,10 +95,6 @@ patients:Patient6 a :Patient, :Woman ;
 patients:Patient7 a :Patient, :Man ;
   :birthDate "1955-07-25"^^xsd:date ;
   :ssn "1 55 07 44 775 007 14";
-  :weight [ 
-    :value "85"^^xsd:unsignedInt ;
-    :unitText "kg"
-  ] ;
   :height [ 
     :value "179"^^xsd:unsignedInt ;
     :unitText "cm"
@@ -142,3 +138,12 @@ patients:Patient10 a :Patient, :Woman ;
     :value "168"^^xsd:unsignedInt ;
     :unitText "cm"
   ] .
+
+patients:Patient11 a :Patient, :Man ;
+  :birthDate "1955-07-25"^^xsd:date ;
+  :ssn "1 55 07 44 775 007 14" ;
+  :weight [ 
+    :value "57"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] .
+

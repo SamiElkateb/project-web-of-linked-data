@@ -14,10 +14,10 @@ Nous avons défini ces propriétés comme owl:InverseFunctionalProperty.
 En effet, si deux entités ont la même valeur pour l'une de ces deux propriété, celles-ci sont identiques.
 Pour la même raison, ce sont également les valeurs de owl:hasKey pour les patients et les médecins respectivement.
 
-Étant donné que nous avions débuté une ontology owl, nous avons avons mis à jour la déclaration
-de notre ontology en ajoutant la référence à la version précédente.
-Nous avons également corrigé les erreurs que nous avions faites concernant les propriétés 
-définies comme ObjectProperty alors que celles-ci étaient des DataProperty.
+Puisque nous avions commencé à développer une ontologie OWL,
+nous avons mis à jour la déclaration de notre ontologie en y ajoutant la référence à la version précédente.
+Nous avons également corrigé nos erreurs précédentes où certaines propriétés définies comme ObjectProperty 
+auraient dû être des DataProperty.
 
 Nous avons ajouté à notre ontologie des liens de parenté tel que hasAncestor qui est une propriété asymétrique, irreflexive
 et transitive et sa sous-propriété hasParent qui elle, n'est pas transitive. Nous avons également ajouté la 

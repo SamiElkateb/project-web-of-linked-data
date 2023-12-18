@@ -80,28 +80,29 @@ Nous observons que les équipes contenant des médecins sont classées comme éq
 alors que l'équipe 3, ne comprenant aucun médecin, ne l'est pas **(mcr_query_entailment 4)**.
 
 ## Contraintes SHACL 
+Lors de notre projet initial, nous avions défini la classe "rapport de cas" (CaseReport) 
+qui comprenait un médecin, un patient, un examen clinique et, éventuellement, une thérapie. 
+Cependant, cette modélisation a été modifiée pour ne plus inclure de patient afin d'éviter la duplication 
+des données déjà présentes dans l'examen clinique. 
+Pour affiner et contrôler cette modélisation, nous avons utilisé une contrainte SHACL. 
+Ainsi, nous avons créé `shapes:case_report`, une contrainte exigeant que chaque rapport de cas comporte au moins un médecin et un examen clinique.
 
-Lors de notre projet initial, nous avions défini la classe "rapport de cas" 
-(CaseReport) composée d'un médecin, un patient, un examen clinique et éventuellement une thérapie. 
-Cette modélisation a évolué et ne contient plus de patient pour éviter la duplication
-des données présentes dans l'examen clinique. 
-Cette modélisation peut être affinée et contrainte à l'aide d'une contrainte SHACL. 
-Nous avons donc définit `shapes:case_report` qui contraint les rapports
-de cas à avoir au moins un Docteur et un examen clinique.
-De même, nous avons définit les examens cliniques comme associés à un patient unique
-et au minimum à un médecin dans la contrainte `shapes:clinical_examination`. 
-Nous pouvons facilement vérifier que ces contraintes ont l'effet désiré en retirant le médecin de l'examen clinique
-ou du rapport de cas ou en augmentant le nombre de patients.
+De la même manière,
+nous avons défini les examens cliniques comme étant associés à un seul patient et à au moins un médecin,
+conformément à la contrainte `shapes:clinical_examination`.
+La validité de ces contraintes peut être facilement vérifiée en retirant le médecin de l'examen clinique ou du rapport de cas, 
+ou en augmentant le nombre de patients.
 
-L'une des évolutions de notre projet Web Sémantique a été l'ajout de 3 Thérausus. Pour 
-standardiser les entités de ces thésaurus nous avons créé des contraintes SHACL pour les
-médicaments, les signes et symptômes et les maladies. Ainsi, nous avons pus contraindre les instances
-de ces classes à être incluses dans leur thésaurus respectif. De plus, nous avons
-ajouté aux instances de la classe médicament d'avoir au moins une substance active une unité de médicament et une
-forme galénique. De même, nous avons contraint les maladies à posséder au moins un signe clinique ou symptôme. Nous 
-pouvons vérifier ces contraintes en retirant les propriétés requises ou en incluant des langues non supportées.
+Une autre évolution de notre projet Web Sémantique a été l'introduction de trois thésaurus.
+Pour standardiser les entités de ces thésaurus, nous avons créé des contraintes SHACL pour les médicaments,
+les signes et symptômes, et les maladies. Cela nous a permis de contraindre les instances de ces classes à être des skos:Concept
+et à contenir au moins un prefLabel et une définition.
+De plus, nous avons exigé que les instances de la classe médicament incluent au moins une substance active,
+une unité de médicament et une forme galénique. De même, les maladies doivent présenter au moins un signe clinique ou un symptôme.
+La validité de ces contraintes peut être testée en retirant les propriétés requises ou en incluant des langues non prises en charge.
 
-Finalement, nous avons définit des contraintes pour les médecins et les patients. Entre autres, les
-instances de ces deux classes doivent être identifiée respectivement par un numéro RPPS et un numéro de sécurité de sécurité sociale.
-Le format de ces numéros est contrôlé à l'aide d'expressions régulières. Nous pouvons utiliser des numéros invalide pour 
-contrôler le bon fonctionnement de ces contraintes.
+Enfin, nous avons défini des contraintes spécifiques pour les médecins et les patients.
+Notamment, les instances de ces deux classes doivent être identifiées par un numéro RPPS 
+pour les médecins et un numéro de sécurité sociale pour les patients.
+Le format de ces numéros est vérifié à l'aide d'expressions régulières.
+Nous pouvons tester le bon fonctionnement de ces contraintes en utilisant des numéros invalides.

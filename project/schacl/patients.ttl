@@ -5,7 +5,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 shapes:ssn_object a sh:NodeShape ; 
   sh:targetObjectsOf :ssn ;
-  sh:pattern "\\[1-2] \\d{2} \\d{2} (\\d{2}|2A|2B) \\d{3} \\d{3} \\d{2}";
+  sh:pattern "^[1-2] \\d{2} \\d{2} (\\d{2}|2A|2B) \\d{3} \\d{3} \\d{2}$";
   sh:datatype xsd:string .
 
 shapes:patient a sh:NodeShape ; 

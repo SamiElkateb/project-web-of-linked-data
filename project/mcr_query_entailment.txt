@@ -1,4 +1,19 @@
-1. Quelles équipes sont des équipes médicales ?
+1. Deux instances ayant la même clé sont la même instance
+
+prefix : <http://project-websem.fr/schema#> .
+prefix patients: <http://project-websem.fr/patients/data#> .
+
+
+select ?weightValue ?weightUnit where {
+  patients:Patient7 :weight ?weight .
+  ?weight :value ?weightValue .
+  ?weight :unitText ?weightUnit .
+}
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+2. Quelles équipes sont des équipes médicales ?
 
 prefix : <http://project-websem.fr/schema#> .
 
@@ -10,7 +25,7 @@ where {
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 
-2. Quelles sont les personnes susceptibles d'avoir une maladie héréditaire ?
+3. Quelles sont les personnes susceptibles d'avoir une maladie héréditaire ?
 
 prefix : <http://project-websem.fr/schema#> .
 
@@ -21,7 +36,7 @@ select * where {
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 
-3. Quelles maladies ont un effet sur les voix respiratoires ? 
+4. Quelles maladies ont un effet sur les voix respiratoires ? 
 Et quels sont les symptômes de ces maladies ?
 
 prefix : <http://project-websem.fr/schema#> .
@@ -35,7 +50,7 @@ select * where {
 SCHACL
 --------------------------------------------------------------------------------------------
 
-4. Quelles sont les personnes qui ne respectent pas la contrainte suivante ?
+5. Quelles sont les personnes qui ne respectent pas la contrainte suivante ?
 
 prefix sh: <http://www.w3.org/ns/shacl#>
 prefix : <http://project-websem.fr/schema#> .

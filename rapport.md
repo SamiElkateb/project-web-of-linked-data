@@ -30,21 +30,22 @@ incluant les personnes ayant un ancêtre ou un frère/soeur diabétique.
 Nous avons choisi de ne pas exclure les personnes déjà diagnostiquées diabétiques de cet ensemble,
 considérant qu'elles restent prédisposées génétiquement au diabète.
 
+Ensuite, nous avons défini l'ensemble des maladies respiratoires (RespiratoryCondition)
+comme l'union des maladies présentant des symptômes tels que la toux,
+l'essoufflement ou le mal de gorge. Nous avons aussi défini l'ensemble des maladies infectieuses et,
+son complément, celui des maladies non infectieuses.
 
-Par la suite nous avons définit l'ensemble des maladies respiratoires (RespiratoryCondition) comme l'union des maladies ayant pour symptôme la toux,
-l'essoufflement ou le mal de gorge. Nous avons également définit l'ensemble des maladies infectieuse et son complément, l'ensemble des maladies non
-infectieuses.
+Finalement, nous avons défini une équipe (Team), puis une équipe médicale (MedicalTeam) comme étant une équipe comprenant au moins un médecin.
 
-Finalement, nous avons définit une équipe (Team) puis une équipe médicale (MedicalTeam) comme étant une équipe composée
-d'au moins un médecin.
+Nous avons aussi intégré trois thésaurus SKOS dans nos données :
+un thésaurus de médicaments, un de symptômes et un autre de maladies.
 
-Nous avons également introduit 3 thésaurus SKOS dans nos données: un thésaurus de médicament, un thésaurus de symptômes et un
-thésaurus des maladies.
-Ceux-ci se prêtent bien à être organisés dans un thésaurus car ils peuvent facilement être classés de manières
-hiérarchiques (différentes familles de médicaments, différents types de symptômes et de maladies). De plus les thésaurus permettent
-d'établir des relations entre les différents termes. Enfin la création de thésaurus permet de normaliser la terminologie.
-Nous avons également créé une collection de maladies contagieuses qui permet de regrouper les maladies
-à travers leur contagiosité alors que le thesaurus est lui organisé par organe atteint. 
+Ces thésaurus se prêtent bien à une organisation hiérarchique,
+facilitant la classification des différentes familles de médicaments,
+types de symptômes et de maladies. Ils permettent également d'établir des relations entre les différents termes.
+La création de ces thésaurus aide à normaliser la terminologie. En outre,
+nous avons créé une collection de maladies contagieuses,
+permettant de regrouper les maladies selon leur contagiosité, contrairement au thésaurus organisé par organe atteint.
 
 ## OWL Entailment
 

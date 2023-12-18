@@ -20,10 +20,10 @@ pour les patients et les médecins respectivement.
 Étant donné que nous avions débuté une ontology owl, nous avons avons mis à jour la déclaration
 de notre ontology en ajoutant la référence à la version précédente.
 Nous avons également corrigé les erreurs que nous avions faites concernant les propriétés 
-que nous avions définies comme ObjectProperty alors que celles-ci étaient des DataProperty.
+définies comme ObjectProperty alors que celles-ci étaient des DataProperty.
 
 Nous avons ajouté à notre ontologie des liens de parenté tel que hasAncestor qui est une propriété asymétrique, irreflexive
-et transitive et sa sous-propriété hasParent qui n'est elle pas transitive. Nous avons également ajouté la 
+et transitive et sa sous-propriété hasParent qui elle, n'est pas transitive. Nous avons également ajouté la 
 propriété hasChild qui est l'inverse de hasParent et possède les mêmes types que celle-ci. De plus, nous
 avons ajouté la propriété hasBrother et hasSister toutes deux disjointes et irréflexives, sous-propriété de hasSibling.
 
@@ -75,7 +75,7 @@ Celles-ci sont inférées comme étant l'union des maladies ayant
 l'un des différents symptômes respiratoire. Et les équipes médicales qui sont
 des équipes contenant au moins un médecin. Nous pouvons remarquer que les équipes
 contenant des médecins sont inférées comme des équipes médicales alors que l'équipe 3
-ne contenant pas de médecin ne l'est pas.
+ne contenant aucun médecin n'est pas inférée.
 
 ## Contraintes SHACL 
 

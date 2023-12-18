@@ -16,7 +16,7 @@
 
 # Schéma existant réutilisé
 :Person a owl:Class ;
-  owl:hasKey ( :ssn ) ;
+  owl:hasKey (:ssn) ;
   rdfs:label    "Person"@en, "Personne"@fr;
   owl:equivalentClass s:Person .
 
@@ -187,7 +187,7 @@
   rdfs:subClassOf :Male, :Person .
 
 :Doctor a owl:Class;
-  owl:hasKey ( :rpps ) ;
+  owl:hasKey (:rpps) ;
   rdfs:label    "Medical practitioner"@en, "Médecin"@fr;
   rdfs:comment  "A health professional who practices medicine, which is concerned with promoting, maintaining or restoring health"@en,
                 "Professionnel de la santé titulaire d'un diplôme de docteur en médecine"@fr;
@@ -255,6 +255,7 @@
     owl:propertyChainAxiom (:hasParent :hasChild) .
 
 :hasAncestor a owl:TransitiveProperty,
+    owl:AsymmetricProperty,
     owl:IrreflexiveProperty;
     rdfs:label "has for ancestor"@en, "a pour ancêtre"@fr ;
     rdfs:comment "relation between an animal and another animal from which it is descended."@en,

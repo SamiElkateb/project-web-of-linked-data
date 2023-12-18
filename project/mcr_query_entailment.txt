@@ -1,11 +1,22 @@
 1. Quelles équipes sont des équipes médicales ?
-prefix : <http://project-wold.fr/schema#>
 
-select * where {
-  ?x a :MedicalTeam
+prefix : <http://project-websem.fr/schema#> .
+
+select * 
+where {
+  ?x a :MedicalTeam .
 }
 
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
 
-2. 
+2. Quelles sont les personnes susceptibles d'avoir une maladie héréditaire ?
+
+prefix : <http://project-websem.fr/schema#> .
+
+select * where {
+  ?x a :PersonWithGeneticDiabetesPredisposition .
+}
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------

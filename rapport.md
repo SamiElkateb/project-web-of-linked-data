@@ -26,7 +26,12 @@ de notre ontology en ajoutant la référence à la version précédente.
 Nous avons également corrigé les erreurs que nous avions faites concernant les propriétés 
 que nous avions définies comme ObjectProperty alors que celles-ci étaient des DataProperty.
 
-Nous avons ajouté 
+Nous avons ajouté à notre ontologie des liens de parenté tel que hasAncestor qui est une propriété asymétrique, irreflexive
+et transitive et sa sous-propriété hasParent qui n'est elle pas transitive. Nous avons également ajouté la 
+propriété hasChild qui est l'inverse de hasParent et possède les mêmes types que celle-ci.
+
+Ainsi ces liens de parenté nous permettre de mettre en évidence des prédispositions génétiques.
+
 
 
 -- draft

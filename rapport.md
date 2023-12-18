@@ -49,25 +49,28 @@ permettant de regrouper les maladies selon leur contagiosité, contrairement au 
 
 ## OWL Entailment
 
-Lors de la création de notre ontologie OWL nous avons définit les clés des patients comme étant 
-leur numéro de sécurité sociale à l'aide de la propriété hasKey. Cette propriété exprime que 
-deux instances ayant le même numéro de sécurité sociale sont la même instance. Nous pouvons vérifier 
-l'effet de cette propriété en recherchant le poids du Patient7. En effet l'instance Patient7 ne
-possède pas de propriété `weight`, cependant le Patient11 possédant le même numéro de
-sécurité sociale possède cette propriété. Étant donné que les deux instances sont
-considérées comme la même instance, nous pouvons récupérer le poids à partir du Patient7 (mcr_query_entailment 1). 
-Le même effet est également atteint à en définissant la propriété ssn comme InverseFunctionalProperty.
+Lors de l'élaboration de notre ontologie OWL, nous avons défini les clés des patients comme étant leur numéro de sécurité sociale,
+en utilisant la propriété hasKey.
 
-Nous avons également définit les PersonWithGeneticDiabetesPredisposition comme étant
-les personnes ayant un ancêtre atteint du diabète ou un sibling (frère/soeur) atteint du diabète.
-Cependant les seules relations définies dans nos données sont les relations hasChild et hasBrother. 
-La relation hasParent est inférée à partir de la relation hasChild dont elle est l'inverse. 
-Celle-ci permet ensuite d'inférer la relation hasAncestor dont elle est la sous-classe.
-La relation hasAncestor est transitive et s'applique donc sur plusieurs générations. Elle permet 
-d'inférer des prédispositions génétiques à partir des diagnostiques effectués sur les grands-parents.
-Ainsi en incluant uniquement les relations hasChild dans nos données,
-le raisonneur OWL RL infère donc correctement que les patients 2, 8 et 9 qui ne sont pas diagnostiquée
-diabétique ont une prédisposition génétique au diabète (mcr_query_entailment 2).
+Cette propriété stipule que deux instances partageant le même numéro de sécurité sociale sont considérées comme une seule et même instance.
+Nous pouvons observer l'effet de cette propriété en recherchant le poids du Patient7.
+Bien que l'instance Patient7 ne possède pas de propriété `weight`, le Patient11, ayant le même numéro de sécurité sociale,
+possède cette propriété. Ainsi, les deux instances étant traitées comme identiques,
+il est possible de récupérer le poids du Patient7 **(mcr_query_entailment 1)**. 
+De même, définir la propriété ssn comme InverseFunctionalProperty produit le même effet.
+
+Nous avons également défini les PersonsWithGeneticDiabetesPredisposition comme étant 
+les individus ayant un ancêtre ou un sibling (frère/soeur) atteint de diabète. 
+Toutefois, les seules relations explicitement définies dans nos données sont hasChild et hasBrother.
+La relation hasParent est inférée à partir de la relation hasChild,
+dont elle est l'inverse, ce qui permet ensuite d'inférer la relation hasAncestor,
+dont hasParent est la sous-classe.
+
+La relation hasAncestor est transitive et s'étend sur plusieurs générations,
+ce qui permet d'inférer des prédispositions génétiques à partir des diagnostics posés sur les grands-parents.
+Ainsi, en incluant uniquement les relations hasChild dans nos données,
+le raisonneur OWL RL infère correctement que les patients 2, 8 et 9,
+bien qu'ils ne soient pas diagnostiqués diabétiques, ont une prédisposition génétique au diabète **(mcr_query_entailment 2)**.
 
 Enfin, nous retrouvons les maladies respiratoires que l'on peut mettre en evidence en
 recherchant les différentes maladies respiratoires (mcr_query_entailment 3).

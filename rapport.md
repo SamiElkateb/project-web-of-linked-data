@@ -72,13 +72,12 @@ Ainsi, en incluant uniquement les relations hasChild dans nos données,
 le raisonneur OWL RL infère correctement que les patients 2, 8 et 9,
 bien qu'ils ne soient pas diagnostiqués diabétiques, ont une prédisposition génétique au diabète **(mcr_query_entailment 2)**.
 
-Enfin, nous retrouvons les maladies respiratoires que l'on peut mettre en evidence en
-recherchant les différentes maladies respiratoires (mcr_query_entailment 3).
-Celles-ci sont inférées comme étant l'union des maladies ayant
-l'un des différents symptômes respiratoire. Et les équipes médicales qui sont
-des équipes contenant au moins un médecin. Nous pouvons remarquer que les équipes
-contenant des médecins sont inférées comme des équipes médicales alors que l'équipe 3
-ne contenant aucun médecin n'est pas inférée.
+Les maladies respiratoires sont quant à elles inférées comme étant l'union des maladies présentant 
+l'un des différents symptômes respiratoires.
+Nous pouvons les identifier en recherchant les entités de type RespiratoryCondition **(mcr_query_entailment 3)**. 
+Quant aux équipes médicales, il s'agit d'équipes comprenant au moins un médecin. 
+Nous observons que les équipes contenant des médecins sont classées comme équipes médicales,
+alors que l'équipe 3, ne comprenant aucun médecin, ne l'est pas **(mcr_query_entailment 4)**.
 
 ## Contraintes SHACL 
 

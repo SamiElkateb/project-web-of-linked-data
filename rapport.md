@@ -69,6 +69,11 @@ Ainsi en incluant uniquement les relations hasChild dans nos données,
 le raisonneur OWL RL infère donc correctement que les patients 2, 8 et 9 qui ne sont pas diagnostiquée
 diabétique ont une prédisposition génétique au diabète (mcr_query_entailment 2).
 
-Nous retrouvons dans les maladies respiratoire ...
+Enfin, nous retrouvons les maladies respiratoires que l'on peut mettre en evidence en
+recherchant les différentes maladies respiratoires (mcr_query_entailment 3).
+Celles-ci sont inférées comme étant l'union des maladies ayant
+l'un des différents symptômes respiratoire. Et les équipes médicales qui sont
+des équipes contenant au moins un médecin. Nous pouvons remarquer que les équipes
+contenant des médecins sont inférées comme des équipes médicales alors que l'équipe 3
+ne contenant pas de médecin ne l'est pas.
 
-## 

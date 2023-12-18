@@ -191,6 +191,13 @@
                 "Professionnel de la santé titulaire d'un diplôme de docteur en médecine"@fr;
   rdfs:subClassOf :Person .
 
+:Nurse a owl:Class;
+  rdfs:label    "Nurse"@en, "Infirmier/Infirmière"@fr;
+  rdfs:comment  "A healthcare professional specialized in providing care and assistance to patients. Nurses are trained to offer a range of medical support, from clinical care to emotional support."@en,
+                "Un professionnel de santé spécialisé dans la prise en charge et l'assistance des patients. Les infirmiers sont formés pour offrir une gamme de soutiens médicaux, allant des soins cliniques au soutien émotionnel."@fr;
+  rdfs:subClassOf :Person .
+
+
 :Team a owl:Class ;
   rdfs:label    "Team"@en, "Équipe"@fr;
   rdfs:comment  "A group of individuals working together towards a common goal."@en,

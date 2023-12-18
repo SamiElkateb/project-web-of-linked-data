@@ -15,5 +15,12 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-other:team :hasMember doctors:DoctorMichu ,
+other:team1 :hasMember doctors:DoctorMichu ,
   doctors:DoctorSmith .
+
+other:team2 :hasMember doctors:DoctorLopez ,
+  doctors:DoctorDoe, doctors:NurseSmith .
+
+other:team3 :hasMember patients:Patient1, 
+  patients:Patient8,
+  patients:Patient9 .

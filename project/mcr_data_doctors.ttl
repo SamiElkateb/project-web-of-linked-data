@@ -34,7 +34,11 @@ doctors:DoctorLopez a :Doctor, :Man ;
   :rpps "45678901234" .
 
 doctors:DoctorDoe a :Doctor, :Woman ;
-  :familyName "Jane";
-  :givenName "Doe";
+  :familyName "Doe";
+  :givenName "Jane";
   :jobTitle "Endocrinologist"@en, "Endocrinologue"@fr ;
   :rpps "12345678901" .
+
+doctors:NurseSmith a :Nurse, :Man ;
+  :familyName "Smith";
+  :givenName "Make" .

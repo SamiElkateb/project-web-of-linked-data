@@ -1,6 +1,6 @@
-@prefix sh: <http://www.w3.org/ns/shacl#>
-@prefix : <http://project-wold.fr/schema#> .
-@prefix shapes: <http://project-wold.fr/shapes#> .
+prefix sh: <http://www.w3.org/ns/shacl#> .
+prefix : <http://project-wold.fr/schema#> .
+prefix shapes: <http://project-wold.fr/shapes#> .
 
 shapes:case_report a sh:NodeShape ; 
   sh:targetClass :CaseReport ;

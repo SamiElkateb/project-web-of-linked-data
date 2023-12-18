@@ -1,0 +1,64 @@
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix : <http://project-wold.fr/schema#> .
+prefix shapes: <http://project-wold.fr/shapes#> .
+prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+shapes:medical_sign_or_symptom a sh:NodeShape ; 
+  sh:targetClass :MedicalSignOrSymptom ;
+  sh:property [ 
+    sh:path rdf:type ;
+    sh:hasValue skos:Concept ;
+  ] ;
+  sh:property [ 
+    sh:path skos:definition ;
+    sh:languageIn ("fr" "en");
+  ] ;
+  sh:property [ 
+    sh:path :name ;
+    sh:languageIn ("fr" "en");
+  ] .
+
+shapes:drug a sh:NodeShape ; 
+  sh:targetClass :Drug ;
+  sh:property [ 
+    sh:path rdf:type ;
+    sh:hasValue skos:Concept ;
+  ] ;
+  sh:property [ 
+    sh:path skos:definition ;
+    sh:languageIn ("fr" "en");
+  ] ;
+  sh:property [ 
+    sh:path :activeIngredient ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [ 
+    sh:path skos:drugUnit ;
+    sh:languageIn ("fr" "en");
+  ] ;
+  sh:property [ 
+    sh:path skos:dosageForm ;
+    sh:languageIn ("fr" "en");
+  ] .
+
+shapes:medical_condition a sh:NodeShape ; 
+  sh:targetClass :MedicalCondition ;
+  sh:property [ 
+    sh:path rdf:type ;
+    sh:hasValue skos:Concept ;
+  ] ;
+  sh:property [ 
+    sh:path skos:definition ;
+    sh:languageIn ("fr" "en");
+  ] ;
+  sh:property [ 
+    sh:path :name ;
+    sh:languageIn ("fr" "en");
+  ] ;
+  sh:property [ 
+    sh:path :signOrSymptom ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape [ sh:class :MedicalSignOrSymptom ]
+  ] .
+

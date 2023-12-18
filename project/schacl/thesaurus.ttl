@@ -34,11 +34,11 @@ shapes:drug a sh:NodeShape ;
     sh:minCount 1 ;
   ] ;
   sh:property [ 
-    sh:path skos:drugUnit ;
+    sh:path :drugUnit ;
     sh:languageIn ("fr" "en");
   ] ;
   sh:property [ 
-    sh:path skos:dosageForm ;
+    sh:path :dosageForm ;
     sh:languageIn ("fr" "en");
   ] .
 

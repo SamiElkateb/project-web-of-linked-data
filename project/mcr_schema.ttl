@@ -277,14 +277,16 @@
     rdfs:domain :Animal ;
     rdfs:range  :Female .
 
-:hasParent a owl:AsymmetricProperty ;
+:hasParent a owl:AsymmetricProperty,
+    owl:IrreflexiveProperty;
     owl:inverseOf :hasChild ;
     rdfs:subPropertyOf :hasAncestor ;
     rdfs:label "has for parent"@en, "a pour parent"@fr ;
     rdfs:comment "relation between an animal and another animal which gave birth to it."@en,
                  "relation entre un animal et un autre animal qui lui a donné naissance."@fr .
 
-:hasChild a owl:AsymmetricProperty ;
+:hasChild a owl:AsymmetricProperty,
+    owl:IrreflexiveProperty;
     owl:inverseOf :hasParent ;
     rdfs:label "has for child"@en, "a pour enfant"@fr ;
     rdfs:comment "relation between an animal and another animal to which it gave birth."@en,

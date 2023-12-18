@@ -11,20 +11,30 @@ author: "EL KATEB Sami, PAUL Thomas"
 
 Pour faire évoluer notre modélisation de rapports médicaux, nous avons commencé
 par intégrer les retours reçus sur notre premier projet. 
-Nous avons donc remplacé la propriété gender par les classes Man et Woman. Puis
-nous avons ajouté les numéros de sécurité sociale des patient et les numéros
-RPPS des médecins.
+Nous avons donc remplacé la propriété _gender_ par les classes Man et Woman. 
 
-De plus, comme nous avions débuté une ontology owl, nous avons avons mis à jour la déclaration
+Puis nous avons ajouté les numéros de sécurité sociale des patients et les numéros
+RPPS des médecins. 
+Nous avons pu définir ces propriétés en tant que owl:InverseFunctionalProperty 
+car deux entités ayant la même valeur pour l'une de ces deux propriété implique que les entités sont 
+identique. 
+Par conséquent, nous avons également pu les définir comme valeur de owl:hasKey
+pour les patients et les médecins respectivement.
+
+Étant donné que nous avions débuté une ontology owl, nous avons avons mis à jour la déclaration
 de notre ontology en ajoutant la référence à la version précédente.
 Nous avons également corrigé les erreurs que nous avions faites concernant les propriétés 
 que nous avions définies comme ObjectProperty alors que celles-ci étaient des DataProperty.
+
+Nous avons ajouté 
+
 
 -- draft
 parler de:
 
 - on a définit rpps et ssn comme InverseFunctionalProperty
 - on a utilisé ssn et rpps en haskey ainsi deux personnes ayant le même ssn sont la même personne et de même pour le rpps et les médecin.
+
 - on a définit une equipe puis une équipe médicale comme étant une équipe composée uniquement de médecins
 - on a définit InfectiousDisease et son complémentaire NonInfectiousDisease
 

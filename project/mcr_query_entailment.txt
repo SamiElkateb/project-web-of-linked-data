@@ -15,8 +15,18 @@ where {
 prefix : <http://project-websem.fr/schema#> .
 
 select * where {
-  ?x a :PersonWithGeneticDiabetesPredisposition .
+  ?person a :PersonWithGeneticDiabetesPredisposition .
 }
 
 --------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------
+
+3. Quelles maladies ont un effet sur les voix respiratoires ? 
+Et quels sont les symptômes de ces maladies ?
+
+prefix : <http://project-websem.fr/schema#> .
+
+select * where {
+  ?disease a :RespiratoryCondition .
+  ?disease :signOrSymptom ?s .
+}

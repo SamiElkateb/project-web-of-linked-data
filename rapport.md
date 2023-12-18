@@ -53,10 +53,25 @@ Nous avons également créé une collection de maladies contagieuses qui permet 
 
 ## OWL Entailment
 
+Lors de la création de notre ontologie OWL nous avons définit les clés des patients comme étant 
+leur numéro de sécurité sociale à l'aide de la propriété hasKey. Cette propriété exprime que 
+deux instances ayant le même numéro de sécurité sociale sont la même instance. Nous pouvons vérifier 
+l'effet de cette propriété en recherchant le poids du Patient7. En effet l'instance Patient7 ne
+possède pas de propriété `weight`, cependant le Patient11 possédant le même numéro de
+sécurité sociale possède cette propriété. Étant donné que les deux instances sont
+considérées comme la même instance, nous pouvons récupérer le poids à partir du Patient7 (mcr_query_entailment 1). 
+Le même effet est également atteint à en définissant la propriété ssn comme InverseFunctionalProperty.
+
+Nous avons également définit les PersonWithGeneticDiabetesPredisposition comme étant
+les personnes ayant un ancêtre atteint du diabète ou un sibling (frère/soeur) atteint du diabète.
+Cependant les seules relations définies dans nos données sont les relations hasChild et hasBrother. 
+La relation hasParent est inférée à partir de la relation hasChild dont elle est l'inverse. 
+Celle-ci permet ensuite d'inférer la relation hasAncestor dont elle est la sous-classe.
+La relation hasAncestor est transitive et s'applique donc sur plusieurs générations. Elle permet 
+d'inférer des prédispositions génétiques à partir des diagnostiques effectués sur les grands-parents.
 Ainsi en incluant uniquement les relations hasChild dans nos données,
-le raisonneur OWL RL infère que la propriété inverse de hasChild est hasParent qui est elle même 
-une sous-propriété de hasAncestor et infère donc correctement que Patient9 qui n'est pas diagnostiquée
-diabètique a une prédisposition génétique au diabète.
+le raisonneur OWL RL infère donc correctement que les patients 2, 8 et 9 qui ne sont pas diagnostiquée
+diabétique ont une prédisposition génétique au diabète (mcr_query_entailment 2).
 
 
 Nous retrouvons dans les maladies respiratoire ...

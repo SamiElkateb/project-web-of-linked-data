@@ -16,7 +16,6 @@
 
 patients:Patient1 a :Patient, :Man ;
   :birthDate "1960-05-20"^^xsd:date ;
-  :hasBrother patients:Patient5;
   :ssn "1 60 05 99 001 001 29";
   :healthCondition diseases:Diabetes ;
   :weight [ 
@@ -30,6 +29,7 @@ patients:Patient1 a :Patient, :Man ;
 
 patients:Patient2 a :Patient, :Woman ;
   :birthDate "1970-04-10"^^xsd:date ;
+  :hasBrother patients:Patient1;
   :ssn "2 70 04 75 125 002 46";
   :weight [ 
     :value "65"^^xsd:unsignedInt ;

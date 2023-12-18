@@ -1,3 +1,17 @@
+1. Deux instances ayant la même clé sont la même instance
+
+prefix : <http://project-websem.fr/schema#> .
+prefix patients: <http://project-websem.fr/patients/data#> .
+
+
+select ?weightValue ?weightUnit where {
+  patients:Patient7 :weight ?weight .
+  ?weight :value ?weightValue .
+  ?weight :unitText ?weightUnit .
+}
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 1. Quelles sont les maladies pouvant avoir comme signe clinique la fièvre ou le mal de tête ?
 prefix : <http://project-wold.fr/schema#>
 prefix symptoms: <http://project-wold.fr/symptoms/data#>

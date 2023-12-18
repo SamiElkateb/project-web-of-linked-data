@@ -20,8 +20,6 @@
   rdfs:label    "Person"@en, "Personne"@fr;
   owl:equivalentClass s:Person .
 
-
-
 :MedicalEntity a owl:Class ;
   rdfs:label    "Medical Entity"@en, "Entité Médicale"@fr;
   owl:equivalentClass s:MedicalEntity .
@@ -252,7 +250,7 @@
     rdfs:label "has for sibling"@en, "a pour frère ou soeur"@fr ;
     rdfs:comment "relation with an individual who has the same parents."@en,
                  "relation avec un individu ayant les mêmes parents."@fr ;
-    owl:propertyChainAxiom (:hasParent :hasChild) .
+    owl:propertyChainAxiom(:hasParent :hasChild) .
 
 :hasAncestor a owl:TransitiveProperty,
     owl:AsymmetricProperty,

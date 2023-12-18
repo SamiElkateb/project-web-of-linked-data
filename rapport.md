@@ -28,9 +28,12 @@ que nous avions définies comme ObjectProperty alors que celles-ci étaient des 
 
 Nous avons ajouté à notre ontologie des liens de parenté tel que hasAncestor qui est une propriété asymétrique, irreflexive
 et transitive et sa sous-propriété hasParent qui n'est elle pas transitive. Nous avons également ajouté la 
-propriété hasChild qui est l'inverse de hasParent et possède les mêmes types que celle-ci.
+propriété hasChild qui est l'inverse de hasParent et possède les mêmes types que celle-ci. De plus, nous
+avons ajouté la propriété hasBrother et 
 
-Ainsi ces liens de parenté nous permettre de mettre en évidence des prédispositions génétiques.
+Ces liens de parenté nous permettre de mettre en évidence les prédispositions génétiques. Nous 
+avons ainsi pu créer la classe PersonWithGeneticDiabetesPredisposition qui inclus les personnes ayant un ancêtre
+diabétique ou un frère/soeur diabétique. 
 
 
 

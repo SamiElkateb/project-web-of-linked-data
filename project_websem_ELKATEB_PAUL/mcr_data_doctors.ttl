@@ -1,0 +1,44 @@
+@prefix : <http://project-websem.fr/schema#> .
+
+@prefix patients: <http://project-websem.fr/patients/data#> .
+@prefix reports: <http://project-websem.fr/case_reports/data#> .
+@prefix treatments: <http://project-websem.fr/treatments/data#> .
+@prefix symptoms: <http://project-websem.fr/symptoms/data#> .
+@prefix drugs: <http://project-websem.fr/drugs/data#> .
+@prefix tests: <http://project-websem.fr/medical_tests/data#> .
+@prefix doctors: <http://project-websem.fr/doctors/data#> .
+@prefix diseases: <http://project-websem.fr/diseases/data#> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+doctors:DoctorMichu a :Doctor, :Man ;
+  :familyName "Michu";
+  :givenName "Pierre";
+  :jobTitle "Family Physician"@en, "Médecin Généraliste"@fr ;
+  :rpps "23456789012" .
+
+doctors:DoctorSmith a :Doctor, :Woman ;
+  :familyName "Smith";
+  :givenName "Jane";
+  :jobTitle "Pediatrician"@en, "Pédiatre"@fr ;
+  :rpps "34567890123" .
+
+doctors:DoctorLopez a :Doctor, :Man ;
+  :familyName "Lopez";
+  :givenName "Carlos";
+  :jobTitle "Pulmonologist"@en, "Pneumologue"@fr ;
+  :rpps "45678901234" .
+
+doctors:DoctorDoe a :Doctor, :Woman ;
+  :familyName "Doe";
+  :givenName "Jane";
+  :jobTitle "Endocrinologist"@en, "Endocrinologue"@fr ;
+  :rpps "12345678901" .
+
+doctors:NurseSmith a :Nurse, :Man ;
+  :familyName "Smith";
+  :givenName "Make" .

@@ -1,0 +1,65 @@
+@prefix : <http://project-websem.fr/schema#> .
+
+@prefix patients: <http://project-websem.fr/patients/data#> .
+@prefix reports: <http://project-websem.fr/case_reports/data#> .
+@prefix treatments: <http://project-websem.fr/treatments/data#> .
+@prefix symptoms: <http://project-websem.fr/symptoms/data#> .
+@prefix drugs: <http://project-websem.fr/drugs/data#> .
+@prefix tests: <http://project-websem.fr/medical_tests/data#> .
+@prefix doctors: <http://project-websem.fr/doctors/data#> .
+@prefix diseases: <http://project-websem.fr/diseases/data#> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+treatments:ParacetamolPrescription a :MedicalTherapy ;
+  :drug drugs:Paracetamol ;
+  :doseSchedule [
+    :doseUnit "mg" ;
+    :doseValue "1000"^^xsd:unsignedInt ;
+    :frequency "every 6 hours"@en, "toutes les 6 heures"@fr
+  ] .
+
+treatments:IbuprofenePrescription a :MedicalTherapy ;
+  :drug drugs:Ibuprofene ;
+  :doseSchedule [
+    :doseUnit "mg" ;
+    :doseValue "1000"^^xsd:unsignedInt ;
+    :frequency "every 8 hours"@en, "toutes les 8 heures"@fr
+  ] .
+
+treatments:AmoxicillinPrescription a :MedicalTherapy ;
+  :drug drugs:Amoxicillin ;
+  :doseSchedule [
+    :doseUnit "mg" ;
+    :doseValue "1000"^^xsd:unsignedInt ;
+    :frequency "morning and night"@en, "matin et soir"@fr
+  ] .
+
+treatments:MetforminPrescription a :MedicalTherapy ;
+  :drug drugs:Metformin ;
+  :doseSchedule [
+    :doseUnit "mg" ;
+    :doseValue "500"^^xsd:unsignedInt ;
+    :frequency "morning and night"@en, "matin et soir"@fr
+  ] .
+
+treatments:InsulinPrescription a :MedicalTherapy ;
+  :drug drugs:Insulin ;
+  :doseSchedule [
+    :doseUnit "UI" ;
+    :doseValue "1"^^xsd:unsignedInt ;
+    :frequency "0.2 UI / kg"@en, "0.2 UI / kg"@fr
+  ] .
+
+treatments:TherapeuticEducation a :MedicalTherapy ;
+  :name "Therapeutic Education"@en, "Education thérapeutique"@fr .
+
+treatments:BalancedDiet a :MedicalTherapy ;
+  :name "Balanced diet"@en, "Régime alimentaire équilibré"@fr .
+
+treatments:PhysicalExercice a :MedicalTherapy ;
+  :name "Physical Exercice"@en, "Exercice Physique"@fr .
+

@@ -1,0 +1,50 @@
+1. Deux instances ayant la même clé sont la même instance
+
+prefix : <http://project-websem.fr/schema#> .
+prefix patients: <http://project-websem.fr/patients/data#> .
+
+
+select ?weightValue ?weightUnit where {
+  patients:Patient7 :weight ?weight .
+  ?weight :value ?weightValue .
+  ?weight :unitText ?weightUnit .
+}
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+2. Quelles sont les personnes susceptibles d'avoir une prédisposition au diabète ?
+
+prefix : <http://project-websem.fr/schema#> .
+prefix diseases: <http://project-websem.fr/diseases/data#> .
+
+select * where {
+  ?person a :PersonWithGeneticDiabetesPredisposition .
+  MINUS
+  { ?person  :healthCondition diseases:Diabetes }
+}
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+3. Quelles maladies ont un effet sur les voix respiratoires ? 
+Et quels sont les symptômes de ces maladies ?
+
+prefix : <http://project-websem.fr/schema#> .
+
+select * where {
+  ?disease a :RespiratoryCondition
+}
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+4. Quelles équipes sont des équipes médicales ?
+
+prefix : <http://project-websem.fr/schema#> .
+
+select * 
+where {
+  ?x a :MedicalTeam .
+}
+

@@ -1,0 +1,33 @@
+prefix sh: <http://www.w3.org/ns/shacl#> .
+prefix : <http://project-websem.fr/schema#> .
+prefix shapes: <http://project-websem.fr/shapes#> .
+
+shapes:rpps_object a sh:NodeShape ; 
+  sh:targetObjectsOf :rpps ;
+  sh:pattern "^\\d{11}$";
+  sh:datatype xsd:string .
+
+shapes:rpps_subject a sh:NodeShape ; 
+  sh:targetSubjectsOf :rpps ;
+  sh:class :Doctor .
+
+shapes:doctor a sh:NodeShape ; 
+  sh:targetClass :Doctor ;
+  sh:property [ 
+    sh:path :familyName ;
+    sh:datatype xsd:string;
+  ] ;
+  sh:property [ 
+    sh:path :givenName ;
+    sh:datatype xsd:string;
+  ] ;
+  sh:property [ 
+    sh:path :jobTitle ;
+    sh:languageIn ("fr" "en");
+  ] ;
+  sh:property [ 
+    sh:path :rpps ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] .
+

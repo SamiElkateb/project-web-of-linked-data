@@ -1,0 +1,148 @@
+@prefix : <http://project-websem.fr/schema#> .
+
+@prefix patients: <http://project-websem.fr/patients/data#> .
+@prefix reports: <http://project-websem.fr/case_reports/data#> .
+@prefix treatments: <http://project-websem.fr/treatments/data#> .
+@prefix symptoms: <http://project-websem.fr/symptoms/data#> .
+@prefix drugs: <http://project-websem.fr/drugs/data#> .
+@prefix tests: <http://project-websem.fr/medical_tests/data#> .
+@prefix doctors: <http://project-websem.fr/doctors/data#> .
+@prefix diseases: <http://project-websem.fr/diseases/data#> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+patients:Patient1 a :Patient, :Man ;
+  :birthDate "1960-05-20"^^xsd:date ;
+  :ssn "1 60 05 99 001 001 29";
+  :healthCondition diseases:Diabetes ;
+  :weight [ 
+    :value "80"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "180"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient2 a :Patient, :Woman ;
+  :birthDate "1970-04-10"^^xsd:date ;
+  :hasBrother patients:Patient1;
+  :ssn "2 70 04 75 125 002 46";
+  :weight [ 
+    :value "65"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "165"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient3 a :Patient, :Man ;
+  :birthDate "1985-02-28"^^xsd:date ;
+  :ssn "1 85 02 33 100 003 81";
+  :weight [ 
+    :value "90"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "175"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient4 a :Patient, :Woman ;
+  :birthDate "1975-08-15"^^xsd:date ;
+  :ssn "2 75 08 01 500 004 75";
+  :healthCondition diseases:Hypertension ;
+  :weight [ 
+    :value "60" ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "162"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient5 a :Patient, :Man ;
+  :birthDate "1965-12-05"^^xsd:date ;
+  :ssn "1 65 12 69 350 005 68";
+  :hasChild patients:Patient8 ;
+  :healthCondition diseases:Diabetes ;
+  :weight [ 
+    :value "78"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "182"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient6 a :Patient, :Woman ;
+  :birthDate "1980-03-30"^^xsd:date ;
+  :ssn "2 80 03 92 600 006 33";
+  :hasDiagnosis diseases:Hypertension ;
+  :weight [ 
+    :value "58"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "159"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient7 a :Patient, :Man ;
+  :birthDate "1955-07-25"^^xsd:date ;
+  :ssn "1 55 07 44 775 007 14";
+  :height [ 
+    :value "179"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient8 a :Patient, :Woman ;
+  :birthDate "1990-11-10"^^xsd:date ;
+  :ssn "2 90 11 2A 800 008 97";
+  :hasChild patients:Patient9 ;
+  :weight [ 
+    :value "54"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "163"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient9 a :Patient, :Man ;
+  :birthDate "2010-06-12"^^xsd:date ;
+  :ssn "1 10 06 2B 900 009 52";
+  :weight [ 
+    :value "54"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "154"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient10 a :Patient, :Woman ;
+  :birthDate "1978-09-24"^^xsd:date ;
+  :ssn "2 78 09 56 250 010 37";
+  :healthCondition diseases:Hypertension ;
+  :weight [ 
+    :value "62"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] ;
+  :height [ 
+    :value "168"^^xsd:unsignedInt ;
+    :unitText "cm"
+  ] .
+
+patients:Patient11 a :Patient, :Man ;
+  :birthDate "1955-07-25"^^xsd:date ;
+  :ssn "1 55 07 44 775 007 14" ;
+  :weight [ 
+    :value "57"^^xsd:unsignedInt ;
+    :unitText "kg"
+  ] .
+

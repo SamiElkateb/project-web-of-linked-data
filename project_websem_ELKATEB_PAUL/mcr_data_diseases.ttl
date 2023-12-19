@@ -1,0 +1,160 @@
+@prefix : <http://project-websem.fr/schema#> .
+
+@prefix patients: <http://project-websem.fr/patients/data#> .
+@prefix reports: <http://project-websem.fr/case_reports/data#> .
+@prefix treatments: <http://project-websem.fr/treatments/data#> .
+@prefix symptoms: <http://project-websem.fr/symptoms/data#> .
+@prefix drugs: <http://project-websem.fr/drugs/data#> .
+@prefix tests: <http://project-websem.fr/medical_tests/data#> .
+@prefix diseases: <http://project-websem.fr/diseases/data#> .
+
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+diseases:DiseasesCollection a skos:Collection; 
+  skos:prefLabel "Collection of Common Diseases"@en, "Collection de Maladies Courantes"@fr;
+  skos:definition "A collection of common diseases, including respiratory illnesses like flu and pneumonia, as well as chronic conditions such as diabetes and hypertension."@en,
+                  "Une collection organisée de maladies courantes, incluant des maladies respiratoires telles que la grippe et la pneumonie, ainsi que des conditions chroniques comme le diabète et l'hypertension."@fr;
+  skos:member diseases:Flu ;
+  skos:member diseases:Pneumonia ;
+  skos:member diseases:Covid ;
+  skos:member diseases:Bronchitis ;
+  skos:member diseases:Diabetes ;
+  skos:member diseases:Hypertension .
+
+diseases:DiseasesThesaurus a skos:ConceptScheme ;
+  skos:prefLabel "Diseases Thesaurus"@en, "Thésaurus des Maladies"@fr;
+  skos:definition "A collection of common diseases, including respiratory illnesses like flu and pneumonia, as well as chronic conditions such as diabetes and hypertension."@en,
+                  "Une collection organisée de maladies courantes, incluant des maladies respiratoires telles que la grippe et la pneumonie, ainsi que des conditions chroniques comme le diabète et l'hypertension."@fr;
+  skos:hasTopConcept diseases:RespiratoryDisease ;
+  skos:hasTopConcept diseases:GastroIntestinalDisease ;
+  skos:hasTopConcept diseases:SystemicDisease .
+
+diseases:ContagiousDiseases a skos:Collection; 
+  skos:prefLabel "Collection of Contagious Diseases"@en, "Collection de Maladies Contagieuses"@fr;
+  skos:definition "A collection of contagious diseases like flu and pneumonia"@en,
+                  "Une collection organisée de maladies contagieuses, telles que la grippe et la pneumonie."@fr;
+  skos:member diseases:Flu ;
+  skos:member diseases:Pneumonia ;
+  skos:member diseases:Covid ;
+  skos:member diseases:Bronchitis ;
+  skos:member diseases:Gastroenteritis .
+
+diseases:RespiratoryDisease a skos:Concept ;
+  skos:prefLabel "Maladie Respiratoire"@fr, "Respiratory Disease"@en ;
+  skos:definition "A medical condition that affects the lungs and other parts of the respiratory system, potentially involving inflammation, infection, or obstruction of airways."@en,
+                  "Une affection médicale qui touche les poumons et d'autres parties du système respiratoire, pouvant impliquer une inflammation, une infection ou une obstruction des voies respiratoires."@fr .
+
+diseases:SystemicDisease a skos:Concept ;
+  skos:prefLabel "Maladie Systémique"@fr, "Systemic Disease"@en ;
+  skos:definition "A disease that affects multiple organs or the entire body, not limited to a specific area or system, and often impacts overall health and functioning."@en,
+                  "Une maladie qui affecte plusieurs organes ou tout le corps, sans se limiter à une zone ou un système spécifique, et qui a souvent un impact sur la santé et le fonctionnement général."@fr .
+
+diseases:GastroIntestinalDisease a skos:Concept ;
+  skos:prefLabel "Maladie Gastro-Intestinale"@fr, "Gastrointestinal Disease"@en ;
+  skos:definition "A medical condition that affects the gastrointestinal tract, including the stomach, intestines, esophagus, and associated organs, often characterized by symptoms like abdominal pain, bloating, diarrhea, and vomiting."@en,
+                  "Une affection médicale qui touche le tractus gastro-intestinal, y compris l'estomac, les intestins, l'œsophage et les organes associés, souvent caractérisée par des symptômes tels que douleurs abdominales, ballonnements, diarrhée et vomissements."@fr .
+
+diseases:Flu a :MedicalCondition, :InfectiousDisease,
+        skos:Concept ;
+        skos:definition "Flu, also known as influenza, is a viral infection that attacks the respiratory system."@en,
+                       "La grippe, également connue sous le nom d'influenza, est une infection virale qui attaque le système respiratoire."@fr ;
+        skos:prefLabel "Flu"@en, "Grippe"@fr ;
+        skos:broader diseases:RespiratoryDisease ;
+        skos:inScheme diseases:DiseasesThesaurus ;
+        :signOrSymptom symptoms:Fever, symptoms:Cough, 
+                        symptoms:Fatigue, symptoms:ArticularPain ,
+                        symptoms:MuscularPain, symptoms:Chills ;
+        :possibleTreatment treatments:ParacetamolPrescription,
+                            treatments:IbuprofenePrescription ;
+        owl:sameAs dbpedia:Influenza .
+
+diseases:Pneumonia a :MedicalCondition, :InfectiousDisease,
+        skos:Concept ;
+        skos:definition "Pneumonia is an infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus, causing cough with phlegm or pus, fever, chills, and difficulty breathing."@en,
+                        "La pneumonie est une infection qui enflamme les sacs aériens dans un ou les deux poumons. Les sacs peuvent se remplir de liquide ou de pus, causant une toux avec du flegme ou du pus, de la fièvre, des frissons et des difficultés respiratoires."@fr ;
+        skos:inScheme diseases:DiseasesThesaurus ;
+        skos:broader diseases:RespiratoryDisease ;
+        skos:prefLabel "Pneumonia"@en , "Pneumonie"@fr ;
+        :signOrSymptom symptoms:Fever, symptoms:Cough, 
+                        symptoms:Fatigue, symptoms:ChestPain,
+                        symptoms:ShortnessBreath, symptoms:Nausea ;
+        :possibleTreatment treatments:AmoxicillinPrescription,
+                            treatments:ParacetamolPrescription ;
+        owl:sameAs dbpedia:Pneumonia .
+
+diseases:Covid a :MedicalCondition, :InfectiousDisease,
+        skos:Concept ;
+        skos:definition "COVID-19 is an infectious disease caused by the SARS-CoV-2 virus. Symptoms can vary from mild to severe respiratory illness."@en,
+                       "La COVID-19 est une maladie infectieuse causée par le virus SARS-CoV-2. Les symptômes peuvent varier de légers à graves."@fr ;
+        skos:inScheme diseases:DiseasesThesaurus ;
+        skos:broader diseases:RespiratoryDisease ;
+        skos:prefLabel "Covid"@en , "Covid"@fr ;
+        :signOrSymptom symptoms:Fever, symptoms:Cough, 
+                        symptoms:Fatigue, symptoms:Chills,
+                        symptoms:ShortnessBreath, symptoms:Headache,
+                        symptoms:LossOfSmell ;
+        :possibleTreatment treatments:ParacetamolPrescription ;
+        owl:sameAs dbpedia:COVID-19 .
+
+diseases:Bronchitis a :MedicalCondition, :InfectiousDisease,
+        skos:Concept ;
+        skos:definition "Bronchitis is an inflammation of the lining of your bronchial tubes, which carry air to and from your lungs. Bronchitis may cause cough, phlegm production, and breathing difficulties."@en,
+                        "La bronchite est une inflammation de la muqueuse de vos bronches, qui transportent l'air vers et depuis vos poumons. La bronchite peut causer une toux, la production de flegme et des difficultés respiratoires."@fr ;
+        skos:prefLabel "Bronchitis"@en , "Bronchite"@fr ;
+        skos:inScheme diseases:DiseasesThesaurus ;
+        skos:broader diseases:RespiratoryDisease ;
+        :signOrSymptom symptoms:Cough, symptoms:SoreThroat, 
+                        symptoms:Fatigue, symptoms:Headache ;
+        :possibleTreatment treatments:ParacetamolPrescription ;
+        owl:sameAs dbpedia:Bronchitis .
+
+diseases:Diabetes a :MedicalCondition, :NonInfectiousDisease,
+        skos:Concept ;
+        skos:definition "Diabetes is a chronic disease that occurs when the pancreas is no longer able to make insulin, or when the body cannot make good use of the insulin it produces."@en,
+                        "Le diabète est une maladie chronique qui se produit lorsque le pancréas n'est plus capable de produire de l'insuline, ou lorsque le corps ne peut pas utiliser correctement l'insuline produite."@fr ;
+        skos:prefLabel "Diabetes"@en , "Diabète"@fr ;
+        skos:inScheme diseases:DiseasesThesaurus ;
+        skos:broader diseases:SystemicDisease ;
+        :signOrSymptom symptoms:Polyphagia, symptoms:Polyuria, 
+                        symptoms:Polydipsia, symptoms:DrySkin,
+                        symptoms:WeightLoss ;
+        :possibleTreatment treatments:MetforminPrescription,
+                            treatments:InsulinPrescription,
+                            treatments:TherapeuticEducation,
+                            treatments:BalancedDiet,
+                            treatments:PhysicalExercice ;
+        owl:sameAs dbpedia:Diabetes .
+
+diseases:Hypertension a :MedicalCondition, :NonInfectiousDisease,
+        skos:Concept ;
+        skos:definition "Hypertension, or high blood pressure, is a condition in which the blood pressure in the arteries is persistently elevated. It can lead to significant health issues and increase the risk of heart disease, stroke, and sometimes death."@en,
+                        "L'hypertension, ou tension artérielle élevée, est une condition dans laquelle la pression sanguine dans les artères est constamment élevée. Elle peut entraîner des problèmes de santé importants et augmenter le risque de maladies cardiaques, d'accidents vasculaires cérébraux et parfois de décès."@fr ;
+        skos:prefLabel "Hypertension"@en , "Hypertension"@fr ;
+        skos:inScheme diseases:DiseasesThesaurus ;
+        skos:broader diseases:SystemicDisease ;
+        :signOrSymptom symptoms:Headache, symptoms:Nausea, 
+                        symptoms:Dizziness, symptoms:Anxiety,
+                        symptoms:BlurredVision, symptoms:ChestPain,
+                        symptoms:ShortnessBreath;
+        :possibleTreatment treatments:TherapeuticEducation,
+                            treatments:BalancedDiet,
+                            treatments:PhysicalExercice ;
+        owl:sameAs dbpedia:Hypertension .
+
+diseases:Gastroenteritis  a :MedicalCondition, 
+        :InfectiousDisease,
+        skos:Concept ;
+        skos:definition "An infectious disease characterized by inflammation of the gastrointestinal tract, primarily the stomach and intestines, causing symptoms like nausea, vomiting, diarrhea, and sometimes fever."@en,
+                        "Une maladie infectieuse caractérisée par une inflammation du tractus gastro-intestinal, principalement de l'estomac et des intestins, causant des symptômes tels que nausées, vomissements, diarrhée et parfois fièvre."@fr ;
+        skos:prefLabel "Gastroenteritis"@en, "Gastro-entérite"@fr ;
+        skos:inScheme diseases:DiseasesThesaurus ;
+        skos:broader diseases:GastroIntestinalDisease ;
+        :signOrSymptom  symptoms:Nausea, symptoms:Fever,
+                        symptoms:Diarrhea, symptoms:Vomiting;
+        owl:sameAs dbpedia:Gastroenteritis .

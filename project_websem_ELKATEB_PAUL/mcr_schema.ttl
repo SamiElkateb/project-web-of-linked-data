@@ -1,0 +1,376 @@
+@prefix : <http://project-websem.fr/schema#> .
+@prefix symptoms: <http://project-websem.fr/symptoms/data#> .
+@prefix diseases: <http://project-websem.fr/diseases/data#> .
+
+@prefix s: <https://schema.org/schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+: a owl:Ontology ;
+  rdfs:label "Medical Ontology";
+  rdfs:comment "An ontology representing medical entities and their relationships." ;
+  owl:priorVersion <http://project-wold.fr/schema#> .
+
+# Schéma existant réutilisé
+:Person a owl:Class ;
+  owl:hasKey (:ssn) ;
+  rdfs:label    "Person"@en, "Personne"@fr;
+  owl:equivalentClass s:Person .
+
+:MedicalEntity a owl:Class ;
+  rdfs:label    "Medical Entity"@en, "Entité Médicale"@fr;
+  owl:equivalentClass s:MedicalEntity .
+
+:MedicalCondition a owl:Class ;
+  rdfs:label    "Medical Condition"@en, "Maladie"@fr;
+  owl:equivalentClass s:MedicalCondition .
+
+:InfectiousDisease a owl:ObjectProperty ;
+  owl:complementOf :NonInfectiousDisease ;
+  rdfs:label    "Infectious Disease"@en, "Maladie Infectieuse"@fr;
+  rdfs:subClassOf :MedicalCondition .
+
+:NonInfectiousDisease a owl:ObjectProperty ;
+  owl:complementOf :InfectiousDisease ;
+  rdfs:label    "Non Infectious Disease"@en, "Maladie Non Infectieuse"@fr ;
+  rdfs:subClassOf :MedicalCondition .
+
+:MedicalSignOrSymptom a owl:Class ;
+  rdfs:label    "Medical Sign or Symptom"@en, "Signe ou Symptôme Médical"@fr;
+  owl:equivalentClass s:MedicalSignOrSymptom .
+
+:MedicalTherapy a owl:Class ;
+  rdfs:label    "Medical Therapy"@en, "Thérapie Médicale"@fr;
+  owl:equivalentClass s:MedicalTherapy .
+
+:Patient a owl:Class ;
+  owl:equivalentClass s:Patient ;
+  rdfs:label    "Patient"@en, "Patient"@fr .
+
+:MedicalTest a owl:Class ;
+  rdfs:label    "Medical Test"@en, "Examen complémentaire"@fr;
+  owl:equivalentClass s:MedicalTest .
+
+:Drug a owl:Class ;
+  rdfs:label    "Drug"@en, "Médicament"@fr;
+  owl:equivalentClass s:Drug .
+
+:name a owl:ObjectProperty ;
+  rdfs:label    "name"@en, "nom"@fr;
+  owl:equivalentProperty s:name .
+
+:signOrSymptom a owl:ObjectProperty ;
+  rdfs:label    "has sign or symptom"@en, "a pour signe ou symptome medical"@fr;
+  owl:equivalentProperty s:signOrSymptom .
+
+:possibleTreatment a owl:ObjectProperty ;
+  rdfs:label    "has possible treatment"@en, "peut être traité par"@fr;
+  owl:equivalentProperty s:possibleTreatment .
+
+:usedToDiagnose a owl:ObjectProperty ;
+  rdfs:label    "used to diagnose"@en, "utilisé pour diagnostiquer"@fr;
+  owl:equivalentProperty s:usedToDiagnose .
+
+:doseUnit a owl:DatatypeProperty ;
+  rdfs:label    "dose unit"@en, "unité de dosage"@fr;
+  owl:equivalentProperty s:doseUnit ;
+  owl:differentFrom :doseValue .
+
+:doseValue a owl:ObjectProperty ;
+  rdfs:label    "dose value"@en, "valeur de la dose"@fr;
+  owl:equivalentProperty s:doseValue ;
+  owl:differentFrom :doseUnit . 
+
+:frequency a owl:DatatypeProperty ;
+  rdfs:label    "frequency"@en, "fréquence"@fr;
+  owl:equivalentProperty s:frequency .
+
+:activeIngredient a owl:DatatypeProperty ;
+  rdfs:label    "active ingredient"@en, "substance active"@fr;
+  owl:equivalentProperty s:activeIngredient .
+
+:drugUnit a owl:DatatypeProperty ;
+  rdfs:label    "drug unit"@en, "unité de médicament"@fr;
+  owl:equivalentProperty s:drugUnit .
+
+:dosageForm a owl:DatatypeProperty ;
+  rdfs:label    "dosage form"@en, "forme galénique"@fr;
+  owl:equivalentProperty s:dosageForm .
+
+:drug a owl:ObjectProperty ;
+  rdfs:label    "drug"@en, "médicament"@fr;
+  owl:equivalentProperty s:drug .
+
+:doseSchedule a owl:ObjectProperty ;
+  rdfs:label    "dose schedule"@en, "calendrier de dosage"@fr;
+  owl:equivalentProperty s:doseSchedule .
+
+:birthDate a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:label    "birth date"@en, "date de naissance"@fr;
+  owl:equivalentProperty s:birthDate .
+
+:healthCondition a owl:ObjectProperty ;
+  rdfs:label    "has health condition"@en, "a pour maladie"@fr;
+  owl:equivalentProperty s:healthCondition .
+
+:value a owl:ObjectProperty ;
+  rdfs:label    "value"@en, "valeur"@fr;
+  owl:equivalentProperty s:value .
+
+:unitText a owl:DatatypeProperty ;
+  rdfs:label    "unit text"@en, "texte d'unité"@fr;
+  owl:equivalentProperty s:unitText .
+
+:weight a owl:ObjectProperty ;
+  rdfs:label    "weight"@en, "poids"@fr;
+  owl:equivalentProperty s:weight .
+
+:familyName a owl:DatatypeProperty ;
+  rdfs:label    "family name"@en, "nom de famille"@fr;
+  owl:equivalentProperty s:familyName .
+
+:givenName a owl:DatatypeProperty ;
+  rdfs:label    "given name"@en, "prénom"@fr;
+  owl:equivalentProperty s:givenName .
+
+:jobTitle a owl:ObjectProperty ;
+  rdfs:label    "has job title"@en, "a pour métier"@fr;
+  owl:equivalentProperty s:jobTitle .
+
+# Schema étendu
+:CaseReport a owl:Class;
+  rdfs:label    "Case report"@en, "Observation médicale"@fr ;
+  rdfs:comment  "detailed report of the symptoms, signs, diagnosis, treatment, and follow-up of an individual patient."@en,
+                "document créé par le médecin et contenant des informations recueillies lors de l'examen médical d'un patient."@fr ;
+  rdfs:subClassOf :MedicalEntity .
+
+:ClinicalExamination a owl:Class;
+  rdfs:label    "Clinical examination"@en, "Examen clinique"@fr ;
+  rdfs:comment  "detailed report of the symptoms, signs, diagnosis, treatment, and follow-up of an individual patient."@en,
+                "L'examen clinique fait partie de l'examen médical ou psychologique qui permet au médecin ou aux infirmiers en pratique avancée de décrire l'état d'un patient"@fr ;
+  rdfs:subClassOf :MedicalEntity .
+
+:Animal a owl:Class ;
+    rdfs:label "Animal"@en, "Animal"@fr ;
+    rdfs:comment "a living organism characterized by voluntary movement."@en,
+                 "être vivant doué de sensibilite de mobilité."@fr .
+
+:Female a owl:Class ;
+    owl:disjointWith :Male;
+    rdfs:label "Female"@en, "Femelle"@fr ;
+    rdfs:comment "an animal that produces gametes (ova) that can be fertilized by male gametes (spermatozoa)."@en,
+                 "animal appartenant au sexe apte à produire des ovules."@fr ;
+    rdfs:subClassOf :Animal .
+
+:Woman a owl:Class ;
+    rdfs:label "Woman"@en, "Femme"@fr ;
+    rdfs:comment "a female person"@en,
+                 "femelle de l'espèce humaine."@fr ;
+    rdfs:subClassOf :Female, :Person .
+
+:Male a owl:Class;
+  owl:disjointWith :Female;
+  rdfs:label    "Male"@en, "Mâle"@fr ;
+  rdfs:comment  "an animal that produces gametes (spermatozoa) that can fertilize female gametes (ova)."@en,
+                "individu appartenant au sexe qui possède le pouvoir de fécondation."@fr ;
+  rdfs:subClassOf :Animal .
+
+:Man a owl:Class;
+  rdfs:label    "Man"@en, "Homme"@fr ;
+  rdfs:comment  "a male person"@en,
+                "mâle de l'espèce humaine."@fr ;
+  rdfs:subClassOf :Male, :Person .
+
+:Doctor a owl:Class;
+  owl:hasKey (:rpps) ;
+  rdfs:label    "Medical practitioner"@en, "Médecin"@fr;
+  rdfs:comment  "A health professional who practices medicine, which is concerned with promoting, maintaining or restoring health"@en,
+                "Professionnel de la santé titulaire d'un diplôme de docteur en médecine"@fr;
+  rdfs:subClassOf :Person .
+
+:Nurse a owl:Class;
+  rdfs:label    "Nurse"@en, "Infirmier/Infirmière"@fr;
+  rdfs:comment  "A healthcare professional specialized in providing care and assistance to patients. Nurses are trained to offer a range of medical support, from clinical care to emotional support."@en,
+                "Un professionnel de santé spécialisé dans la prise en charge et l'assistance des patients. Les infirmiers sont formés pour offrir une gamme de soutiens médicaux, allant des soins cliniques au soutien émotionnel."@fr;
+  rdfs:subClassOf :Person .
+
+
+:Team a owl:Class ;
+  rdfs:label    "Team"@en, "Équipe"@fr;
+  rdfs:comment  "A group of individuals working together towards a common goal."@en,
+                "Un groupe d'individus travaillant ensemble vers un objectif commun."@fr.
+
+:hasMember a owl:ObjectProperty ;
+  rdfs:label    "has member"@en, "a pour membre"@fr;
+  rdfs:comment  "Relates a team to its individual members."@en,
+                "Relie une équipe à ses membres individuels."@fr;
+  rdfs:range :Person ;
+  rdfs:domain :Team .
+
+:hasDiagnosis a owl:ObjectProperty;
+  rdfs:label   "has diagnosis"@en, "a un diagnostic"@fr;
+  rdfs:comment "Relates a case or patient to a specific medical diagnosis."@en,
+               "Relie un cas ou un patient à un diagnostic médical spécifique."@fr;
+  rdfs:range :MedicalCondition .
+
+:hasClinicalExamination a owl:ObjectProperty;
+  rdfs:label   "has clinical examination"@en, "a un examen clinique"@fr;
+  rdfs:comment "Links a patient or case to their clinical examination details."@en,
+               "Relie un patient ou un cas à ses détails d'examen clinique."@fr;
+  rdfs:range :ClinicalExamination .
+
+:hasSignOrSymptom a owl:ObjectProperty;
+  rdfs:label    "has sign or symptom"@en, "a un signe ou symptôme"@fr;
+  rdfs:comment  "Relates an entity to a medical sign or symptom it exhibits or experiences."@en,
+                "Relie une entité à un signe médical ou à un symptôme qu'elle présente ou ressent."@fr;
+  rdfs:range :MedicalSignOrSymptom .
+
+:hasPatient a owl:ObjectProperty;
+  rdfs:label   "has patient"@en, "a un patient"@fr;
+  rdfs:comment "Associates a medical event or entity with a specific patient."@en,
+               "Associe un événement médical ou une entité à un patient spécifique."@fr;
+  rdfs:range :Patient .
+  
+
+:hasDoctor a owl:ObjectProperty;
+  rdfs:label    "has doctor"@en, "a un médecin"@fr;
+  rdfs:comment  "Links a medical case, examination, or event to the attending physician."@en,
+                "Relie un cas médical, un examen ou un événement à un médecin."@fr;
+  rdfs:range :Doctor .
+
+:hasMedicalTherapy a owl:ObjectProperty;
+  rdfs:label    "has medical therapy"@en, "a un traitement médical"@fr;
+  rdfs:comment  "Associates an entity with a specific medical treatment or therapy."@en,
+                "Associe une entité à un traitement médical spécifique."@fr;
+  rdfs:range :MedicalTherapy .
+
+:hasMedicalTest a owl:ObjectProperty;
+  rdfs:label    "has medical test"@en, "a un examen complémentaire"@fr;
+  rdfs:comment  "Connects an entity to a specific medical test that was conducted."@en,
+                "Connecte une entité à un examen complémentaire spécifique qui a été réalisé."@fr;
+  rdfs:range :MedicalTest .
+
+:hasSibling a owl:SymmetricProperty ;
+    rdfs:label "has for sibling"@en, "a pour frère ou soeur"@fr ;
+    rdfs:comment "relation with an individual who has the same parents."@en,
+                 "relation avec un individu ayant les mêmes parents."@fr ;
+    owl:propertyChainAxiom(:hasParent :hasChild) .
+
+:hasAncestor a owl:TransitiveProperty,
+    owl:AsymmetricProperty,
+    owl:IrreflexiveProperty;
+    rdfs:label "has for ancestor"@en, "a pour ancêtre"@fr ;
+    rdfs:comment "relation between an animal and another animal from which it is descended."@en,
+                 "relation entre un animal et un autre animal duquel il descend."@fr ;
+    rdfs:domain :Animal ;
+    rdfs:range  :Animal .
+
+:hasBrother a owl:TransitiveProperty,
+    owl:IrreflexiveProperty;
+    owl:propertyDisjointWith :hasSister ;
+    rdfs:subPropertyOf :hasSibling ;
+    rdfs:label "has for brother"@en, "a pour frère"@fr ;
+    rdfs:comment "relation with a male who has the same parents."@en,
+                 "relation avec un mâle ayant les mêmes parents."@fr ;
+    rdfs:domain :Animal ;
+    rdfs:range  :Male .
+
+:hasSister a owl:TransitiveProperty ;
+    owl:propertyDisjointWith :hasBrother ;
+    rdfs:subPropertyOf :hasSibling ;
+    rdfs:label "has for brother"@en, "a pour frère"@fr ;
+    rdfs:comment "relation with a male who has the same parents."@en,
+                 "relation avec un mâle ayant les mêmes parents."@fr ;
+    rdfs:domain :Animal ;
+    rdfs:range  :Female .
+
+:hasParent a owl:AsymmetricProperty,
+    owl:IrreflexiveProperty;
+    owl:inverseOf :hasChild ;
+    rdfs:subPropertyOf :hasAncestor ;
+    rdfs:label "has for parent"@en, "a pour parent"@fr ;
+    rdfs:comment "relation between an animal and another animal which gave birth to it."@en,
+                 "relation entre un animal et un autre animal qui lui a donné naissance."@fr .
+
+:hasChild a owl:AsymmetricProperty,
+    owl:IrreflexiveProperty;
+    owl:inverseOf :hasParent ;
+    rdfs:label "has for child"@en, "a pour enfant"@fr ;
+    rdfs:comment "relation between an animal and another animal to which it gave birth."@en,
+                 "relation entre un animal et un autre animal auquel il a donné naissance."@fr .
+
+:ssn a owl:DatatypeProperty,
+  owl:InverseFunctionalProperty ;
+  rdfs:label    "has social security number"@en, "a un numéro de sécurité sociale"@fr;
+  rdfs:comment  "Associates an individual with their unique social security number."@en,
+                "Associe un individu à son numéro unique de sécurité sociale."@fr;
+  rdfs:range xsd:string ;
+  rdfs:domain :Person .
+
+:rpps a owl:DatatypeProperty,
+  owl:InverseFunctionalProperty ;
+  rdfs:label    "has RPPS number"@en, "a un numéro RPPS"@fr;
+  rdfs:comment  "Links a healthcare professional to their unique RPPS identification number."@en,
+                "Relie un professionnel de santé à son numéro d'identification unique RPPS."@fr;
+  rdfs:range xsd:string ;
+  rdfs:domain :Doctor .
+
+:RespiratoryCondition a owl:Class ;
+  rdfs:label "Respiratory Condition"@en, "Maladie Respiratoire"@fr ;
+  rdfs:subClassOf :MedicalCondition ;
+  owl:unionOf (
+      [
+          a owl:Restriction ;
+          owl:onProperty :signOrSymptom ;
+          owl:hasValue symptoms:Cough
+      ]
+      [
+          a owl:Restriction ;
+          owl:onProperty :signOrSymptom ;
+          owl:hasValue symptoms:ShortnessBreath
+      ]
+      [
+          a owl:Restriction ;
+          owl:onProperty :signOrSymptom ;
+          owl:hasValue symptoms:SoreThroat
+      ]
+  ) .
+
+:MedicalTeam a owl:Class;
+  rdfs:label    "Medical Team"@en, "Equipe Médicale"@fr;
+  rdfs:comment  "A team composed exclusively of physicians."@en,
+                "Une équipe composée exclusivement de médecins."@fr;
+  rdfs:subClassOf :Team ;
+  owl:equivalentClass [
+    a owl:Restriction;
+    owl:onProperty :hasMember;
+    owl:someValuesFrom :Doctor
+  ] .
+
+:PersonWithGeneticDiabetesPredisposition a owl:Class ;
+    rdfs:label "Person who has a predisposition to have Diabetes"@en, "Personne susceptible d'avoir le diabète"@fr ;
+    rdfs:comment "A condition inferred for an individual who has an ancestor with diabetes."@en,
+                 "Condition déduite pour un individu ayant un ancêtre atteint de diabète."@fr ;
+    owl:unionOf ( 
+        [ 
+            a owl:Restriction ;
+            owl:onProperty :hasAncestor ;
+            owl:someValuesFrom [
+                a owl:Restriction ;
+                owl:onProperty :healthCondition ;
+                owl:hasValue diseases:Diabetes 
+            ]
+        ]
+        [ 
+            a owl:Restriction ;
+            owl:onProperty :hasSibling ;
+            owl:someValuesFrom [
+                a owl:Restriction ;
+                owl:onProperty :healthCondition ;
+                owl:hasValue diseases:Diabetes 
+            ]
+        ]
+    ) .

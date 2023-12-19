@@ -1,0 +1,75 @@
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix : <http://project-websem.fr/schema#> .
+prefix shapes: <http://project-websem.fr/shapes#> .
+prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+shapes:medical_sign_or_symptom a sh:NodeShape ; 
+  sh:targetClass :MedicalSignOrSymptom ;
+  sh:property [ 
+    sh:path rdf:type ;
+    sh:hasValue skos:Concept ;
+  ] ;
+  sh:property [ 
+    sh:path skos:definition ;
+    sh:languageIn ("fr" "en");
+    sh:minCount 1
+  ] ;
+  sh:property [ 
+    sh:path skos:prefLabel ;
+    sh:languageIn ("fr" "en");
+    sh:minCount 1
+  ] .
+
+shapes:drug a sh:NodeShape ; 
+  sh:targetClass :Drug ;
+  sh:property [ 
+    sh:path rdf:type ;
+    sh:hasValue skos:Concept ;
+  ] ;
+  sh:property [ 
+    sh:path skos:prefLabel ;
+    sh:minCount 1
+  ] ;
+  sh:property [ 
+    sh:path skos:definition ;
+    sh:languageIn ("fr" "en");
+    sh:minCount 1
+  ] ;
+  sh:property [ 
+    sh:path :activeIngredient ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [ 
+    sh:path :drugUnit ;
+    sh:languageIn ("fr" "en");
+    sh:minCount 1
+  ] ;
+  sh:property [ 
+    sh:path :dosageForm ;
+    sh:languageIn ("fr" "en");
+    sh:minCount 1
+  ] .
+
+shapes:medical_condition a sh:NodeShape ; 
+  sh:targetClass :MedicalCondition ;
+  sh:property [ 
+    sh:path rdf:type ;
+    sh:hasValue skos:Concept ;
+  ] ;
+  sh:property [ 
+    sh:path skos:definition ;
+    sh:languageIn ("fr" "en");
+    sh:minCount 1
+  ] ;
+  sh:property [ 
+    sh:path skos:prefLabel ;
+    sh:languageIn ("fr" "en");
+    sh:minCount 1
+  ] ;
+  sh:property [ 
+    sh:path :signOrSymptom ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape [ sh:class :MedicalSignOrSymptom ]
+  ] .
+

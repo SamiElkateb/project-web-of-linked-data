@@ -1,0 +1,31 @@
+@prefix : <http://project-websem.fr/schema#> .
+
+@prefix patients: <http://project-websem.fr/patients/data#> .
+@prefix reports: <http://project-websem.fr/case_reports/data#> .
+@prefix treatments: <http://project-websem.fr/treatments/data#> .
+@prefix symptoms: <http://project-websem.fr/symptoms/data#> .
+@prefix drugs: <http://project-websem.fr/drugs/data#> .
+@prefix tests: <http://project-websem.fr/medical_tests/data#> .
+@prefix doctors: <http://project-websem.fr/doctors/data#> .
+@prefix diseases: <http://project-websem.fr/diseases/data#> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+tests:CovidTest a :MedicalTest ;
+  :name "Covid test"@en , "Test Covid"@fr ;
+  :usedToDiagnose diseases:Covid .
+
+tests:PulmonaryRadiography a :MedicalTest ;
+  :name "Pulmonary radiography"@en , "Radiographie pulmonaire"@fr ;
+  :usedToDiagnose diseases:Pneumonia .
+
+tests:BloodTest a :MedicalTest ;
+  :name "Blood test"@en , "Prise de sang"@fr ;
+  :usedToDiagnose diseases:Diabetes .
+
+tests:BloodPressureMesurement a :MedicalTest ;
+  :name "Blood pressure mesurement"@en , "Mesure de la pression artérielle"@fr ;
+  :usedToDiagnose diseases:Hypertension .

@@ -1,0 +1,99 @@
+@prefix : <http://project-websem.fr/schema#> .
+
+@prefix patients: <http://project-websem.fr/patients/data#> .
+@prefix reports: <http://project-websem.fr/case_reports/data#> .
+@prefix treatments: <http://project-websem.fr/treatments/data#> .
+@prefix symptoms: <http://project-websem.fr/symptoms/data#> .
+@prefix drugs: <http://project-websem.fr/drugs/data#> .
+@prefix tests: <http://project-websem.fr/medical_tests/data#> .
+@prefix doctors: <http://project-websem.fr/doctors/data#> .
+@prefix diseases: <http://project-websem.fr/diseases/data#> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+drugs:DrugsThesaurus a skos:ConceptScheme ;
+  skos:prefLabel "Drugs Thesaurus"@en, "Thésaurus des Médicaments"@fr;
+  skos:definition "A comprehensive classification of drugs, encompassing various types such as antibiotics, analgesics, anti-inflammatory, and antipyretic medications."@en,
+                  "Une classification complète des médicaments, englobant divers types tels que les antibiotiques, les analgésiques, les médicaments anti-inflammatoires et antipyrétiques."@fr;
+  skos:hasTopConcept drugs:Antibiotics;
+  skos:hasTopConcept drugs:Antibiotics ;
+  skos:hasTopConcept drugs:Analgesics ;
+  skos:hasTopConcept drugs:AntiInflammatory ;
+  skos:hasTopConcept drugs:Antipyretic .
+
+drugs:Antibiotic a skos:Concept ;
+  skos:prefLabel "Antibiotiques"@fr, "Antibiotics"@en ;
+  skos:definition "Antibiotics are a type of medication used to treat bacterial infections by killing or inhibiting the growth of bacteria."@en ,
+                 "Les antibiotiques sont un type de médicament utilisé pour traiter les infections bactériennes en tuant ou en inhibant la croissance des bactéries."@fr .
+
+drugs:Analgesic a skos:Concept ;
+  skos:prefLabel "Analgésiques"@fr, "Analgesics"@en ;
+  skos:definition "Analgesics, also known as painkillers, are medications used to relieve pain. They can range from over-the-counter options like aspirin to stronger prescription medications."@en ,
+                 "Les analgésiques, également connus sous le nom d'antidouleurs, sont des médicaments utilisés pour soulager la douleur. Ils peuvent varier des options en vente libre comme l'aspirine aux médicaments sur ordonnance plus forts."@fr .
+
+drugs:AntiInflammatory a skos:Concept ;
+  skos:prefLabel "Anti-inflammatoire"@fr, "Anti-inflammatory"@en ;
+  skos:definition "Anti-inflammatory drugs are medications designed to reduce inflammation and relieve pain. They can be over-the-counter, like ibuprofen, or prescription medications."@en ,
+                 "Les médicaments anti-inflammatoires sont conçus pour réduire l'inflammation et soulager la douleur. Ils peuvent être en vente libre, comme l'ibuprofène, ou sur ordonnance."@fr .
+
+drugs:Antipyretic a skos:Concept ;
+  skos:prefLabel "Antipyrétique"@fr, "Antipyretic"@en ;
+  skos:definition "Antipyretics are medications that are used to reduce fever. Common examples include acetaminophen and ibuprofen, which can also act as pain relievers."@en ,
+                 "Les antipyrétiques sont des médicaments utilisés pour réduire la fièvre. Des exemples courants incluent l'acétaminophène et l'ibuprofène, qui peuvent également agir comme des analgésiques."@fr .
+
+drugs:Paracetamol a :Drug,
+  skos:Concept ;
+  skos:inScheme drugs:DrugsThesaurus ;
+  skos:definition "Le paracétamol, est un médicament utilisé pour traiter la douleur et la fièvre. Il est généralement utilisé pour soulager la douleur légère à modérée."@fr ,
+                  "Paracetamol, is a medication used to treat pain and fever. It is typically used for mild to moderate pain relief."@en ;
+  skos:broader drugs:Antipyretics, drugs:Analgesic ;
+  skos:prefLabel "Paracetamol" ;
+  :activeIngredient "Paracetamol" ;
+  :drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé"@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .
+
+drugs:Ibuprofene a :Drug,
+  skos:Concept ;
+  skos:inScheme drugs:DrugsThesaurus ;
+  skos:definition "L'ibuprofène est un médicament anti-inflammatoire non stéroïdien (AINS) utilisé pour traiter la douleur, la fièvre et l'inflammation."@fr,
+                  "Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) used to treat pain, fever, and inflammation."@en ;
+  skos:broader drugs:Antipyretics, drugs:Analgesic, drugs:AntiInflammatory ;
+  skos:prefLabel "Ibuprofene" ;
+  :activeIngredient "Ibuprofene" ;
+  :drugUnit "400mg tablet"@en, "200mg tablet"@en, "200mg comprimé"@en, "400mg comprimé"@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .
+
+drugs:Amoxicillin a :Drug,
+  skos:Concept ;
+  skos:inScheme drugs:DrugsThesaurus ;
+  skos:definition "L'amoxicilline est un antibiotique de la famille des pénicillines qui lutte contre les bactéries. Elle est utilisée pour traiter de nombreux types d'infections causées par des bactéries."@fr,
+                  "Amoxicillin is a penicillin antibiotic that fights bacteria. It is used to treat many different types of infection caused by bacteria."@en ;
+  skos:broader drugs:Antibiotic ;
+  skos:prefLabel "Amoxicillin"@en, "Amoxicilline"@fr ;
+  :activeIngredient "Amoxicillin"@en, "Amoxicilline"@fr ;
+  :drugUnit "1g tablet"@en, "500mg tablet"@en, "1g comprimé "@en, "500mg  comprimé "@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .
+
+drugs:Insulin a :Drug,
+  skos:Concept ;
+  skos:inScheme drugs:DrugsThesaurus ;
+  skos:definition "L'insuline est une hormone qui régule la glycémie. Elle est utilisée dans le traitement du diabète pour contrôler les niveaux de glucose dans le sang."@fr,
+                  "Insulin is a hormone that regulates blood sugar. It is used in the treatment of diabetes to control blood glucose levels."@en ;
+  skos:prefLabel "Insulin"@en, "Insuline"@fr ;
+  :activeIngredient "Insulin"@en, "Insuline"@fr ;
+  :drugUnit "UI"@fr, "IU"@en ;
+  :dosageForm "injection"@en, "injectable"@fr .
+
+drugs:Metformin a :Drug,
+  skos:Concept ;
+  skos:inScheme drugs:DrugsThesaurus ;
+  skos:definition "La metformine est un médicament oral pour le diabète qui aide à contrôler les niveaux de sucre dans le sang. Elle est utilisée dans le traitement du diabète de type 2."@fr,
+                  "Metformin is an oral diabetes medicine that helps control blood sugar levels. It is used in the treatment of type 2 diabetes."@en ;
+  skos:prefLabel "Metformin"@en, "Metformine"@fr ;
+  :activeIngredient "Metformin"@en, "Metformine"@fr ;
+  :drugUnit "500mg tablet"@en, "500mg  comprimé "@en ;
+  :dosageForm "tablet"@en, "comprimé"@fr .

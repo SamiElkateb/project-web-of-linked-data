@@ -7,12 +7,12 @@ author: "EL KATEB Sami, PAUL Thomas"
 
 Pour faire évoluer notre modélisation de rapports médicaux, nous avons commencé
 par intégrer les retours reçus sur notre premier projet.
-Nous avons commencé par remplacer la propriété _gender_ par les classes Man et Woman.
+Ainsi, nous avons remplacer la propriété _gender_ par les classes Man et Woman.
 Puis nous avons ajouté les numéros de sécurité sociale des patients et les numéros
 RPPS des médecins.
 Nous avons défini ces propriétés comme owl:InverseFunctionalProperty.
 En effet, si deux entités ont la même valeur pour l'une de ces deux propriétés, celles-ci sont identiques.
-Pour la même raison, ce sont également les valeurs de owl:hasKey pour les patients et les médecins respectivement.
+Pour cette même raison, ssn et rpps sont les valeurs de owl:hasKey pour les patients et les médecins respectivement.
 
 Puisque nous avions commencé à développer une ontologie OWL,
 nous avons mis à jour la déclaration de notre ontologie en y ajoutant la référence à la version précédente.
@@ -43,7 +43,7 @@ un thésaurus de médicaments, un thésaurus de symptômes et un autre de maladi
 Ces thésaurus se prêtent bien à une organisation hiérarchique,
 facilitant la classification des différentes familles de médicaments,
 types de symptômes et de maladies. Ils permettent également d'établir des relations entre les différents termes.
-La création de ces thésaurus aide à normaliser la terminologie. En outre,
+La création de ces thésaurus aide à normaliser la terminologie. De plus,
 nous avons créé une collection de maladies contagieuses,
 permettant de regrouper les maladies selon leur contagiosité, contrairement au thésaurus organisé par organe atteint.
 
